@@ -477,6 +477,11 @@
         <ref role="trN6q" node="1MxN4Cv1DgJ" resolve="IRequirement" />
       </node>
     </node>
+    <node concept="1TJgyi" id="2B9hOR0HuoI" role="1TKVEl">
+      <property role="IQ2nx" value="3011016225145087534" />
+      <property role="TrG5h" value="checked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="1MxN4Cv4CWV" role="1TKVEl">
       <property role="IQ2nx" value="2063154723033354043" />
       <property role="TrG5h" value="satisfied" />
@@ -599,6 +604,21 @@
       <property role="IQ2nx" value="3011016225144372312" />
       <property role="TrG5h" value="maxMovingParts" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2B9hOR0GFLh">
+    <property role="EcuMT" value="3011016225144880209" />
+    <property role="3GE5qa" value="product.requirement" />
+    <property role="TrG5h" value="TextOnlyRequirement" />
+    <property role="34LRSv" value="text only" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2B9hOR0GFLi" role="PzmwI">
+      <ref role="PrY4T" node="1MxN4Cv1DgJ" resolve="IRequirement" />
+    </node>
+    <node concept="1TJgyi" id="2B9hOR0GFLk" role="1TKVEl">
+      <property role="IQ2nx" value="3011016225144880212" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

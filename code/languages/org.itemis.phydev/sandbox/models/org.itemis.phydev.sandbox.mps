@@ -44,9 +44,6 @@
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -81,10 +78,6 @@
         <child id="2063154723032673454" name="deviation" index="3Eu3$" />
         <child id="2063154723032673456" name="y" index="3Eu3U" />
       </concept>
-      <concept id="2063154723033354019" name="org.itemis.phydev.structure.ReqCheck" flags="ng" index="3GOdD">
-        <property id="2063154723033354043" name="satisfied" index="3GOdL" />
-        <property id="2063154723033354045" name="explanation" index="3GOdR" />
-      </concept>
       <concept id="7027649560272729976" name="org.itemis.phydev.structure.RequiredPoint" flags="ng" index="suOPM">
         <property id="7027649560272729998" name="description" index="suOQ4" />
       </concept>
@@ -94,6 +87,9 @@
       </concept>
       <concept id="3011016225144372179" name="org.itemis.phydev.structure.ComplexityRequirement" flags="ng" index="3DoVMu">
         <property id="3011016225144372312" name="maxMovingParts" index="3DoVGl" />
+      </concept>
+      <concept id="3011016225144880209" name="org.itemis.phydev.structure.TextOnlyRequirement" flags="ng" index="3DuZGs">
+        <property id="3011016225144880212" name="text" index="3DuZGp" />
       </concept>
       <concept id="85995404698816570" name="org.itemis.phydev.structure.Parameter" flags="ng" index="1GkxhB">
         <property id="2063154723033852633" name="description" index="3IYqj" />
@@ -537,13 +533,12 @@
       <property role="TrG5h" value="PM" />
       <property role="suOQ4" value="the point which should move on a horizontal line" />
     </node>
+    <node concept="3DuZGs" id="2B9hOR0H4to" role="3DPtZ">
+      <property role="3DuZGp" value="The product shall look shiny, mostly silver and black." />
+    </node>
     <node concept="3DPw9" id="1MxN4CvaIPi" role="3DPtZ">
       <node concept="30bXRB" id="1MxN4CvaIPk" role="3DPwV">
         <property role="30bXRw" value="2.3" />
-      </node>
-      <node concept="3GOdD" id="2B9hOR0GF5o" role="lGtFl">
-        <property role="3GOdL" value="false" />
-        <property role="3GOdR" value="The actual product mass is 2,58 kg. This is 0,281 kg too heavy." />
       </node>
     </node>
     <node concept="3Eu3i" id="1MxN4CvaIPl" role="3DPtZ">
@@ -554,17 +549,9 @@
       <node concept="30bXRB" id="667ewDY5b7D" role="3Eu3$">
         <property role="30bXRw" value="5.0" />
       </node>
-      <node concept="3GOdD" id="2B9hOR0GF5p" role="lGtFl">
-        <property role="3GOdL" value="true" />
-        <property role="3GOdR" value="The starting y-position of 'PM' (mapped to 'M1') is 0,800 m. This satisfies the specification." />
-      </node>
     </node>
     <node concept="3DoVMu" id="2B9hOR0GnK5" role="3DPtZ">
       <property role="3DoVGl" value="3" />
-      <node concept="3GOdD" id="2B9hOR0GF5q" role="lGtFl">
-        <property role="3GOdL" value="true" />
-        <property role="3GOdR" value="The actual product has 3 moving parts. This satisfies the expected maximum." />
-      </node>
     </node>
   </node>
   <node concept="3xVcU" id="5gicTDiqiCO">
