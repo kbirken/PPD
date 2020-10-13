@@ -1203,5 +1203,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2B9hOR0EJLc">
+    <property role="3GE5qa" value="product.requirement" />
+    <ref role="1XX52x" to="wl5u:2B9hOR0EJJj" resolve="ComplexityRequirement" />
+    <node concept="3EZMnI" id="2B9hOR0EJLe" role="2wV5jI">
+      <node concept="3F0ifn" id="2B9hOR0EJLf" role="3EZMnx">
+        <property role="3F0ifm" value="The product should not have more than" />
+      </node>
+      <node concept="l2Vlx" id="2B9hOR0EJLg" role="2iSdaV" />
+      <node concept="3F0A7n" id="2B9hOR0EJLw" role="3EZMnx">
+        <ref role="1NtTu8" to="wl5u:2B9hOR0EJLo" resolve="maxMovingParts" />
+      </node>
+      <node concept="3F0ifn" id="2B9hOR0EJLi" role="3EZMnx">
+        <property role="3F0ifm" value="moving parts." />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -586,5 +586,20 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2B9hOR0EJJj">
+    <property role="EcuMT" value="3011016225144372179" />
+    <property role="3GE5qa" value="product.requirement" />
+    <property role="TrG5h" value="ComplexityRequirement" />
+    <property role="34LRSv" value="complexity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2B9hOR0EJJl" role="PzmwI">
+      <ref role="PrY4T" node="1MxN4Cv1DgJ" resolve="IRequirement" />
+    </node>
+    <node concept="1TJgyi" id="2B9hOR0EJLo" role="1TKVEl">
+      <property role="IQ2nx" value="3011016225144372312" />
+      <property role="TrG5h" value="maxMovingParts" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

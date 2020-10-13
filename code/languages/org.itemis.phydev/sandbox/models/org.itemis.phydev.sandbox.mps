@@ -92,6 +92,9 @@
         <reference id="3294480440867723998" name="segment" index="2wRc9v" />
         <child id="3294480440867724000" name="relativePos" index="2wRc9x" />
       </concept>
+      <concept id="3011016225144372179" name="org.itemis.phydev.structure.ComplexityRequirement" flags="ng" index="3DoVMu">
+        <property id="3011016225144372312" name="maxMovingParts" index="3DoVGl" />
+      </concept>
       <concept id="85995404698816570" name="org.itemis.phydev.structure.Parameter" flags="ng" index="1GkxhB">
         <property id="2063154723033852633" name="description" index="3IYqj" />
       </concept>
@@ -538,7 +541,7 @@
       <node concept="30bXRB" id="1MxN4CvaIPk" role="3DPwV">
         <property role="30bXRw" value="2.3" />
       </node>
-      <node concept="3GOdD" id="667ewDY5xnb" role="lGtFl">
+      <node concept="3GOdD" id="2B9hOR0GF5o" role="lGtFl">
         <property role="3GOdL" value="false" />
         <property role="3GOdR" value="The actual product mass is 2,58 kg. This is 0,281 kg too heavy." />
       </node>
@@ -548,12 +551,19 @@
       <node concept="30bXRB" id="1MxN4CvaIPn" role="3Eu3U">
         <property role="30bXRw" value="0.8" />
       </node>
-      <node concept="3GOdD" id="667ewDY5xnc" role="lGtFl">
-        <property role="3GOdL" value="true" />
-        <property role="3GOdR" value="The starting y-position of 'PM' (mapped to 'M1') is 0,800 m. This satiesfies the specification." />
-      </node>
       <node concept="30bXRB" id="667ewDY5b7D" role="3Eu3$">
         <property role="30bXRw" value="5.0" />
+      </node>
+      <node concept="3GOdD" id="2B9hOR0GF5p" role="lGtFl">
+        <property role="3GOdL" value="true" />
+        <property role="3GOdR" value="The starting y-position of 'PM' (mapped to 'M1') is 0,800 m. This satisfies the specification." />
+      </node>
+    </node>
+    <node concept="3DoVMu" id="2B9hOR0GnK5" role="3DPtZ">
+      <property role="3DoVGl" value="3" />
+      <node concept="3GOdD" id="2B9hOR0GF5q" role="lGtFl">
+        <property role="3GOdL" value="true" />
+        <property role="3GOdR" value="The actual product has 3 moving parts. This satisfies the expected maximum." />
       </node>
     </node>
   </node>
