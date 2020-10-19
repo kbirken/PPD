@@ -744,7 +744,7 @@
     <node concept="1Gk$NH" id="667ewDY1fx0" role="3xO7i">
       <ref role="1Gk$NG" node="667ewDY1fgw" resolve="wb" />
       <node concept="30bXRB" id="667ewDY1fx1" role="1PhqcF">
-        <property role="30bXRw" value="2.0" />
+        <property role="30bXRw" value="1.0" />
       </node>
     </node>
     <node concept="1Gk$NH" id="667ewDY1fx2" role="3xO7i">
