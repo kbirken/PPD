@@ -99,6 +99,7 @@
         <child id="7796940267871922422" name="value" index="1PhqcF" />
       </concept>
       <concept id="85995404697704244" name="org.itemis.phydev.structure.Segment" flags="ng" index="1GoLdD">
+        <property id="1887433507762689464" name="noCollision" index="1HrdtY" />
         <child id="7225990155325393139" name="density" index="22T1sL" />
         <child id="7796940267872258225" name="end" index="1PgOdG" />
         <child id="7796940267872257899" name="start" index="1PgOMQ" />
@@ -643,6 +644,7 @@
     </node>
     <node concept="1GoLdD" id="667ewDY1fgG" role="1GkxhE">
       <property role="TrG5h" value="links" />
+      <property role="1HrdtY" value="true" />
       <node concept="1PgKxM" id="667ewDY1fgH" role="1PgOMQ">
         <ref role="1PgKSO" node="667ewDY1fgT" resolve="L0" />
       </node>
@@ -674,6 +676,7 @@
     </node>
     <node concept="1GoLdD" id="667ewDY1fgP" role="1GkxhE">
       <property role="TrG5h" value="rechts" />
+      <property role="1HrdtY" value="true" />
       <node concept="1PgKxM" id="667ewDY1fwy" role="1PgOMQ">
         <ref role="1PgKSO" node="667ewDY1fgo" resolve="L1" />
       </node>
