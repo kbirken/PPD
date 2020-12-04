@@ -274,6 +274,19 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="667ewDXZ7y6" role="3EZMnx" />
+      <node concept="3F0ifn" id="667ewDXZ7Ei" role="3EZMnx">
+        <property role="3F0ifm" value="required points:" />
+      </node>
+      <node concept="3EZMnI" id="667ewDXZ7An" role="3EZMnx">
+        <node concept="VPM3Z" id="667ewDXZ7Ap" role="3F10Kt" />
+        <node concept="3XFhqQ" id="667ewDXZ7CC" role="3EZMnx" />
+        <node concept="2iRfu4" id="667ewDXZ7As" role="2iSdaV" />
+        <node concept="3F2HdR" id="667ewDXZ7CI" role="3EZMnx">
+          <ref role="1NtTu8" to="wl5u:667ewDXZ7ug" resolve="requiredPoints" />
+          <node concept="2iRkQZ" id="667ewDXZ7CO" role="2czzBx" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="1MxN4Cv46S3" role="3EZMnx" />
       <node concept="3EZMnI" id="1MxN4Cv1DI6" role="3EZMnx">
         <node concept="VPM3Z" id="1MxN4Cv1DI8" role="3F10Kt" />
@@ -290,19 +303,6 @@
           </node>
         </node>
         <node concept="2iRfu4" id="1MxN4Cv1DIb" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="667ewDXZ7y6" role="3EZMnx" />
-      <node concept="3F0ifn" id="667ewDXZ7Ei" role="3EZMnx">
-        <property role="3F0ifm" value="required points:" />
-      </node>
-      <node concept="3EZMnI" id="667ewDXZ7An" role="3EZMnx">
-        <node concept="VPM3Z" id="667ewDXZ7Ap" role="3F10Kt" />
-        <node concept="3XFhqQ" id="667ewDXZ7CC" role="3EZMnx" />
-        <node concept="2iRfu4" id="667ewDXZ7As" role="2iSdaV" />
-        <node concept="3F2HdR" id="667ewDXZ7CI" role="3EZMnx">
-          <ref role="1NtTu8" to="wl5u:667ewDXZ7ug" resolve="requiredPoints" />
-          <node concept="2iRkQZ" id="667ewDXZ7CO" role="2czzBx" />
-        </node>
       </node>
     </node>
   </node>
