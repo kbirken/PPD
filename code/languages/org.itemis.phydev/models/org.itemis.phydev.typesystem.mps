@@ -329,37 +329,6 @@
       <ref role="1YaFvo" to="wl5u:4Lx5PHkDsO" resolve="Segment" />
     </node>
   </node>
-  <node concept="1YbPZF" id="2QSm86dp9L8">
-    <property role="TrG5h" value="typeof_Anchor" />
-    <property role="3GE5qa" value="mechanism" />
-    <node concept="3clFbS" id="2QSm86dp9L9" role="18ibNy">
-      <node concept="1ZobV4" id="2QSm86dp9Lf" role="3cqZAp">
-        <node concept="mw_s8" id="2QSm86dp9Lg" role="1ZfhK$">
-          <node concept="1Z2H0r" id="2QSm86dp9Lh" role="mwGJk">
-            <node concept="2OqwBi" id="2QSm86dp9Li" role="1Z2MuG">
-              <node concept="1YBJjd" id="2QSm86dp9Sk" role="2Oq$k0">
-                <ref role="1YBMHb" node="2QSm86dp9Lb" resolve="anchor" />
-              </node>
-              <node concept="3TrEf2" id="2QSm86dp9Lk" role="2OqNvi">
-                <ref role="3Tt5mk" to="wl5u:6h7RWbACWzN" resolve="density" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="2QSm86dp9Ll" role="1ZfhKB">
-          <node concept="2YIFZM" id="2QSm86dp9Lm" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQdc" resolve="createRealType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-            <node concept="10Nm6u" id="2QSm86dp9Ln" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="2QSm86dp9Lb" role="1YuTPh">
-      <property role="TrG5h" value="anchor" />
-      <ref role="1YaFvo" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
-    </node>
-  </node>
   <node concept="18kY7G" id="2QSm86dqMvC">
     <property role="TrG5h" value="check_Segment" />
     <property role="3GE5qa" value="mechanism" />
