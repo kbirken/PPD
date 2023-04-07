@@ -1,7 +1,11 @@
 # PPD
 Physical Product Developer with MPS
 
-Use MPS 2020.3.4 and iets3.opensource.
+## Setup
+
+Use MPS 2021.1.4 and iets3.opensource.
+
+Run script `download_deps.sh` to download dependencies from itemis artifacts server.
 
 
 ## Theory
