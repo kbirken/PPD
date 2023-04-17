@@ -66,6 +66,7 @@
         <reference id="7027649560272853053" name="actual" index="sum8R" />
       </concept>
       <concept id="2063154723034660720" name="org.itemis.phydev.structure.Solution" flags="ng" index="3xVcU">
+        <property id="657808204782432570" name="rationale" index="2Lhv0D" />
         <reference id="2063154723034664342" name="product" index="3xO7s" />
         <reference id="2063154723034664357" name="mechanism" index="3xO7J" />
         <child id="2063154723034664346" name="maxX" index="3xO7g" />
@@ -932,6 +933,7 @@
   <node concept="3xVcU" id="6hFjnTqrGGY">
     <property role="3GE5qa" value="geradführung" />
     <property role="TrG5h" value="Watt01" />
+    <property role="2Lhv0D" value="Use the Watt principle for supporting horizontal movement." />
     <ref role="3xO7s" node="1MxN4CvaIPh" resolve="Hori2000" />
     <ref role="3xO7J" node="6hFjnTqrG4G" resolve="Geradführung_Watt" />
     <node concept="1Gk$NH" id="6hFjnTqrGH5" role="3xO7i">
