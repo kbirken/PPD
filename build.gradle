@@ -1,0 +1,105 @@
+import de.itemis.mps.gradle.*
+
+//will pull the groovy classes/types from nexus to the classpath
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
+    }
+    dependencies {
+        // classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
+        classpath('de.itemis.mps:mps-gradle-plugin:2.0.315.0da7e4b')
+    }
+}
+
+plugins {
+    id 'base'
+    id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'
+    id 'nu.studer.credentials' version '3.0'
+}
+
+apply plugin: 'download-jbr'
+
+
+// Project version
+def major = '2021'
+def minor = '1'
+
+// if building a against a special branch from mbeddr/iets3 opensource is required, add the name here
+// the name is enough no trailing "." is required, also the plain name from git can
+// be used here. No need to convert "/" the script will take care of that.
+def mbeddrBranch = ''
+def osBranch = ''
+
+// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
+def jdk_home
+
+if (ext.has('java11_home')) {
+    jdk_home = ext.get('java11_home')
+} else if (System.getenv('JB_JAVA11_HOME') != null) {
+    jdk_home = System.getenv('JB_JAVA11_HOME')
+} else {
+    def expected = JavaVersion.VERSION_11
+    if (JavaVersion.current() != expected) {
+        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
+                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
+                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
+                + "  * Run Gradle using Java 11")
+    }
+    jdk_home = System.getProperty('java.home')
+}
+
+// Check JDK location
+if (!new File(jdk_home, "lib").exists()) {
+    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+}
+
+logger.info 'Using JDK at {}', jdk_home
+
+wrapper {
+    gradleVersion '7.3.1'
+    distributionType Wrapper.DistributionType.ALL
+}
+
+configurations {
+    mps
+}
+
+
+downloadJbr {
+    jbrVersion = '11_0_12-b1504.28'
+}
+
+ext.jdk_home = jdk_home
+
+// Dependency versions
+ext.mpsVersion = '2021.1.4'
+
+ext.artifactsDir = file("$buildDir/artifacts")
+
+ext.iets3OpenSourceVersion = "$major.$minor.+"
+ext.dependencyRepositories = [
+        'https://artifacts.itemis.cloud/repository/maven-mps',
+        'https://artifacts.itemis.cloud/repository/maven-iets3'
+]
+
+repositories {
+    mavenLocal()
+    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
+    mavenCentral()
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+ //   languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
+ //   junitAnt 'org.apache.ant:ant-junit:1.10.6'
+}
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/mps"
+}
