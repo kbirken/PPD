@@ -64,6 +64,7 @@ wrapper {
 
 configurations {
     mps
+    languageLibs
 }
 
 
@@ -92,7 +93,7 @@ repositories {
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
- //   languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
+    languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
  //   junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
 
@@ -102,4 +103,14 @@ task resolveMps(type: Copy) {
         configurations.mps.resolve().collect { zipTree(it) }
     }
     into "$buildDir/mps"
+}
+
+task resolveAllLanguageLibs(type: Copy) {
+    dependsOn("downloadJbr")
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    from {
+        def configs = [configurations.languageLibs]
+        configs.collectMany { it.resolve() }.collect { zipTree(it) }
+    }
+    into "$buildDir/dependencies"
 }
