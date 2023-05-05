@@ -13,9 +13,9 @@ buildscript {
 }
 
 plugins {
-   // id 'base'
-   // id 'maven-publish'
-   // id 'co.riiid.gradle' version '0.4.2'
+    id 'base'
+//    id 'maven-publish'
+//    id 'co.riiid.gradle' version '0.4.2'
     id 'nu.studer.credentials' version '3.0'
 }
 
@@ -25,14 +25,6 @@ apply plugin: 'download-jbr'
 // Project version
 def major = '2021'
 def minor = '1'
-
-// if building a against a special branch from mbeddr/iets3 opensource is required, add the name here
-// the name is enough no trailing "." is required, also the plain name from git can
-// be used here. No need to convert "/" the script will take care of that.
-def mbeddrBranch = ''
-def osBranch = ''
-
-
 
 //Specify used gradle version
 wrapper {
@@ -62,11 +54,10 @@ println "Using JDK at: ${jdk_home}"
 //}
 
 ext.jdk_home = jdk_home
-
+ext.artifactsDir = new File(buildDir, 'artifacts')
 // Dependency versions
 ext.mpsVersion = '2021.1.4'
 
-ext.artifactsDir = file("$buildDir/artifacts")
 
 ext.iets3OpenSourceVersion = "$major.$minor.+"
 ext.dependencyRepositories = [
@@ -104,9 +95,19 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
     script.set("$buildDir/scripts/build-languages.xml")
 }
 
+task packageLanguages(type: Zip, dependsOn: buildLanguages) {
+    archiveBaseName = 'org.itemis.phydev'
+    from artifactsDir
+    include 'org.itemis.phydev/**'
+}
+
+assemble.dependsOn packageLanguages
 // Default arguments for ant scripts (additionally to what is set in the MPS-build-solution)
 def defaultScriptArgs = [
-        //'mps.home'                          : resolveMps.destinationDir
+        'mps.home'                          : resolveMps.destinationDir,
+        'build.dir'                         : buildDir,
+        'version'                           : version,
+        'mps.generator.skipUnmodifiedModels': true //enable incremental build
 ]
 
 def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
