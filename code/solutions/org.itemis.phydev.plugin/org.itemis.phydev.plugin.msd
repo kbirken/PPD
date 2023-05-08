@@ -16,6 +16,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">769783b6-17f4-40a3-bdc7-88b8332300f2(org.itemis.phydev)</dependency>
     <dependency reexport="false">856b26ba-05ad-49b3-8b5b-d034f8f7a4a0(org.itemis.phydev.runtime)</dependency>
+    <dependency reexport="false">3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
@@ -72,6 +73,7 @@
     <module reference="769783b6-17f4-40a3-bdc7-88b8332300f2(org.itemis.phydev)" version="0" />
     <module reference="552ddae7-173a-41b2-8758-b576a7f7a851(org.itemis.phydev.plugin)" version="0" />
     <module reference="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0(org.itemis.phydev.runtime)" version="0" />
+    <module reference="3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)" version="0" />
   </dependencyVersions>
 </solution>
 
