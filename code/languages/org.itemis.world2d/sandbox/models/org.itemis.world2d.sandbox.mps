@@ -99,6 +99,19 @@
         <property role="1osFrf" value="16.0f" />
       </node>
     </node>
+    <node concept="1QQ392" id="6At7l0NveeZ" role="1QRWQ5">
+      <property role="TrG5h" value="B3" />
+      <property role="1QQfnC" value="1.0f" />
+      <property role="1QQfnI" value="4.0f" />
+      <property role="1QQfni" value="-10.0f" />
+      <property role="1QQsmn" value="20.0f" />
+      <property role="1QQigP" value="true" />
+      <property role="2eyUBO" value="true" />
+      <node concept="1osFrc" id="6At7l0Nvef0" role="1oqHpa">
+        <property role="1osFrd" value="-4.0f" />
+        <property role="1osFrf" value="22.0f" />
+      </node>
+    </node>
     <node concept="1QQuSk" id="6At7l0M3Kid" role="1QRWQ5">
       <property role="TrG5h" value="C1" />
       <property role="1QQuSI" value="1.5f" />
@@ -123,8 +136,8 @@
       </node>
     </node>
     <node concept="1qX_DW" id="6At7l0NuFzP" role="1qX$W4">
-      <property role="1qX_DP" value="-14.0f" />
-      <property role="1qX_DS" value="14.0f" />
+      <property role="1qX_DP" value="-13.0f" />
+      <property role="1qX_DS" value="13.0f" />
     </node>
   </node>
 </model>
