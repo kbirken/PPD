@@ -26,7 +26,7 @@ The simulation can be started and stopped using the context menu on any `World2D
 
 ### Modeling mechanical products
 
-`org.itemis.phydev` is a language for mechanical products and the underlying mechanical solutions. It transforms to `org.itemis.world.2d`, thus allowing the simulation of these physical mechanisms. You can either transform a `Solution` node to a `World2D` and use the resulting root node for running the simulation, or run the simulation directly by using the context menu on a `Solution` root node.
+`org.itemis.phydev` is a language for mechanical products and the underlying mechanical solutions. It transforms to `org.itemis.world2d`, thus allowing the simulation of these physical mechanisms. You can either transform a `Solution` node to a `World2D` and use the resulting root node for running the simulation, or run the simulation directly by using the context menu on a `Solution` root node.
 
 The modeling language consists of the following root nodes:
 - `Mechanism` (m): A parametrized physical mechanism. It consists of fixed points in 2D space and moving points. The points can be connected via segments. There is also a physical model behind the segments (define the density of the material to compute the actual weight and other physical parameters).
