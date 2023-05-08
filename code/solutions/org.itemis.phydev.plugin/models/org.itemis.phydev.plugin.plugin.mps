@@ -1809,7 +1809,7 @@
               <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
             </node>
             <node concept="2YIFZM" id="6h7RWbAqjlC" role="33vP2m">
-              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildWorld" />
+              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildBoxWorld" />
               <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
               <node concept="2OqwBi" id="6h7RWbAqjlD" role="37wK5m">
                 <node concept="2WthIp" id="6h7RWbAqjlE" role="2Oq$k0" />
@@ -2816,7 +2816,7 @@
               <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
             </node>
             <node concept="2YIFZM" id="667ewDY5e2R" role="33vP2m">
-              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildWorld" />
+              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildBoxWorld" />
               <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
               <node concept="2OqwBi" id="667ewDY5e2S" role="37wK5m">
                 <node concept="2WthIp" id="667ewDY5e2T" role="2Oq$k0" />
