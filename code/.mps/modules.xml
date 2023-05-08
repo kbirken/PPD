@@ -5,6 +5,9 @@
       <modulePath path="$PROJECT_DIR$/languages/org.itemis.phydev/org.itemis.phydev.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.itemis.phydev/runtime/org.itemis.phydev.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.itemis.phydev/sandbox/org.itemis.phydev.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.world2d/org.itemis.world2d.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.world2d/runtime/org.itemis.world2d.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.world2d/sandbox/org.itemis.world2d.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.itemis.phydev.plugin/org.itemis.phydev.plugin.msd" folder="" />
     </projectModules>
   </component>

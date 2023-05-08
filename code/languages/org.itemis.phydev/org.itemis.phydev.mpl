@@ -108,6 +108,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)</dependency>
+    <dependency reexport="false">3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -199,6 +200,7 @@
     <module reference="769783b6-17f4-40a3-bdc7-88b8332300f2(org.itemis.phydev)" version="0" />
     <module reference="552ddae7-173a-41b2-8758-b576a7f7a851(org.itemis.phydev.plugin)" version="0" />
     <module reference="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0(org.itemis.phydev.runtime)" version="0" />
+    <module reference="3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">856b26ba-05ad-49b3-8b5b-d034f8f7a4a0(org.itemis.phydev.runtime)</dependency>
