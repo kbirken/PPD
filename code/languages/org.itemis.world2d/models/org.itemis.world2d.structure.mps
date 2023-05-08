@@ -81,6 +81,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="16PkDIvk8LK" resolve="IElement2D" />
     </node>
+    <node concept="1TJgyj" id="6At7l0NqP9k" role="1TKVEi">
+      <property role="IQ2ns" value="7610271175623266900" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="x_range" />
+      <ref role="20lvS9" node="6At7l0NqOsG" resolve="Range" />
+    </node>
     <node concept="1irR5M" id="6At7l0M3Bwb" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irR9n" id="5gicTDipUyT" role="1irR9h">
@@ -254,6 +260,22 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6Asc$Cvh00b" resolve="IBody2D" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6At7l0NqOsG">
+    <property role="EcuMT" value="7610271175623264044" />
+    <property role="TrG5h" value="Range" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6At7l0NqOs_" role="1TKVEl">
+      <property role="IQ2nx" value="7610271175623264037" />
+      <property role="TrG5h" value="a" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+    <node concept="1TJgyi" id="6At7l0NqOsC" role="1TKVEl">
+      <property role="IQ2nx" value="7610271175623264040" />
+      <property role="TrG5h" value="b" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
     </node>
   </node>
 </model>
