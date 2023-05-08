@@ -13,7 +13,7 @@ Run script `download_deps.sh` to download dependencies from itemis artifacts ser
 The PPD tool has two architectural layers:
 
 - `org.itemis.world2d`: A modeling language for 2D physical worlds. 
-- `org.itemis.phydev`: A modeling language for mechanical products and the underlying mechanical solutions. It transforms to `org.itemis.world.2d`.
+- `org.itemis.phydev`: A modeling language for mechanical products and the underlying mechanical solutions. It transforms to `org.itemis.world2d`.
 
 ### Simulating 2D physical worlds
 
