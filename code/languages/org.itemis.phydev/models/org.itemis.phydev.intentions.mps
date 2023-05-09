@@ -8,6 +8,7 @@
   <imports>
     <import index="carl" ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)" />
     <import index="i1wt" ref="r:094c7499-ed0f-433f-9bb4-33e921f96162(org.itemis.phydev.runtime)" />
+    <import index="wfa7" ref="r:5cbb99b3-109d-41a0-9f3d-5c45b7d64709(org.itemis.world2d.structure)" />
     <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" implicit="true" />
   </imports>
   <registry>
@@ -91,12 +92,19 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
+        <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -156,7 +164,7 @@
               <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
             </node>
             <node concept="2YIFZM" id="1MxN4Cv4ooY" role="33vP2m">
-              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildWorld" />
+              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildBoxWorld" />
               <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
               <node concept="2OqwBi" id="1MxN4Cvam$K" role="37wK5m">
                 <node concept="2Sf5sV" id="1MxN4Cv4ooZ" role="2Oq$k0" />
@@ -332,6 +340,50 @@
               <node concept="2Sf5sV" id="1CLwGpRqZQl" role="2Oq$k0" />
               <node concept="3TrcHB" id="1CLwGpRr0db" role="2OqNvi">
                 <ref role="3TsBF5" to="wl5u:1CLwGpRnlmS" resolve="noCollision" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6At7l0NveiG">
+    <property role="3GE5qa" value="solution" />
+    <property role="TrG5h" value="buildWorld2D" />
+    <ref role="2ZfgGC" to="wl5u:1MxN4Cv9BXK" resolve="Solution" />
+    <node concept="2S6ZIM" id="6At7l0NveiH" role="2ZfVej">
+      <node concept="3clFbS" id="6At7l0NveiI" role="2VODD2">
+        <node concept="3clFbF" id="6At7l0NvenE" role="3cqZAp">
+          <node concept="Xl_RD" id="6At7l0NvenD" role="3clFbG">
+            <property role="Xl_RC" value="Build World2D Root Node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6At7l0NveiJ" role="2ZfgGD">
+      <node concept="3clFbS" id="6At7l0NveiK" role="2VODD2">
+        <node concept="3cpWs8" id="6At7l0NwpUF" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NwpUG" role="3cpWs9">
+            <property role="TrG5h" value="world2D" />
+            <node concept="3Tqbb2" id="6At7l0NwpRX" role="1tU5fm">
+              <ref role="ehGHo" to="wfa7:6Asc$CvgZXX" resolve="World2D" />
+            </node>
+            <node concept="2YIFZM" id="6At7l0NwpUH" role="33vP2m">
+              <ref role="37wK5l" to="carl:6At7l0NvX7B" resolve="buildWorld2D" />
+              <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
+              <node concept="2Sf5sV" id="6At7l0NwpUI" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NwpZn" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NwqtF" role="3clFbG">
+            <node concept="2OqwBi" id="6At7l0Nwq93" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6At7l0NwpZm" role="2Oq$k0" />
+              <node concept="I4A8Y" id="6At7l0NwqmD" role="2OqNvi" />
+            </node>
+            <node concept="3BYIHo" id="6At7l0NwqAa" role="2OqNvi">
+              <node concept="37vLTw" id="6At7l0NwqCq" role="3BYIHq">
+                <ref role="3cqZAo" node="6At7l0NwpUG" resolve="world2D" />
               </node>
             </node>
           </node>

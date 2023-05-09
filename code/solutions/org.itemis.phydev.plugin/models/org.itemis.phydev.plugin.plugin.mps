@@ -24,8 +24,10 @@
     <import index="9s9o" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.common(org.itemis.phydev.runtime/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="wfa7" ref="r:5cbb99b3-109d-41a0-9f3d-5c45b7d64709(org.itemis.world2d.structure)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="go45" ref="r:3b1df3bc-09e5-4259-ad74-e2614cc7ec91(org.itemis.world2d.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -306,6 +308,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -1746,7 +1749,7 @@
     </node>
   </node>
   <node concept="sE7Ow" id="6KOiXOpymp7">
-    <property role="TrG5h" value="StartSimulation" />
+    <property role="TrG5h" value="StartSimulationForSolution" />
     <property role="2uzpH1" value="Start Simulation" />
     <property role="ngHcd" value="S" />
     <node concept="1DS2jV" id="6KOiXOpyt3D" role="1NuT2Z">
@@ -1806,7 +1809,7 @@
               <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
             </node>
             <node concept="2YIFZM" id="6h7RWbAqjlC" role="33vP2m">
-              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildWorld" />
+              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildBoxWorld" />
               <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
               <node concept="2OqwBi" id="6h7RWbAqjlD" role="37wK5m">
                 <node concept="2WthIp" id="6h7RWbAqjlE" role="2Oq$k0" />
@@ -1882,11 +1885,17 @@
   <node concept="tC5Ba" id="6KOiXOpyvh$">
     <property role="TrG5h" value="SimulationGroup" />
     <node concept="ftmFs" id="6KOiXOpyvug" role="ftER_">
+      <node concept="tCFHf" id="6At7l0NuwEr" role="ftvYc">
+        <ref role="tCJdB" node="6At7l0NqxGV" resolve="ShowInitialGeometryForWorld2D" />
+      </node>
       <node concept="tCFHf" id="667ewDY5rBH" role="ftvYc">
-        <ref role="tCJdB" node="667ewDY5e2t" resolve="ShowInitialGeometry" />
+        <ref role="tCJdB" node="667ewDY5e2t" resolve="ShowInitialGeometryForSolution" />
+      </node>
+      <node concept="tCFHf" id="6At7l0NuDkI" role="ftvYc">
+        <ref role="tCJdB" node="6At7l0NuATH" resolve="StartSimulationForWorld2D" />
       </node>
       <node concept="tCFHf" id="6KOiXOpyvv$" role="ftvYc">
-        <ref role="tCJdB" node="6KOiXOpymp7" resolve="StartSimulation" />
+        <ref role="tCJdB" node="6KOiXOpymp7" resolve="StartSimulationForSolution" />
       </node>
       <node concept="tCFHf" id="2QSm86dtPgD" role="ftvYc">
         <ref role="tCJdB" node="2QSm86dtCT$" resolve="StopSimulation" />
@@ -2748,7 +2757,7 @@
     <node concept="lHU7p" id="1MxN4CuZyP5" role="qq9xR" />
   </node>
   <node concept="sE7Ow" id="667ewDY5e2t">
-    <property role="TrG5h" value="ShowInitialGeometry" />
+    <property role="TrG5h" value="ShowInitialGeometryForSolution" />
     <property role="2uzpH1" value="Show Initial Geometry" />
     <property role="ngHcd" value="I" />
     <node concept="1DS2jV" id="667ewDY5e2u" role="1NuT2Z">
@@ -2807,7 +2816,7 @@
               <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
             </node>
             <node concept="2YIFZM" id="667ewDY5e2R" role="33vP2m">
-              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildWorld" />
+              <ref role="37wK5l" to="carl:4Lx5PHkTvV" resolve="buildBoxWorld" />
               <ref role="1Pybhc" to="carl:4Lx5PHkTue" resolve="WorldBuilder" />
               <node concept="2OqwBi" id="667ewDY5e2S" role="37wK5m">
                 <node concept="2WthIp" id="667ewDY5e2T" role="2Oq$k0" />
@@ -2827,6 +2836,229 @@
               <ref role="2WH_rO" node="6KOiXOpzYpu" resolve="load" />
               <node concept="37vLTw" id="667ewDY5e2Z" role="2XxRq1">
                 <ref role="3cqZAo" node="667ewDY5e2P" resolve="world" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="6At7l0NqxGV">
+    <property role="TrG5h" value="ShowInitialGeometryForWorld2D" />
+    <property role="2uzpH1" value="Show Initial Geometry" />
+    <property role="ngHcd" value="I" />
+    <node concept="1DS2jV" id="6At7l0NqxGW" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="6At7l0NqxGX" role="1oa70y" />
+    </node>
+    <node concept="2S4$dB" id="6At7l0NqxGY" role="1NuT2Z">
+      <property role="TrG5h" value="world2d" />
+      <node concept="3Tm6S6" id="6At7l0NqxGZ" role="1B3o_S" />
+      <node concept="1oajcY" id="6At7l0NqxH0" role="1oa70y" />
+      <node concept="3Tqbb2" id="6At7l0NqxH1" role="1tU5fm">
+        <ref role="ehGHo" to="wfa7:6Asc$CvgZXX" resolve="World2D" />
+      </node>
+    </node>
+    <node concept="tnohg" id="6At7l0NqxH2" role="tncku">
+      <node concept="3clFbS" id="6At7l0NqxH3" role="2VODD2">
+        <node concept="3cpWs8" id="6At7l0NqxH4" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NqxH5" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <property role="3TUv4t" value="true" />
+            <node concept="1xUVSX" id="6At7l0NqxH6" role="1tU5fm">
+              <ref role="1xYkEM" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+            </node>
+            <node concept="2OqwBi" id="6At7l0NqxH7" role="33vP2m">
+              <node concept="2OqwBi" id="6At7l0NqxH8" role="2Oq$k0">
+                <node concept="2WthIp" id="6At7l0NqxH9" role="2Oq$k0" />
+                <node concept="1DTwFV" id="6At7l0NqxHa" role="2OqNvi">
+                  <ref role="2WH_rO" node="6At7l0NqxGW" resolve="project" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="6At7l0NqxHb" role="2OqNvi">
+                <ref role="LR4U5" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NqxHc" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NqxHd" role="3clFbG">
+            <node concept="37vLTw" id="6At7l0NqxHe" role="2Oq$k0">
+              <ref role="3cqZAo" node="6At7l0NqxH5" resolve="tool" />
+            </node>
+            <node concept="liA8E" id="6At7l0NqxHf" role="2OqNvi">
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+              <node concept="3clFbT" id="6At7l0NqxHg" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6At7l0NqxHh" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NqxHi" role="3cpWs9">
+            <property role="TrG5h" value="world" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6At7l0NqxHj" role="1tU5fm">
+              <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
+            </node>
+            <node concept="2OqwBi" id="6At7l0NuwvV" role="33vP2m">
+              <node concept="2OqwBi" id="6At7l0Nuw6E" role="2Oq$k0">
+                <node concept="2WthIp" id="6At7l0Nuw6H" role="2Oq$k0" />
+                <node concept="3gHZIF" id="6At7l0Nuw6J" role="2OqNvi">
+                  <ref role="2WH_rO" node="6At7l0NqxGY" resolve="world2d" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6At7l0Nuw$4" role="2OqNvi">
+                <ref role="37wK5l" to="go45:16PkDIvfnZA" resolve="buildBoxWorld" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NqxHo" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NqxHp" role="3clFbG">
+            <node concept="37vLTw" id="6At7l0NqxHq" role="2Oq$k0">
+              <ref role="3cqZAo" node="6At7l0NqxH5" resolve="tool" />
+            </node>
+            <node concept="2XshWL" id="6At7l0NqxHr" role="2OqNvi">
+              <ref role="2WH_rO" node="6KOiXOpzYpu" resolve="load" />
+              <node concept="37vLTw" id="6At7l0NqxHs" role="2XxRq1">
+                <ref role="3cqZAo" node="6At7l0NqxHi" resolve="world" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="6At7l0NuATH">
+    <property role="TrG5h" value="StartSimulationForWorld2D" />
+    <property role="2uzpH1" value="Start Simulation" />
+    <property role="ngHcd" value="S" />
+    <node concept="1DS2jV" id="6At7l0NuATI" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="6At7l0NuATJ" role="1oa70y" />
+    </node>
+    <node concept="2S4$dB" id="6At7l0NuATK" role="1NuT2Z">
+      <property role="TrG5h" value="world2d" />
+      <node concept="3Tm6S6" id="6At7l0NuATL" role="1B3o_S" />
+      <node concept="1oajcY" id="6At7l0NuATM" role="1oa70y" />
+      <node concept="3Tqbb2" id="6At7l0NuATN" role="1tU5fm">
+        <ref role="ehGHo" to="wfa7:6Asc$CvgZXX" resolve="World2D" />
+      </node>
+    </node>
+    <node concept="tnohg" id="6At7l0NuATO" role="tncku">
+      <node concept="3clFbS" id="6At7l0NuATP" role="2VODD2">
+        <node concept="3cpWs8" id="6At7l0NuATQ" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NuATR" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <property role="3TUv4t" value="true" />
+            <node concept="1xUVSX" id="6At7l0NuATS" role="1tU5fm">
+              <ref role="1xYkEM" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+            </node>
+            <node concept="2OqwBi" id="6At7l0NuATT" role="33vP2m">
+              <node concept="2OqwBi" id="6At7l0NuATU" role="2Oq$k0">
+                <node concept="2WthIp" id="6At7l0NuATV" role="2Oq$k0" />
+                <node concept="1DTwFV" id="6At7l0NuATW" role="2OqNvi">
+                  <ref role="2WH_rO" node="6At7l0NuATI" resolve="project" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="6At7l0NuATX" role="2OqNvi">
+                <ref role="LR4U5" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NuATY" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NuATZ" role="3clFbG">
+            <node concept="37vLTw" id="6At7l0NuAU0" role="2Oq$k0">
+              <ref role="3cqZAo" node="6At7l0NuATR" resolve="tool" />
+            </node>
+            <node concept="liA8E" id="6At7l0NuAU1" role="2OqNvi">
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+              <node concept="3clFbT" id="6At7l0NuAU2" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6At7l0NuAU3" role="3cqZAp" />
+        <node concept="3cpWs8" id="6At7l0NuAU4" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NuAU5" role="3cpWs9">
+            <property role="TrG5h" value="world" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6At7l0NuAU6" role="1tU5fm">
+              <ref role="3uigEE" to="i1wt:6h7RWbAoVgT" resolve="BoxWorld" />
+            </node>
+            <node concept="2OqwBi" id="6At7l0NuCpm" role="33vP2m">
+              <node concept="2OqwBi" id="6At7l0NuBMo" role="2Oq$k0">
+                <node concept="2WthIp" id="6At7l0NuBzh" role="2Oq$k0" />
+                <node concept="3gHZIF" id="6At7l0NuC4g" role="2OqNvi">
+                  <ref role="2WH_rO" node="6At7l0NuATK" resolve="world2d" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6At7l0NuCtB" role="2OqNvi">
+                <ref role="37wK5l" to="go45:16PkDIvfnZA" resolve="buildBoxWorld" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NuAUb" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NuAUc" role="3clFbG">
+            <node concept="37vLTw" id="6At7l0NuAUd" role="2Oq$k0">
+              <ref role="3cqZAo" node="6At7l0NuATR" resolve="tool" />
+            </node>
+            <node concept="2XshWL" id="6At7l0NuAUe" role="2OqNvi">
+              <ref role="2WH_rO" node="6KOiXOpzYpu" resolve="load" />
+              <node concept="37vLTw" id="6At7l0NuAUf" role="2XxRq1">
+                <ref role="3cqZAo" node="6At7l0NuAU5" resolve="world" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NuAUg" role="3cqZAp">
+          <node concept="2OqwBi" id="6At7l0NuAUh" role="3clFbG">
+            <node concept="37vLTw" id="6At7l0NuAUi" role="2Oq$k0">
+              <ref role="3cqZAo" node="6At7l0NuATR" resolve="tool" />
+            </node>
+            <node concept="2XshWL" id="6At7l0NuAUj" role="2OqNvi">
+              <ref role="2WH_rO" node="2QSm86dt9i_" resolve="runSimulation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="6At7l0NuAUk" role="tmbBb">
+      <node concept="3clFbS" id="6At7l0NuAUl" role="2VODD2">
+        <node concept="3cpWs8" id="6At7l0NuAUm" role="3cqZAp">
+          <node concept="3cpWsn" id="6At7l0NuAUn" role="3cpWs9">
+            <property role="TrG5h" value="tool" />
+            <property role="3TUv4t" value="true" />
+            <node concept="1xUVSX" id="6At7l0NuAUo" role="1tU5fm">
+              <ref role="1xYkEM" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+            </node>
+            <node concept="2OqwBi" id="6At7l0NuAUp" role="33vP2m">
+              <node concept="2OqwBi" id="6At7l0NuAUq" role="2Oq$k0">
+                <node concept="2WthIp" id="6At7l0NuAUr" role="2Oq$k0" />
+                <node concept="1DTwFV" id="6At7l0NuAUs" role="2OqNvi">
+                  <ref role="2WH_rO" node="6At7l0NuATI" resolve="project" />
+                </node>
+              </node>
+              <node concept="LR4U6" id="6At7l0NuAUt" role="2OqNvi">
+                <ref role="LR4U5" node="6KOiXOpxxuO" resolve="PhysicsSimulation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6At7l0NuAUu" role="3cqZAp">
+          <node concept="3fqX7Q" id="6At7l0NuAUv" role="3clFbG">
+            <node concept="2OqwBi" id="6At7l0NuAUw" role="3fr31v">
+              <node concept="37vLTw" id="6At7l0NuAUx" role="2Oq$k0">
+                <ref role="3cqZAo" node="6At7l0NuAUn" resolve="tool" />
+              </node>
+              <node concept="2XshWL" id="6At7l0NuAUy" role="2OqNvi">
+                <ref role="2WH_rO" node="2QSm86dtV6y" resolve="isSimulationRunning" />
               </node>
             </node>
           </node>
