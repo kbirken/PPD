@@ -1,36 +1,21 @@
 import de.itemis.mps.gradle.*
 
-//will pull the groovy classes/types from nexus to the classpath
-buildscript {
-    repositories {
-        mavenLocal()
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-    }
-    dependencies {
-        // classpath 'de.itemis.mps:mps-gradle-plugin:1.2.175.cc60dc8'
-        classpath('de.itemis.mps:mps-gradle-plugin:2.0.315.0da7e4b')
-    }
-}
-
 plugins {
-    id 'base'
+    //Package/Artifact publishing
 //    id 'maven-publish'
+    // github releses
 //    id 'co.riiid.gradle' version '0.4.2'
-    id 'nu.studer.credentials' version '3.0'
+    id 'de.itemis.mps.gradle.common' version  '1.16.+'
 }
 
 apply plugin: 'download-jbr'
-
 
 // Project version
 def major = '2021'
 def minor = '1'
 
 //Specify used gradle version
-wrapper {
-    gradleVersion '7.3.1'
-    distributionType Wrapper.DistributionType.ALL
-}
+// unnecessary as specified already in gradle(gradle-wrapper.properties
 
 configurations {
     mps
@@ -42,31 +27,15 @@ downloadJbr {
     jbrVersion = '11_0_12-b1504.28'
 }
 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def jdk_home = file("$buildDir/jbrDownload/jbr/Contents/Home")
-
-project.logger.info 'Using JDK at {}', jdk_home
-println "Using JDK at: ${jdk_home}"
-
-// Check JDK location
-//if (!new File(jdk_home, "lib").exists()) {
-//    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-//}
-
-ext.jdk_home = jdk_home
 ext.artifactsDir = new File(buildDir, 'artifacts')
 // Dependency versions
-ext.mpsVersion = '2021.1.4'
-
+ext.mpsVersion = "$major.$minor." + '4'
 
 ext.iets3OpenSourceVersion = "$major.$minor.+"
 ext.dependencyRepositories = [
         'https://artifacts.itemis.cloud/repository/maven-mps',
         'https://artifacts.itemis.cloud/repository/maven-iets3'
 ]
-
-
-
 
 task resolveMps(type: Copy) {
     dependsOn configurations.mps
@@ -88,11 +57,11 @@ task resolveAllLanguageLibs(type: Copy) {
 
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs]) {
-    script.set("$buildDir/scripts/build-allScripts.xml")
+    script = "$buildDir/scripts/build-allScripts.xml"
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
-    script.set("$buildDir/scripts/build-languages.xml")
+    script = "$buildDir/scripts/build-languages.xml"
 }
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
@@ -101,25 +70,25 @@ task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     include 'org.itemis.phydev/**'
 }
 
-assemble.dependsOn packageLanguages
 // Default arguments for ant scripts (additionally to what is set in the MPS-build-solution)
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'build.dir'                         : buildDir,
-        'version'                           : version,
-        'mps.generator.skipUnmodifiedModels': true //enable incremental build
+        'version'                           : version
 ]
 
-def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true } +
-        project.files("$ext.jdk_home/lib/tools.jar")
+def defaultScriptClasspath = project.configurations.junitAnt
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
-ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+// Ant gets started with specified JDK
+project.afterEvaluate{
+    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.downloadJbr.javaExecutable
+}
 
+//for project depenendencies
 repositories {
-    mavenLocal()
     maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
     mavenCentral()
 }

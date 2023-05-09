@@ -172,19 +172,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6uyzASnqI1n" role="3bR37C">
-          <node concept="3bR9La" id="6uyzASnqI1o" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" resolve="org.iets3.opensource.build" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6uyzASnqI1p" role="3bR37C">
           <node concept="3bR9La" id="6uyzASnqI1q" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6uyzASnqI1r" role="3bR37C">
-          <node concept="3bR9La" id="6uyzASnqI1s" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
         <node concept="1BupzO" id="6uyzASnqI1y" role="3bR31x">
@@ -210,6 +200,16 @@
             <node concept="3qWCbU" id="6uyzASnqI1$" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="$m7ywrHmkO" role="3bR37C">
+          <node concept="3bR9La" id="$m7ywrHmkP" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" resolve="org.iets3.opensource.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="$m7ywrHmkQ" role="3bR37C">
+          <node concept="3bR9La" id="$m7ywrHmkR" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
       </node>
