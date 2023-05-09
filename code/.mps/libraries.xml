@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="iets3.opensource" />
-              <option name="path" value="$PROJECT_DIR$/../build/dependencies/org.iets3.opensource" />
+              <option name="path" value="${phydev.home}/build/dependencies/org.iets3.opensource" />
             </Library>
           </value>
         </entry>
@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="mbeddr.platform" />
-              <option name="path" value="$PROJECT_DIR$/../build/dependencies/com.mbeddr.platform" />
+              <option name="path" value="${phydev.home}/build/dependencies/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>

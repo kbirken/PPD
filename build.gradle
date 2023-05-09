@@ -64,12 +64,26 @@ task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
     script = "$buildDir/scripts/build-languages.xml"
 }
 
+task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-test.xml"
+    doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.junitAnt.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.itemis.phydev'
     from artifactsDir
     include 'org.itemis.phydev/**'
 }
-
+println 'Pojectdir is ' + projectDir
 // Default arguments for ant scripts (additionally to what is set in the MPS-build-solution)
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
