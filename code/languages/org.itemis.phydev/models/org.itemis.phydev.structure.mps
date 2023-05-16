@@ -280,7 +280,7 @@
     <property role="EcuMT" value="7796940267872261469" />
     <property role="TrG5h" value="Vector2D" />
     <property role="34LRSv" value="vector2d" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6KOiXOptLlw" role="1TKVEi">
       <property role="IQ2ns" value="7796940267872261472" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

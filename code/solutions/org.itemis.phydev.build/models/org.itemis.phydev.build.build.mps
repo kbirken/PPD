@@ -10,6 +10,7 @@
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -633,6 +634,11 @@
             <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
           </node>
         </node>
+        <node concept="1SiIV0" id="pX_yswGSJS" role="3bR37C">
+          <node concept="3bR9La" id="pX_yswGSJT" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="Ji$st3GiLU" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -780,6 +786,11 @@
         <node concept="1SiIV0" id="5sn4YBkcRQk" role="3bR37C">
           <node concept="3bR9La" id="5sn4YBkcRQl" role="1SiIV1">
             <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pX_yswHPpr" role="3bR37C">
+          <node concept="3bR9La" id="pX_yswHPps" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
