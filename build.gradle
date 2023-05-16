@@ -1,0 +1,117 @@
+import de.itemis.mps.gradle.*
+
+plugins {
+    //Package/Artifact publishing
+//    id 'maven-publish'
+    // github releses
+//    id 'co.riiid.gradle' version '0.4.2'
+    id 'de.itemis.mps.gradle.common' version  '1.16.+'
+}
+
+apply plugin: 'download-jbr'
+
+// Project version
+def major = '2021'
+def minor = '1'
+
+//Specify used gradle version
+// unnecessary as specified already in gradle(gradle-wrapper.properties
+
+configurations {
+    mps
+    languageLibs
+    junitAnt
+}
+
+downloadJbr {
+    jbrVersion = '11_0_12-b1504.28'
+}
+
+ext.artifactsDir = new File(buildDir, 'artifacts')
+// Dependency versions
+ext.mpsVersion = "$major.$minor." + '4'
+
+ext.iets3OpenSourceVersion = "$major.$minor.+"
+ext.dependencyRepositories = [
+        'https://artifacts.itemis.cloud/repository/maven-mps',
+        'https://artifacts.itemis.cloud/repository/maven-iets3'
+]
+
+task resolveMps(type: Copy) {
+    dependsOn configurations.mps
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+    }
+    into "$buildDir/mps"
+}
+
+task resolveAllLanguageLibs(type: Copy) {
+    dependsOn("downloadJbr")
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    from {
+        def configs = [configurations.languageLibs]
+        configs.collectMany { it.resolve() }.collect { zipTree(it) }
+    }
+    into "$buildDir/dependencies"
+}
+
+
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs]) {
+    script = "$buildDir/scripts/build-allScripts.xml"
+}
+
+task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
+    script = "$buildDir/scripts/build-languages.xml"
+}
+
+task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-test.xml"
+    doLast {
+        ant.taskdef(name: 'junitreport',
+                classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
+                classpath: configurations.junitAnt.asPath)
+        ant.junitreport {
+            fileset(dir: "$buildDir", includes: '**/TEST*.xml')
+            report(format: 'frames', todir: "$buildDir/junitreport")
+        }
+        ant.echo("JUnit report placed into $buildDir/junitreport/index.html")
+    }
+}
+
+task packageLanguages(type: Zip, dependsOn: buildLanguages) {
+    archiveBaseName = 'org.itemis.phydev'
+    from artifactsDir
+    include 'org.itemis.phydev/**'
+}
+
+defaultTasks 'buildLanguages'
+
+println 'Pojectdir is ' + projectDir
+// Default arguments for ant scripts (additionally to what is set in the MPS-build-solution)
+def defaultScriptArgs = [
+        'mps.home'                          : resolveMps.destinationDir,
+        'build.dir'                         : buildDir,
+        'version'                           : version
+]
+
+def defaultScriptClasspath = project.configurations.junitAnt
+
+// enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
+// Ant gets started with specified JDK
+project.afterEvaluate{
+    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.downloadJbr.javaExecutable
+}
+
+//for project depenendencies
+repositories {
+    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
+    mavenCentral()
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsVersion"
+    languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
+    junitAnt 'org.apache.ant:ant-junit:1.10.6'
+}

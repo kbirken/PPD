@@ -7,6 +7,8 @@ iets3_opensource_version=2021.1.6031.067d686
 
 nexus_path=https://artifacts.itemis.cloud/repository/maven-mps
 
+cd build
+
 mkdir dependencies
 cd dependencies
 

@@ -5,23 +5,17 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hdfp" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.dynamics(org.itemis.phydev.runtime/)" />
     <import index="9s9o" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.common(org.itemis.phydev.runtime/)" />
-    <import index="q7of" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.collision.shapes(org.itemis.phydev.runtime/)" />
-    <import index="elf6" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.dynamics.joints(org.itemis.phydev.runtime/)" />
     <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" />
     <import index="2ahs" ref="r:ea6cf71d-29d2-478d-8027-a9f4a4de53c4(com.mbeddr.mpsutil.interpreter.rt)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="9xe4" ref="r:50fa461b-2709-4d24-97af-6b81f8fba7f2(org.itemis.phydev.plugin.plugin)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="i1wt" ref="r:094c7499-ed0f-433f-9bb4-33e921f96162(org.itemis.phydev.runtime)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
@@ -2164,9 +2158,6 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="1MxN4CuXVlc" role="1B3o_S" />
-      <node concept="3Tqbb2" id="16PkDIviSjq" role="3clF45">
-        <ref role="ehGHo" to="wfa7:6Asc$Cvh008" resolve="Box2D" />
-      </node>
       <node concept="37vLTG" id="1MxN4CuY9uP" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="1MxN4CuYajU" role="1tU5fm" />
@@ -2196,6 +2187,9 @@
         <node concept="3Tqbb2" id="16PkDIvi$5h" role="1tU5fm">
           <ref role="ehGHo" to="wfa7:6Asc$CvgZXX" resolve="World2D" />
         </node>
+      </node>
+      <node concept="3Tqbb2" id="16PkDIviSjq" role="3clF45">
+        <ref role="ehGHo" to="wfa7:6Asc$Cvh008" resolve="Box2D" />
       </node>
     </node>
     <node concept="2tJIrI" id="1MxN4CuXZSI" role="jymVt" />
