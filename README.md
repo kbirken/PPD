@@ -3,12 +3,26 @@ Physical Product Developer with MPS
 
 ## Setup
 
-Use MPS 2021.1.4 and iets3.opensource.
+Download and install MPS 2021.1.4 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture.
 
-Run script `download_deps.sh` to download dependencies from itemis artifacts server.
+This project will use the open-source platform extensions `mbeddr.platform` and `iets3.opensource`. We are not using the latest MPS version in order to have stable platform components available.
 
 
-## Tool Architecture
+### Building the project
+
+The project comes with a gradle build. Open a command shell, move to the root folder of this repository (where youu also found this README), and start the build:
+
+- on Windows: `gradlew.bat`
+- on MacOS: `./gradlew`
+
+
+### Alternative: Poor man's build
+
+Instead of running the gradle build, you can also run the script `download_deps.sh` to just download dependencies from itemis artifacts server.
+After the download is completed, open the MPS IDE and build all languages manually.
+
+
+## Tool architecture
 
 The PPD tool has two architectural layers:
 
