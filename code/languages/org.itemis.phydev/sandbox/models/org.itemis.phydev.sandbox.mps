@@ -6,6 +6,7 @@
     <use id="6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0" name="org.iets3.core.expr.math" version="0" />
     <use id="3d42449e-9670-4233-9f68-ba0596ae57f9" name="org.itemis.world2d" version="0" />
     <use id="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" name="org.itemis.phydev.gen.html" version="0" />
+    <use id="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" name="org.itemis.phydev.gen.world2d" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports />
@@ -47,6 +48,9 @@
     </language>
     <language id="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" name="org.itemis.phydev.gen.html">
       <concept id="4607112623202498341" name="org.itemis.phydev.gen.html.structure.GenHtmlConfig" flags="ng" index="1dR3uw" />
+    </language>
+    <language id="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" name="org.itemis.phydev.gen.world2d">
+      <concept id="4607112623202498341" name="org.itemis.phydev.gen.world2d.structure.GenWorld2dConfig" flags="ng" index="1dR3ux" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -965,5 +969,6 @@
     </node>
   </node>
   <node concept="1dR3uw" id="3ZJK8lMd87$" />
+  <node concept="1dR3ux" id="3ZJK8lMfpgl" />
 </model>
 
