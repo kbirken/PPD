@@ -83,6 +83,9 @@ task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     from artifactsDir
     include 'org.itemis.phydev/**'
 }
+
+defaultTasks 'buildLanguages'
+
 println 'Pojectdir is ' + projectDir
 // Default arguments for ant scripts (additionally to what is set in the MPS-build-solution)
 def defaultScriptArgs = [
