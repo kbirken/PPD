@@ -28,8 +28,10 @@
         <dependency reexport="false">769783b6-17f4-40a3-bdc7-88b8332300f2(org.itemis.phydev)</dependency>
         <dependency reexport="false">822a7acd-f487-45f5-bbb9-1ce595a1705f(com.mbeddr.mpsutil.ecore.stubs)</dependency>
         <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+        <dependency reexport="false">189537ea-2a28-44c9-91aa-a8e68b3e1e1b(com.mbeddr.mpsutil.blutil.genutil)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:189537ea-2a28-44c9-91aa-a8e68b3e1e1b:com.mbeddr.mpsutil.blutil.genutil" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -58,6 +60,8 @@
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
         <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
+        <module reference="189537ea-2a28-44c9-91aa-a8e68b3e1e1b(com.mbeddr.mpsutil.blutil.genutil)" version="0" />
+        <module reference="6c5bab3e-5035-4a48-b9ea-62747c04e3d6(com.mbeddr.mpsutil.blutil.genutil.rt)" version="0" />
         <module reference="822a7acd-f487-45f5-bbb9-1ce595a1705f(com.mbeddr.mpsutil.ecore.stubs)" version="0" />
         <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
         <module reference="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" version="0" />
