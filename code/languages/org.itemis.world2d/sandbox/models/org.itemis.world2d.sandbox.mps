@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="3d42449e-9670-4233-9f68-ba0596ae57f9" name="org.itemis.world2d" version="0" />
+    <use id="0b89126e-fd1d-40f2-89cd-e37f2025923b" name="org.itemis.world2d.gen.json" version="0" />
   </languages>
   <imports />
   <registry>
@@ -41,6 +42,9 @@
         <child id="7610271175623266900" name="x_range" index="1qX$W4" />
         <child id="7610012764282814415" name="elements" index="1QRWQ5" />
       </concept>
+    </language>
+    <language id="0b89126e-fd1d-40f2-89cd-e37f2025923b" name="org.itemis.world2d.gen.json">
+      <concept id="4607112623202498341" name="org.itemis.world2d.gen.json.structure.GenJsonConfig" flags="ng" index="1dR3uw" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -140,5 +144,6 @@
       <property role="1qX_DS" value="13.0f" />
     </node>
   </node>
+  <node concept="1dR3uw" id="3ZJK8lMfS0D" />
 </model>
 
