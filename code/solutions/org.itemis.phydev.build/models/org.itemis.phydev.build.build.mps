@@ -639,6 +639,21 @@
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
+        <node concept="1SiIV0" id="pX_ysx3Xri" role="3bR37C">
+          <node concept="3bR9La" id="pX_ysx3Xrj" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pX_ysx4aCB" role="3bR37C">
+          <node concept="3bR9La" id="pX_ysx4aCC" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4dliOJL_XQJ" role="3bR37C">
+          <node concept="3bR9La" id="4dliOJL_XQK" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="Ji$st3GiLU" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -791,6 +806,11 @@
         <node concept="1SiIV0" id="pX_yswHPpr" role="3bR37C">
           <node concept="3bR9La" id="pX_yswHPps" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="pX_yswZNTw" role="3bR37C">
+          <node concept="3bR9La" id="pX_yswZNTx" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
@@ -991,6 +1011,15 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5sn4YBkhrzt" role="2JcizS">
         <ref role="398BVh" node="5sn4YBkhrz8" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="pX_yswPQga" role="1l3spa">
+      <ref role="1l3spb" node="6uyzASnqGG0" resolve="org.itemis.phydev.build" />
+      <node concept="398BVA" id="pX_yswPQgb" role="2JcizS">
+        <ref role="398BVh" node="5sn4YBkhrzc" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="pX_yswPQgo" role="iGT6I">
+          <property role="2Ry0Am" value="org.itemis.phydev.build" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5sn4YBkhrzu" role="1l3spa">

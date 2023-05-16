@@ -18,7 +18,6 @@
       </concept>
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
-      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -90,6 +89,7 @@
         <reference id="3294480440867723998" name="segment" index="2wRc9v" />
         <child id="3294480440867724000" name="relativePos" index="2wRc9x" />
       </concept>
+      <concept id="467695031115694595" name="org.itemis.phydev.structure.Vector2DPlus" flags="ng" index="AC5g$" />
       <concept id="3011016225144372179" name="org.itemis.phydev.structure.ComplexityRequirement" flags="ng" index="3DoVMu">
         <property id="3011016225144372312" name="maxMovingParts" index="3DoVGl" />
       </concept>
@@ -374,17 +374,34 @@
     </node>
     <node concept="1PgUBy" id="6KOiXOpumkz" role="1PgUnF">
       <property role="TrG5h" value="Swing" />
-      <node concept="1PgPU0" id="6KOiXOpumk$" role="1PgT4F">
-        <node concept="30dvUo" id="667ewDXVXXE" role="1PgPUX">
-          <node concept="2mDo$" id="667ewDXVXYP" role="30dEs_">
-            <ref role="2mDrv" node="5gicTDiqtqc" resolve="yh" />
-          </node>
-          <node concept="2mDo$" id="5gicTDiqt$c" role="30dEsF">
+      <node concept="AC5g$" id="4dliOJLKJsP" role="1PgT4F">
+        <node concept="1PgPU0" id="pX_ysx3T3c" role="30dEs_">
+          <node concept="2mDo$" id="pX_ysx3THg" role="1PgPUW">
             <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
           </node>
+          <node concept="30bXRB" id="4dliOJLLjrt" role="1PgPUX">
+            <property role="30bXRw" value="0" />
+          </node>
         </node>
-        <node concept="2mDo$" id="667ewDXVY26" role="1PgPUW">
-          <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
+        <node concept="AC5g$" id="pX_ysx3TgK" role="30dEsF">
+          <node concept="1PgPU0" id="4dliOJLKJuA" role="30dEsF">
+            <node concept="30bXRB" id="4dliOJLLjvH" role="1PgPUW">
+              <property role="30bXRw" value="0" />
+            </node>
+            <node concept="2mDo$" id="4dliOJLKJuC" role="1PgPUX">
+              <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
+            </node>
+          </node>
+          <node concept="1PgPU0" id="6KOiXOpumk$" role="30dEs_">
+            <node concept="30cIq6" id="pX_ysx3TDS" role="1PgPUX">
+              <node concept="2mDo$" id="667ewDXVXYP" role="30czhm">
+                <ref role="2mDrv" node="5gicTDiqtqc" resolve="yh" />
+              </node>
+            </node>
+            <node concept="30bXRB" id="pX_ysx3TKl" role="1PgPUW">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
