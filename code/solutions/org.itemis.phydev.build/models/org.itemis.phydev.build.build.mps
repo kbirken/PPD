@@ -900,6 +900,112 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="3ZJK8lMfyOb" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.itemis.phydev.gen.world2d" />
+        <property role="3LESm3" value="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" />
+        <node concept="398BVA" id="3ZJK8lMfyQv" role="3LF7KH">
+          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="3ZJK8lMfyQz" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="3ZJK8lMfyQF" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="3ZJK8lMfyQK" role="2Ry0An">
+                <property role="2Ry0Am" value="org.itemis.phydev.gen.world2d" />
+                <node concept="2Ry0Ak" id="3ZJK8lMfyQP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.itemis.phydev.gen.world2d.mpl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3ZJK8lMfyQR" role="3bR31x">
+          <node concept="3LXTmp" id="3ZJK8lMfyQS" role="3rtmxm">
+            <node concept="398BVA" id="3ZJK8lMfyQT" role="3LXTmr">
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="3ZJK8lMfyQU" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="3ZJK8lMfyQV" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3ZJK8lMfyQW" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.gen.world2d" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3ZJK8lMfyQY" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="3ZJK8lMfySk" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3ZJK8lMfySl" role="1HemKq">
+            <node concept="398BVA" id="3ZJK8lMfySf" role="3LXTmr">
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="3ZJK8lMfySg" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="3ZJK8lMfySh" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3ZJK8lMfySi" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.gen.world2d" />
+                    <node concept="2Ry0Ak" id="3ZJK8lMfySj" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3ZJK8lMfySm" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3ZJK8lMfySn" role="1TViLv">
+          <property role="TrG5h" value="org.itemis.phydev.gen.world2d.generator" />
+          <property role="3LESm3" value="5eb88c59-7c7c-461c-bd9e-520b228199ae" />
+          <node concept="1SiIV0" id="3ZJK8lMfySo" role="3bR37C">
+            <node concept="3bR9La" id="3ZJK8lMfySp" role="1SiIV1">
+              <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3ZJK8lMfySq" role="3bR37C">
+            <node concept="3bR9La" id="3ZJK8lMfySr" role="1SiIV1">
+              <ref role="3bR37D" node="Ji$st3GiLU" resolve="org.itemis.phydev" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="3ZJK8lMfySy" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3ZJK8lMfySz" role="1HemKq">
+              <node concept="398BVA" id="3ZJK8lMfySs" role="3LXTmr">
+                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <node concept="2Ry0Ak" id="3ZJK8lMfySt" role="iGT6I">
+                  <property role="2Ry0Am" value="code" />
+                  <node concept="2Ry0Ak" id="3ZJK8lMfySu" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="3ZJK8lMfySv" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.itemis.phydev.gen.world2d" />
+                      <node concept="2Ry0Ak" id="3ZJK8lMfySw" role="2Ry0An">
+                        <property role="2Ry0Am" value="generator" />
+                        <node concept="2Ry0Ak" id="3ZJK8lMfySx" role="2Ry0An">
+                          <property role="2Ry0Am" value="templates" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3ZJK8lMfyS$" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="5wLtKNeSRPp" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
