@@ -666,5 +666,12 @@
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7LoSEVz2hbF">
+    <property role="EcuMT" value="8960160699414811371" />
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="Vectore2DMinus" />
+    <property role="34LRSv" value="--" />
+    <ref role="1TJDcQ" node="pX_yswQ5oC" resolve="Vector2DOperation" />
+  </node>
 </model>
 

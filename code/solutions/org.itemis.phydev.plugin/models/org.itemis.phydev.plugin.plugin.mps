@@ -2898,6 +2898,97 @@
         </node>
       </node>
     </node>
+    <node concept="qq9P1" id="7LoSEVz2sHQ" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="wl5u:7LoSEVz2hbF" resolve="Vectore2DMinus" />
+      <node concept="3dA_Gj" id="7LoSEVz2sO6" role="3vQZUl">
+        <node concept="9aQIb" id="7LoSEVz2sO8" role="3vcmbn">
+          <node concept="3clFbS" id="7LoSEVz2sOa" role="9aQI4">
+            <node concept="3cpWs8" id="7LoSEVz2sOn" role="3cqZAp">
+              <node concept="3cpWsn" id="7LoSEVz2sOo" role="3cpWs9">
+                <property role="TrG5h" value="leftParam" />
+                <node concept="3uibUv" id="7LoSEVz2sOp" role="1tU5fm">
+                  <ref role="3uigEE" to="q8go:4dliOJLEi9Z" resolve="Vec2D" />
+                </node>
+                <node concept="10QFUN" id="7LoSEVz2sOq" role="33vP2m">
+                  <node concept="3uibUv" id="7LoSEVz2sOr" role="10QFUM">
+                    <ref role="3uigEE" to="q8go:4dliOJLEi9Z" resolve="Vec2D" />
+                  </node>
+                  <node concept="rqRoa" id="7LoSEVz2sOs" role="10QFUP">
+                    <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7LoSEVz2sOt" role="3cqZAp">
+              <node concept="3cpWsn" id="7LoSEVz2sOu" role="3cpWs9">
+                <property role="TrG5h" value="righParam" />
+                <node concept="3uibUv" id="7LoSEVz2sOv" role="1tU5fm">
+                  <ref role="3uigEE" to="q8go:4dliOJLEi9Z" resolve="Vec2D" />
+                </node>
+                <node concept="10QFUN" id="7LoSEVz2sOw" role="33vP2m">
+                  <node concept="3uibUv" id="7LoSEVz2sOx" role="10QFUM">
+                    <ref role="3uigEE" to="q8go:4dliOJLEi9Z" resolve="Vec2D" />
+                  </node>
+                  <node concept="rqRoa" id="7LoSEVz2sOy" role="10QFUP">
+                    <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7LoSEVz2sOz" role="3cqZAp">
+              <node concept="2ShNRf" id="7LoSEVz2sO$" role="3cqZAk">
+                <node concept="1pGfFk" id="7LoSEVz2sO_" role="2ShVmc">
+                  <ref role="37wK5l" to="q8go:4dliOJLEid0" resolve="Vec2D" />
+                  <node concept="2OqwBi" id="7LoSEVz2sOA" role="37wK5m">
+                    <node concept="2OqwBi" id="7LoSEVz2sOB" role="2Oq$k0">
+                      <node concept="37vLTw" id="7LoSEVz2sOC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7LoSEVz2sOo" resolve="leftParam" />
+                      </node>
+                      <node concept="2OwXpG" id="7LoSEVz2sOD" role="2OqNvi">
+                        <ref role="2Oxat5" to="q8go:4dliOJLEibi" resolve="x" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7LoSEVz2sOE" role="2OqNvi">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.subtract(java.math.BigDecimal)" resolve="subtract" />
+                      <node concept="2OqwBi" id="7LoSEVz2sOF" role="37wK5m">
+                        <node concept="37vLTw" id="7LoSEVz2sOG" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7LoSEVz2sOu" resolve="righParam" />
+                        </node>
+                        <node concept="2OwXpG" id="7LoSEVz2sOH" role="2OqNvi">
+                          <ref role="2Oxat5" to="q8go:4dliOJLEibi" resolve="x" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7LoSEVz2sOI" role="37wK5m">
+                    <node concept="2OqwBi" id="7LoSEVz2sOJ" role="2Oq$k0">
+                      <node concept="37vLTw" id="7LoSEVz2sOK" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7LoSEVz2sOo" resolve="leftParam" />
+                      </node>
+                      <node concept="2OwXpG" id="7LoSEVz2sOL" role="2OqNvi">
+                        <ref role="2Oxat5" to="q8go:4dliOJLEicc" resolve="y" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7LoSEVz2sOM" role="2OqNvi">
+                      <ref role="37wK5l" to="xlxw:~BigDecimal.subtract(java.math.BigDecimal)" resolve="subtract" />
+                      <node concept="2OqwBi" id="7LoSEVz2sON" role="37wK5m">
+                        <node concept="37vLTw" id="7LoSEVz2sOO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7LoSEVz2sOu" resolve="righParam" />
+                        </node>
+                        <node concept="2OwXpG" id="7LoSEVz2sOP" role="2OqNvi">
+                          <ref role="2Oxat5" to="q8go:4dliOJLEicc" resolve="y" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="sE7Ow" id="667ewDY5e2t">
     <property role="TrG5h" value="ShowInitialGeometryForSolution" />

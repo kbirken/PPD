@@ -93,11 +93,11 @@
       <concept id="7027649560272729976" name="org.itemis.phydev.structure.RequiredPoint" flags="ng" index="suOPM">
         <property id="7027649560272729998" name="description" index="suOQ4" />
       </concept>
+      <concept id="8960160699414811371" name="org.itemis.phydev.structure.Vectore2DMinus" flags="ng" index="2vkv15" />
       <concept id="3294480440867723988" name="org.itemis.phydev.structure.Anchor" flags="ng" index="2wRc9l">
         <reference id="3294480440867723998" name="segment" index="2wRc9v" />
         <child id="3294480440867724000" name="relativePos" index="2wRc9x" />
       </concept>
-      <concept id="467695031115694595" name="org.itemis.phydev.structure.Vector2DPlus" flags="ng" index="AC5g$" />
       <concept id="3011016225144372179" name="org.itemis.phydev.structure.ComplexityRequirement" flags="ng" index="3DoVMu">
         <property id="3011016225144372312" name="maxMovingParts" index="3DoVGl" />
       </concept>
@@ -382,7 +382,7 @@
     </node>
     <node concept="1PgUBy" id="6KOiXOpumkz" role="1PgUnF">
       <property role="TrG5h" value="Swing" />
-      <node concept="AC5g$" id="7nJ_v$TDHR9" role="1PgT4F">
+      <node concept="2vkv15" id="7LoSEVz2s9b" role="1PgT4F">
         <node concept="1PgPU0" id="4dliOJLKJuA" role="30dEsF">
           <node concept="2mDo$" id="7nJ_v$TAowm" role="1PgPUW">
             <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
@@ -391,26 +391,12 @@
             <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
           </node>
         </node>
-        <node concept="30bsCy" id="7nJ_v$TDHRa" role="30dEs_">
-          <node concept="AC5g$" id="7nJ_v$TDHRb" role="30bsDf">
-            <node concept="1PgPU0" id="6KOiXOpumk$" role="30dEsF">
-              <node concept="30cIq6" id="pX_ysx3TDS" role="1PgPUX">
-                <node concept="2mDo$" id="667ewDXVXYP" role="30czhm">
-                  <ref role="2mDrv" node="5gicTDiqtqc" resolve="yh" />
-                </node>
-              </node>
-              <node concept="30bXRB" id="pX_ysx3TKl" role="1PgPUW">
-                <property role="30bXRw" value="0" />
-              </node>
-            </node>
-            <node concept="1PgPU0" id="pX_ysx3T3c" role="30dEs_">
-              <node concept="2mDo$" id="pX_ysx3THg" role="1PgPUW">
-                <ref role="2mDrv" node="5gicTDiqtpB" resolve="y0" />
-              </node>
-              <node concept="30bXRB" id="4dliOJLLjrt" role="1PgPUX">
-                <property role="30bXRw" value="0" />
-              </node>
-            </node>
+        <node concept="1PgPU0" id="6KOiXOpumk$" role="30dEs_">
+          <node concept="2mDo$" id="667ewDXVXYP" role="1PgPUX">
+            <ref role="2mDrv" node="5gicTDiqtqc" resolve="yh" />
+          </node>
+          <node concept="30bXRB" id="pX_ysx3TKl" role="1PgPUW">
+            <property role="30bXRw" value="0" />
           </node>
         </node>
       </node>
