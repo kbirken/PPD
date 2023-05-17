@@ -424,6 +424,17 @@
         </node>
       </node>
     </node>
+    <node concept="1PgUBy" id="7LoSEVzutMg" role="1PgUnF">
+      <property role="TrG5h" value="ff" />
+      <node concept="1PgPU0" id="7LoSEVzutMr" role="1PgT4F">
+        <node concept="30bXRB" id="7LoSEVzutM_" role="1PgPUX">
+          <property role="30bXRw" value="4" />
+        </node>
+        <node concept="30bXRB" id="7LoSEVzutMF" role="1PgPUW">
+          <property role="30bXRw" value="4" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1Gr_s$" id="6h7RWbAGAja">
     <property role="TrG5h" value="Gelenk-7Punkt" />
