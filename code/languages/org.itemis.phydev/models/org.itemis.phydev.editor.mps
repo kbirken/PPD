@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,7 +72,6 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
-      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -186,6 +186,12 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
+      <concept id="8658283006837850119" name="de.itemis.mps.editor.math.notations.structure.SquareBracketsEditor" flags="ng" index="jtQq2" />
+      <concept id="9120555111532910673" name="de.itemis.mps.editor.math.notations.structure.AbstractBracketsEditor" flags="ng" index="1BQ63s">
+        <child id="9120555111532911379" name="body" index="1BQ6eu" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -607,25 +613,15 @@
   </node>
   <node concept="24kQdi" id="6KOiXOptMIY">
     <ref role="1XX52x" to="wl5u:6KOiXOptLlt" resolve="Vector2D" />
-    <node concept="3EZMnI" id="pX_yswW51M" role="2wV5jI">
-      <node concept="3F0ifn" id="7nJ_v$TD3gz" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-      </node>
-      <node concept="2iRfu4" id="pX_yswW51N" role="2iSdaV" />
-      <node concept="3EZMnI" id="6KOiXOptMLy" role="3EZMnx">
-        <node concept="3F1sOY" id="6KOiXOptMMU" role="3EZMnx">
+    <node concept="jtQq2" id="7LoSEVz2YLv" role="2wV5jI">
+      <node concept="3EZMnI" id="7LoSEVz2YL_" role="1BQ6eu">
+        <node concept="3F1sOY" id="7LoSEVz2YLG" role="3EZMnx">
           <ref role="1NtTu8" to="wl5u:6KOiXOptLlw" resolve="x" />
         </node>
-        <node concept="3F1sOY" id="6KOiXOptMOh" role="3EZMnx">
+        <node concept="3F1sOY" id="7LoSEVz2YLM" role="3EZMnx">
           <ref role="1NtTu8" to="wl5u:6KOiXOptLlx" resolve="y" />
         </node>
-        <node concept="2iRkQZ" id="6KOiXOptML_" role="2iSdaV" />
-        <node concept="3vyZuw" id="6KOiXOptNdP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7nJ_v$TCooJ" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
+        <node concept="2iRkQZ" id="7LoSEVz2YLC" role="2iSdaV" />
       </node>
     </node>
   </node>
