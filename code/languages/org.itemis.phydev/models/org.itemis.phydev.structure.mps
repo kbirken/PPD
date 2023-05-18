@@ -280,7 +280,8 @@
     <property role="EcuMT" value="7796940267872261469" />
     <property role="TrG5h" value="Vector2D" />
     <property role="34LRSv" value="vector2d" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="vector" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="6KOiXOptLlw" role="1TKVEi">
       <property role="IQ2ns" value="7796940267872261472" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -325,7 +326,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="loc" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6KOiXOptLlt" resolve="Vector2D" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="6KOiXOptY8Z">
@@ -629,6 +630,40 @@
       <property role="IQ2nx" value="3011016225144880212" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pX_yswQ5oC">
+    <property role="EcuMT" value="467695031115339304" />
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="Vector2DOperation" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MpKl" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="pX_yswRs83">
+    <property role="EcuMT" value="467695031115694595" />
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="Vector2DPlus" />
+    <property role="34LRSv" value="++" />
+    <ref role="1TJDcQ" node="pX_yswQ5oC" resolve="Vector2DOperation" />
+  </node>
+  <node concept="1TIwiD" id="pX_ysx1O9L">
+    <property role="EcuMT" value="467695031118414449" />
+    <property role="3GE5qa" value="vector" />
+    <property role="TrG5h" value="Vectore2DType" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    <node concept="1TJgyj" id="pX_ysx1O9M" role="1TKVEi">
+      <property role="IQ2ns" value="467695031118414450" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="x" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="pX_ysx1PB7" role="1TKVEi">
+      <property role="IQ2ns" value="467695031118420423" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="y" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
   </node>
 </model>

@@ -81,7 +81,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     archiveBaseName = 'org.itemis.phydev'
     from artifactsDir
-    include 'org.itemis.phydev/**'
+     destinationDirectory =  new File(buildDir,"distro")
 }
 
 defaultTasks 'buildLanguages'
