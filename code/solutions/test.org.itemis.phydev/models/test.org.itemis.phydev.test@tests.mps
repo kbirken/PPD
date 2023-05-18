@@ -37,9 +37,16 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
     </language>
     <language id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests">
@@ -78,6 +85,8 @@
     </language>
     <language id="769783b6-17f4-40a3-bdc7-88b8332300f2" name="org.itemis.phydev">
       <concept id="467695031115694595" name="org.itemis.phydev.structure.Vector2DPlus" flags="ng" index="AC5g$" />
+      <concept id="4919605291742085531" name="org.itemis.phydev.structure.Vec2DXOp" flags="ng" index="3tbFdD" />
+      <concept id="4919605291742087150" name="org.itemis.phydev.structure.Vec2DYOp" flags="ng" index="3tbFks" />
       <concept id="7796940267872261469" name="org.itemis.phydev.structure.Vector2D" flags="ng" index="1PgPU0">
         <child id="7796940267872261473" name="y" index="1PgPUW" />
         <child id="7796940267872261472" name="x" index="1PgPUX" />
@@ -193,6 +202,26 @@
           <node concept="30bXRB" id="3vCiOsXw2VC" role="1PgPUX">
             <property role="30bXRw" value="1.0" />
           </node>
+        </node>
+      </node>
+      <node concept="_fkuZ" id="4h5WJaprM8c" role="_fkp5">
+        <node concept="_fku$" id="4h5WJaprM8d" role="_fkur" />
+        <node concept="30dDZf" id="4h5WJaprNK3" role="_fkuY">
+          <node concept="1QScDb" id="4h5WJaprNNW" role="30dEs_">
+            <node concept="3tbFks" id="4h5WJaprNR1" role="1QScD9" />
+            <node concept="_emDc" id="4h5WJaprNKt" role="30czhm">
+              <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="4h5WJaprM9b" role="30dEsF">
+            <node concept="3tbFdD" id="4h5WJaprNH7" role="1QScD9" />
+            <node concept="_emDc" id="4h5WJaprM8W" role="30czhm">
+              <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="4h5WJaprNUw" role="_fkuS">
+          <property role="30bXRw" value="1.5" />
         </node>
       </node>
     </node>

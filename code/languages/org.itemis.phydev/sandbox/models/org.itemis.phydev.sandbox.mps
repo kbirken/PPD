@@ -20,6 +20,7 @@
       </concept>
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -78,6 +79,9 @@
       </concept>
       <concept id="1240669143552786952" name="org.iets3.core.expr.repl.structure.REPL" flags="ng" index="1gtNKb">
         <child id="3123720608934258677" name="entries" index="3ij$yy" />
+      </concept>
+      <concept id="1240669143552786993" name="org.iets3.core.expr.repl.structure.IReplEntry" flags="ng" index="1gtNKM">
+        <property id="3288176362550256370" name="optionalName" index="3t1h08" />
       </concept>
       <concept id="3123720608935236577" name="org.iets3.core.expr.repl.structure.ReplEntryRef" flags="ng" index="3ivRMQ">
         <reference id="3123720608935236578" name="entry" index="3ivRMP" />
@@ -140,6 +144,8 @@
         <child id="3294480440867724000" name="relativePos" index="2wRc9x" />
       </concept>
       <concept id="467695031115694595" name="org.itemis.phydev.structure.Vector2DPlus" flags="ng" index="AC5g$" />
+      <concept id="4919605291742085531" name="org.itemis.phydev.structure.Vec2DXOp" flags="ng" index="3tbFdD" />
+      <concept id="4919605291742087150" name="org.itemis.phydev.structure.Vec2DYOp" flags="ng" index="3tbFks" />
       <concept id="3011016225144372179" name="org.itemis.phydev.structure.ComplexityRequirement" flags="ng" index="3DoVMu">
         <property id="3011016225144372312" name="maxMovingParts" index="3DoVGl" />
       </concept>
@@ -1118,6 +1124,53 @@
         </node>
         <node concept="aq24F" id="3yKzJTRcdv0" role="30czhm">
           <ref role="aq24E" node="1MxN4Cv9Xtg" resolve="Roberts01" />
+        </node>
+      </node>
+    </node>
+    <node concept="1gtNKa" id="5qHDD5ae2xY" role="3ij$yy">
+      <property role="3isvIs" value="true" />
+      <property role="3tdReV" value="true" />
+      <node concept="1QScDb" id="5qHDD5ae2z_" role="1gtNKu">
+        <node concept="aq27Q" id="5qHDD5ae2$1" role="1QScD9">
+          <ref role="aq26n" node="667ewDY1fhb" resolve="R1" />
+        </node>
+        <node concept="aq24F" id="5qHDD5ae2zb" role="30czhm">
+          <ref role="aq24E" node="667ewDY1fwZ" resolve="Tschebyschev01" />
+        </node>
+      </node>
+    </node>
+    <node concept="1gtNKa" id="5qHDD5adZF1" role="3ij$yy">
+      <property role="3isvIs" value="true" />
+      <property role="3tdReV" value="true" />
+      <property role="3t1h08" value="scalar product" />
+      <node concept="30dDZf" id="5qHDD5ae060" role="1gtNKu">
+        <node concept="30dDTi" id="5qHDD5ae061" role="30dEsF">
+          <node concept="1QScDb" id="5qHDD5ae062" role="30dEsF">
+            <node concept="3ivRMQ" id="5qHDD5adZFC" role="30czhm">
+              <ref role="3ivRMP" node="3yKzJTRcdjO" resolve="3" />
+            </node>
+            <node concept="3tbFdD" id="5qHDD5adZIk" role="1QScD9" />
+          </node>
+          <node concept="1QScDb" id="5qHDD5ae063" role="30dEs_">
+            <node concept="3ivRMQ" id="5qHDD5adZND" role="30czhm">
+              <ref role="3ivRMP" node="5qHDD5ae2xY" resolve="4" />
+            </node>
+            <node concept="3tbFdD" id="5qHDD5adZVP" role="1QScD9" />
+          </node>
+        </node>
+        <node concept="30dDTi" id="5qHDD5ae0RC" role="30dEs_">
+          <node concept="1QScDb" id="5qHDD5ae149" role="30dEs_">
+            <node concept="3tbFks" id="5qHDD5ae1aF" role="1QScD9" />
+            <node concept="3ivRMQ" id="5qHDD5ae0Xs" role="30czhm">
+              <ref role="3ivRMP" node="5qHDD5ae2xY" resolve="4" />
+            </node>
+          </node>
+          <node concept="1QScDb" id="5qHDD5ae0Gh" role="30dEsF">
+            <node concept="3tbFks" id="5qHDD5ae0LN" role="1QScD9" />
+            <node concept="3ivRMQ" id="5qHDD5ae0_R" role="30czhm">
+              <ref role="3ivRMP" node="3yKzJTRcdjO" resolve="3" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
