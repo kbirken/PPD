@@ -11,6 +11,9 @@
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">e5d9c8b2-888d-4711-b7f3-2b02600ffd38(org.itemis.phydev.sandbox)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -39,8 +42,10 @@
     <language slang="l:d441fba0-f46b-43cd-b723-dad7b65da615:org.iets3.core.expr.tests" version="1" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
     <language slang="l:769783b6-17f4-40a3-bdc7-88b8332300f2:org.itemis.phydev" version="0" />
+    <language slang="l:a985a22f-0f3f-4ca2-93de-13fe7726e332:org.itemis.phydev.test" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="e5d9c8b2-888d-4711-b7f3-2b02600ffd38(org.itemis.phydev.sandbox)" version="0" />
     <module reference="5f740244-6ea7-4f28-ba3c-a9c80a3bed72(test.org.itemis.phydev)" version="0" />
   </dependencyVersions>
 </solution>
