@@ -885,7 +885,7 @@
   </node>
   <node concept="24kQdi" id="1MxN4Cv4CXq">
     <property role="3GE5qa" value="product.requirement" />
-    <ref role="1XX52x" to="wl5u:1MxN4Cv4CWz" resolve="ReqCheck" />
+    <ref role="1XX52x" to="wl5u:1MxN4Cv4CWz" resolve="ReqCheckState" />
     <node concept="3EZMnI" id="1MxN4Cv4CXJ" role="2wV5jI">
       <node concept="3EZMnI" id="1MxN4Cv4CXQ" role="3EZMnx">
         <node concept="VPM3Z" id="1MxN4Cv4CXS" role="3F10Kt" />
