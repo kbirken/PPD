@@ -307,6 +307,11 @@
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
+        <node concept="1SiIV0" id="zSqug$V8Th" role="3bR37C">
+          <node concept="3bR9La" id="zSqug$V8Ti" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5sn4YBkcRDe" role="3989C9">
@@ -1304,15 +1309,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="6uyzASnqGGh" role="1l3spd">
       <property role="TrG5h" value="phydev.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -1393,6 +1389,15 @@
     </node>
     <node concept="2igEWh" id="Ji$st3HApE" role="1hWBAP">
       <property role="3UIfUI" value="4096" />
+    </node>
+    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="5sn4YBkhr8a">
@@ -1479,6 +1484,63 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="zSqug$Ve7L" role="3bR37C">
+          <node concept="3bR9La" id="zSqug$Ve7M" role="1SiIV1">
+            <ref role="3bR37D" node="zSqug$Ve7d" resolve="org.itemis.phydev.sandbox" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="zSqug$Ve7d" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.itemis.phydev.sandbox" />
+        <property role="3LESm3" value="e5d9c8b2-888d-4711-b7f3-2b02600ffd38" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="zSqug$Ve7e" role="3LF7KH">
+          <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="zSqug$Ve7f" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="zSqug$Ve7g" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="zSqug$Ve7h" role="2Ry0An">
+                <property role="2Ry0Am" value="org.itemis.phydev" />
+                <node concept="2Ry0Ak" id="zSqug$VdYK" role="2Ry0An">
+                  <property role="2Ry0Am" value="sandbox" />
+                  <node concept="2Ry0Ak" id="zSqug$VdYP" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.sandbox.msd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="zSqug$Ve7i" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="zSqug$VdZ3" role="1HemKq">
+            <node concept="398BVA" id="zSqug$VdYR" role="3LXTmr">
+              <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="zSqug$VdYS" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="zSqug$VdYT" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="zSqug$VdYU" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev" />
+                    <node concept="2Ry0Ak" id="zSqug$VdYV" role="2Ry0An">
+                      <property role="2Ry0Am" value="sandbox" />
+                      <node concept="2Ry0Ak" id="zSqug$VdYW" role="2Ry0An">
+                        <property role="2Ry0Am" value="models" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="zSqug$VdZ4" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5sn4YBkhrzs" role="1l3spa">
@@ -1555,6 +1617,15 @@
         </node>
       </node>
     </node>
+    <node concept="3b7kt6" id="5sn4YBkhraa" role="10PD9s" />
+    <node concept="10PD9b" id="5sn4YBkhrag" role="10PD9s" />
+    <node concept="1gjT0q" id="5sn4YBkhrwX" role="10PD9s" />
+    <node concept="55IIr" id="5sn4YBkhr8b" role="auvoZ" />
+    <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
+      <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
+        <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
+      </node>
+    </node>
     <node concept="398rNT" id="1PCOxygkit5" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="1PCOxygkit6" role="398pKh">
@@ -1565,15 +1636,6 @@
             <property role="2Ry0Am" value="artifacts" />
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="3b7kt6" id="5sn4YBkhraa" role="10PD9s" />
-    <node concept="10PD9b" id="5sn4YBkhrag" role="10PD9s" />
-    <node concept="1gjT0q" id="5sn4YBkhrwX" role="10PD9s" />
-    <node concept="55IIr" id="5sn4YBkhr8b" role="auvoZ" />
-    <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
-      <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
-        <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
       </node>
     </node>
   </node>
