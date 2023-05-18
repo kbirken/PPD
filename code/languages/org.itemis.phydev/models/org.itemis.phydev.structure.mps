@@ -476,7 +476,7 @@
   <node concept="1TIwiD" id="1MxN4Cv4CWz">
     <property role="EcuMT" value="2063154723033354019" />
     <property role="3GE5qa" value="product.requirement" />
-    <property role="TrG5h" value="ReqCheck" />
+    <property role="TrG5h" value="ReqCheckState" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="1MxN4Cv4CWR" role="lGtFl">
       <property role="Hh88m" value="req_status" />
