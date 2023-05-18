@@ -8,8 +8,11 @@
     <use id="769783b6-17f4-40a3-bdc7-88b8332300f2" name="org.itemis.phydev" version="0" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
+    <use id="a985a22f-0f3f-4ca2-93de-13fe7726e332" name="org.itemis.phydev.test" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="u6qv" ref="r:ddfcd381-4dd3-4b6f-9a8f-4890633a8bd9(org.itemis.phydev.sandbox)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
@@ -43,6 +46,7 @@
         <property id="7740953487931061385" name="referenceOnlyLocalStuff" index="1XBH2A" />
         <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
+      <concept id="5285810042889815162" name="org.iets3.core.expr.tests.structure.EmptyTestItem" flags="ng" index="3dYjL0" />
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
@@ -57,6 +61,19 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
+    </language>
+    <language id="a985a22f-0f3f-4ca2-93de-13fe7726e332" name="org.itemis.phydev.test">
+      <concept id="7859688920400258797" name="org.itemis.phydev.test.structure.ProductTestItem" flags="ng" index="G_dY3">
+        <reference id="7859688920400349243" name="product" index="GAB5l" />
+        <child id="7859688920400515637" name="reqChecks" index="GAeHr" />
+      </concept>
+      <concept id="7859688920400498550" name="org.itemis.phydev.test.structure.RequirementCheck" flags="ng" index="GAboo">
+        <reference id="7859688920400498551" name="requirement" index="GAbop" />
+        <child id="7859688920400498593" name="expected" index="GAbrf" />
+      </concept>
+      <concept id="7859688920400498590" name="org.itemis.phydev.test.structure.ReqStateFailed" flags="ng" index="GAbrK" />
+      <concept id="7859688920400498584" name="org.itemis.phydev.test.structure.ReqStateNotCheckable" flags="ng" index="GAbrQ" />
+      <concept id="7859688920400498585" name="org.itemis.phydev.test.structure.ReqStateOkay" flags="ng" index="GAbrR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -192,6 +209,40 @@
       </node>
     </node>
     <node concept="_ixoA" id="4O5Uu5DOACM" role="_iOnB" />
+  </node>
+  <node concept="_iOnU" id="6OjemT1yJe6">
+    <property role="1XBH2A" value="true" />
+    <property role="TrG5h" value="TestProducts" />
+    <node concept="_fkuM" id="6OjemT1yJe7" role="_iOnB">
+      <property role="TrG5h" value="checkRequirements" />
+      <node concept="G_dY3" id="6OjemT1yJeb" role="_fkp5">
+        <ref role="GAB5l" to="u6qv:1MxN4CvaIPh" resolve="Hori2000" />
+        <node concept="GAboo" id="6OjemT1GkBz" role="GAeHr">
+          <ref role="GAbop" to="u6qv:2B9hOR0H4to" />
+          <node concept="GAbrQ" id="6OjemT1GzRf" role="GAbrf" />
+        </node>
+        <node concept="GAboo" id="6OjemT1GkB$" role="GAeHr">
+          <ref role="GAbop" to="u6qv:1MxN4CvaIPi" />
+          <node concept="GAbrK" id="6OjemT1GzUz" role="GAbrf" />
+        </node>
+        <node concept="GAboo" id="6OjemT1GkB_" role="GAeHr">
+          <ref role="GAbop" to="u6qv:1MxN4CvaIPl" />
+          <node concept="GAbrR" id="6OjemT1GzUA" role="GAbrf" />
+        </node>
+        <node concept="GAboo" id="6OjemT1GkBA" role="GAeHr">
+          <ref role="GAbop" to="u6qv:6hFjnTqteRc" />
+          <node concept="GAbrR" id="6OjemT1GzVA" role="GAbrf" />
+        </node>
+      </node>
+      <node concept="3dYjL0" id="6OjemT1GzX0" role="_fkp5" />
+      <node concept="G_dY3" id="6OjemT1GzW$" role="_fkp5">
+        <ref role="GAB5l" to="u6qv:1MxN4CvaIPh" resolve="Hori2000" />
+        <node concept="GAboo" id="6OjemT1GzW_" role="GAeHr">
+          <ref role="GAbop" to="u6qv:2B9hOR0H4to" />
+          <node concept="GAbrR" id="6OjemT1GXpa" role="GAbrf" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
