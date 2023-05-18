@@ -5127,5 +5127,33 @@
       <node concept="17QB3L" id="4dliOJLzJT_" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="3vCiOsXw6OF">
+    <property role="3GE5qa" value="solution.expr" />
+    <ref role="13h7C2" to="wl5u:3vCiOsXw6EL" resolve="PointRefDotTarget" />
+    <node concept="13hLZK" id="3vCiOsXw6OG" role="13h7CW">
+      <node concept="3clFbS" id="3vCiOsXw6OH" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3vCiOsXw6OQ" role="13h7CS">
+      <property role="TrG5h" value="renderReadable" />
+      <ref role="13i0hy" to="pbu6:6kR0qIbI2yi" resolve="renderReadable" />
+      <node concept="3Tm1VV" id="3vCiOsXw6OR" role="1B3o_S" />
+      <node concept="3clFbS" id="3vCiOsXw6OU" role="3clF47">
+        <node concept="3clFbF" id="3vCiOsXw6OX" role="3cqZAp">
+          <node concept="2OqwBi" id="3vCiOsXw8bC" role="3clFbG">
+            <node concept="2OqwBi" id="3vCiOsXw7Ku" role="2Oq$k0">
+              <node concept="13iPFW" id="3vCiOsXw7AX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3vCiOsXw7X6" role="2OqNvi">
+                <ref role="3Tt5mk" to="wl5u:3vCiOsXw6Fg" resolve="point" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="3vCiOsXw8rB" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3vCiOsXw6OV" role="3clF45" />
+    </node>
+  </node>
 </model>
 
