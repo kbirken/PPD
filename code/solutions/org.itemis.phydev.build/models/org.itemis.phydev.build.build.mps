@@ -1484,63 +1484,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="zSqug$Ve7L" role="3bR37C">
-          <node concept="3bR9La" id="zSqug$Ve7M" role="1SiIV1">
-            <ref role="3bR37D" node="zSqug$Ve7d" resolve="org.itemis.phydev.sandbox" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="zSqug$Ve7d" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.itemis.phydev.sandbox" />
-        <property role="3LESm3" value="e5d9c8b2-888d-4711-b7f3-2b02600ffd38" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
-        <node concept="398BVA" id="zSqug$Ve7e" role="3LF7KH">
-          <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
-          <node concept="2Ry0Ak" id="zSqug$Ve7f" role="iGT6I">
-            <property role="2Ry0Am" value="code" />
-            <node concept="2Ry0Ak" id="zSqug$Ve7g" role="2Ry0An">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="zSqug$Ve7h" role="2Ry0An">
-                <property role="2Ry0Am" value="org.itemis.phydev" />
-                <node concept="2Ry0Ak" id="zSqug$VdYK" role="2Ry0An">
-                  <property role="2Ry0Am" value="sandbox" />
-                  <node concept="2Ry0Ak" id="zSqug$VdYP" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.itemis.phydev.sandbox.msd" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1BupzO" id="zSqug$Ve7i" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="zSqug$VdZ3" role="1HemKq">
-            <node concept="398BVA" id="zSqug$VdYR" role="3LXTmr">
-              <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
-              <node concept="2Ry0Ak" id="zSqug$VdYS" role="iGT6I">
-                <property role="2Ry0Am" value="code" />
-                <node concept="2Ry0Ak" id="zSqug$VdYT" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="zSqug$VdYU" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.itemis.phydev" />
-                    <node concept="2Ry0Ak" id="zSqug$VdYV" role="2Ry0An">
-                      <property role="2Ry0Am" value="sandbox" />
-                      <node concept="2Ry0Ak" id="zSqug$VdYW" role="2Ry0An">
-                        <property role="2Ry0Am" value="models" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="zSqug$VdZ4" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5sn4YBkhrzs" role="1l3spa">
