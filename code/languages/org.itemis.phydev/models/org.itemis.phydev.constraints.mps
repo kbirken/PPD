@@ -20,6 +20,7 @@
     <import index="carl" ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -57,6 +58,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -591,6 +595,33 @@
             <node concept="1mIQ4w" id="twWOnQMLu8" role="2OqNvi">
               <node concept="chp4Y" id="twWOnQMLu9" role="cj9EA">
                 <ref role="cht4Q" to="wl5u:3vCiOsXxW7n" resolve="SolutionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4h5WJapqMh0">
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <ref role="1M2myG" to="wl5u:4h5WJapqM2f" resolve="IVector2DOp" />
+    <node concept="9S07l" id="4h5WJapqMh1" role="9Vyp8">
+      <node concept="3clFbS" id="4h5WJapqMh2" role="2VODD2">
+        <node concept="3clFbF" id="6b_jefnKylm" role="3cqZAp">
+          <node concept="2OqwBi" id="6b_jefnKyln" role="3clFbG">
+            <node concept="1PxgMI" id="6b_jefnKylo" role="2Oq$k0">
+              <node concept="nLn13" id="6b_jefnKylp" role="1m5AlR" />
+              <node concept="chp4Y" id="6b_jefnKyoa" role="3oSUPX">
+                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6b_jefnKylq" role="2OqNvi">
+              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
+              <node concept="35c_gC" id="6b_jefnKylr" role="37wK5m">
+                <ref role="35c_gD" to="wl5u:pX_ysx1O9L" resolve="Vector2DType" />
+              </node>
+              <node concept="3clFbT" id="6b_jefnKyls" role="37wK5m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>

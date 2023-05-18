@@ -38,6 +38,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -706,6 +707,46 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4Lx5PHnXdT" resolve="Mechanism" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4h5WJapqLRA">
+    <property role="EcuMT" value="4919605291742076390" />
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <property role="TrG5h" value="NoArgVec2DOp" />
+    <property role="R4oN_" value="a base vector2d operation without arguments" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4h5WJapqO2U" role="PzmwI">
+      <ref role="PrY4T" node="4h5WJapqM2f" resolve="IVector2DOp" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4h5WJapqM2f">
+    <property role="EcuMT" value="4919605291742077071" />
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <property role="TrG5h" value="IVector2DOp" />
+    <node concept="PrWs8" id="4h5WJapqM2$" role="PrDN$">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4h5WJapqO6r">
+    <property role="EcuMT" value="4919605291742085531" />
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <property role="TrG5h" value="Vec2DXOp" />
+    <property role="34LRSv" value="x" />
+    <ref role="1TJDcQ" node="4h5WJapqOdT" resolve="Vec2DComponentOp" />
+  </node>
+  <node concept="1TIwiD" id="4h5WJapqOdT">
+    <property role="EcuMT" value="4919605291742086009" />
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <property role="TrG5h" value="Vec2DComponentOp" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="4h5WJapqLRA" resolve="NoArgVec2DOp" />
+  </node>
+  <node concept="1TIwiD" id="4h5WJapqOvI">
+    <property role="EcuMT" value="4919605291742087150" />
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <property role="TrG5h" value="Vec2DYOp" />
+    <property role="34LRSv" value="y" />
+    <ref role="1TJDcQ" node="4h5WJapqOdT" resolve="Vec2DComponentOp" />
   </node>
 </model>
 

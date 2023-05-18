@@ -1480,5 +1480,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4h5WJapqO2Y">
+    <property role="3GE5qa" value="vector.dotOperations" />
+    <ref role="1XX52x" to="wl5u:4h5WJapqLRA" resolve="NoArgVec2DOp" />
+    <node concept="PMmxH" id="4h5WJapqO3a" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
