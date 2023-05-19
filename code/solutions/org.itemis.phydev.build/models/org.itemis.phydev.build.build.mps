@@ -924,9 +924,9 @@
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7nJ_v$TyXMN" role="3bR37C">
-          <node concept="3bR9La" id="7nJ_v$TyXMO" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:2Xjt3l57bIA" resolve="de.itemis.mps.editor.math.runtime" />
+        <node concept="1SiIV0" id="4Y8Ro$BTDjR" role="3bR37C">
+          <node concept="3bR9La" id="4Y8Ro$BTDjS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
       </node>
