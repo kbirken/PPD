@@ -3,6 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -187,6 +189,9 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -353,38 +358,13 @@
         <ref role="1NtTu8" to="wl5u:6h7RWbACWzN" resolve="density" />
       </node>
       <node concept="3F0ifn" id="6h7RWbAD5gX" role="3EZMnx">
-        <property role="3F0ifm" value="kg/m2" />
+        <property role="3F0ifm" value="kg/m2," />
       </node>
-      <node concept="1HlG4h" id="1CLwGpRr41A" role="3EZMnx">
-        <node concept="1HfYo3" id="1CLwGpRr41C" role="1HlULh">
-          <node concept="3TQlhw" id="1CLwGpRr41E" role="1Hhtcw">
-            <node concept="3clFbS" id="1CLwGpRr41G" role="2VODD2">
-              <node concept="3clFbF" id="1CLwGpRr4Nf" role="3cqZAp">
-                <node concept="Xl_RD" id="1CLwGpRr4Ne" role="3clFbG">
-                  <property role="Xl_RC" value=", no collisions" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="Vb9p2" id="1CLwGpRr46u" role="3F10Kt">
-          <property role="Vbekb" value="g1_k_vY/BOLD" />
-        </node>
-        <node concept="11L4FC" id="1CLwGpRr55f" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pkWqt" id="1CLwGpRr46y" role="pqm2j">
-          <node concept="3clFbS" id="1CLwGpRr46z" role="2VODD2">
-            <node concept="3clFbF" id="1CLwGpRr46C" role="3cqZAp">
-              <node concept="2OqwBi" id="1CLwGpRr4lU" role="3clFbG">
-                <node concept="pncrf" id="1CLwGpRr46B" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1CLwGpRr4D0" role="2OqNvi">
-                  <ref role="3TsBF5" to="wl5u:1CLwGpRnlmS" resolve="noCollision" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="27S6Sx" id="16xqaOIbI6y" role="3EZMnx">
+        <ref role="1NtTu8" to="wl5u:1CLwGpRnlmS" resolve="noCollision" />
+      </node>
+      <node concept="3F0ifn" id="16xqaOIbI7c" role="3EZMnx">
+        <property role="3F0ifm" value="no collision" />
       </node>
     </node>
   </node>
