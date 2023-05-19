@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
-    <use id="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" name="org.itemis.phydev.gen.html" version="0" />
   </languages>
   <imports>
     <import index="jonj" ref="r:d6edddcc-59cd-4ff3-bd73-6d3899a64488(org.itemis.phydev.gen.html)" />

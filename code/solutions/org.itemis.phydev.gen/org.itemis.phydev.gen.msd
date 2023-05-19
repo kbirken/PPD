@@ -20,9 +20,6 @@
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="18" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-    <language slang="l:d9bfe14c-f389-4e27-be1b-5c11336c3fe5:org.itemis.phydev.gen.html" version="0" />
-    <language slang="l:9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0:org.itemis.phydev.gen.world2d" version="0" />
-    <language slang="l:0b89126e-fd1d-40f2-89cd-e37f2025923b:org.itemis.world2d.gen.json" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="4bbd7be4-8c1a-40bc-a45f-403c5d3bf141(org.itemis.phydev.gen)" version="0" />
