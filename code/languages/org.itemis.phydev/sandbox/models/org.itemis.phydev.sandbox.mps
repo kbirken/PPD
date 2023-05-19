@@ -51,6 +51,10 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="7061117989422575278" name="org.iets3.core.expr.toplevel.structure.EnumDeclaration" flags="ng" index="5mgZ8">
+        <property id="7061117989424763681" name="qualified" index="5dF97" />
+        <child id="3213836461276467746" name="type" index="3c3ckp" />
+      </concept>
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq">
         <child id="7089558164906249715" name="value" index="2zPyp_" />
       </concept>
@@ -449,6 +453,12 @@
           <ref role="arSqi" node="4Lx5PHoWys" resolve="Geradführung_Roberts" />
         </node>
       </node>
+    </node>
+    <node concept="_ixoA" id="2Ar3EGnggnb" role="_iOnB" />
+    <node concept="5mgZ8" id="2Ar3EGnggoc" role="_iOnB">
+      <property role="TrG5h" value="f" />
+      <property role="5dF97" value="true" />
+      <node concept="mLuIC" id="2Ar3EGnggqn" role="3c3ckp" />
     </node>
   </node>
   <node concept="1Gr_s$" id="6KOiXOpumky">
