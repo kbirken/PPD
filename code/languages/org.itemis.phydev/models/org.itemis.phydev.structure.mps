@@ -656,14 +656,14 @@
     <node concept="1TJgyj" id="pX_ysx1O9M" role="1TKVEi">
       <property role="IQ2ns" value="467695031118414450" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="x" />
+      <property role="20kJfa" value="xType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="pX_ysx1PB7" role="1TKVEi">
       <property role="IQ2ns" value="467695031118420423" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="y" />
+      <property role="20kJfa" value="yType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
     </node>
