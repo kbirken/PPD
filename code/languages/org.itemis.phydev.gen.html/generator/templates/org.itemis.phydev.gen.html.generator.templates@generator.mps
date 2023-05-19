@@ -83,9 +83,7 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
@@ -113,19 +111,9 @@
     <language id="189537ea-2a28-44c9-91aa-a8e68b3e1e1b" name="com.mbeddr.mpsutil.blutil.genutil">
       <concept id="4213334375081881491" name="com.mbeddr.mpsutil.blutil.genutil.structure.MappingExecuteOnceExpression" flags="ng" index="10MAFp" />
     </language>
-    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
-      <concept id="1217004708011" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetInputModel" flags="nn" index="1r8y6K" />
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -148,9 +136,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
-    </language>
   </registry>
   <node concept="bUwia" id="3ZJK8lMcHyw">
     <property role="TrG5h" value="main" />
@@ -162,26 +147,6 @@
         <node concept="3clFbS" id="3ZJK8lMfgrr" role="2VODD2">
           <node concept="3clFbF" id="3ZJK8lMfgrA" role="3cqZAp">
             <node concept="10MAFp" id="3ZJK8lMfgr_" role="3clFbG" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="avzCv" id="3ZJK8lMd2o2" role="avys_">
-      <node concept="3clFbS" id="3ZJK8lMd2o3" role="2VODD2">
-        <node concept="3clFbF" id="3ZJK8lMd2o8" role="3cqZAp">
-          <node concept="2OqwBi" id="3ZJK8lMd4Sm" role="3clFbG">
-            <node concept="2OqwBi" id="3ZJK8lMd2MH" role="2Oq$k0">
-              <node concept="2OqwBi" id="3ZJK8lMd2$6" role="2Oq$k0">
-                <node concept="1iwH7S" id="3ZJK8lMd2o7" role="2Oq$k0" />
-                <node concept="1r8y6K" id="3ZJK8lMd2D_" role="2OqNvi" />
-              </node>
-              <node concept="2RRcyG" id="3ZJK8lMd2W7" role="2OqNvi">
-                <node concept="chp4Y" id="3ZJK8lMd3h8" role="3MHsoP">
-                  <ref role="cht4Q" to="5vx7:3ZJK8lMcZs_" resolve="GenHtmlConfig" />
-                </node>
-              </node>
-            </node>
-            <node concept="3GX2aA" id="3ZJK8lMd6Zb" role="2OqNvi" />
           </node>
         </node>
       </node>

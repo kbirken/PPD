@@ -6,11 +6,15 @@
     </modelRoot>
   </models>
   <facets>
+    <facet planModel="r:1fb49d66-2012-446a-88cc-fea67cbb54a7(org.itemis.phydev.gen.plan)" type="generator" />
     <facet type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">4bbd7be4-8c1a-40bc-a45f-403c5d3bf141(org.itemis.phydev.gen)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -46,6 +50,7 @@
     <language slang="l:d9bfe14c-f389-4e27-be1b-5c11336c3fe5:org.itemis.phydev.gen.html" version="0" />
     <language slang="l:9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0:org.itemis.phydev.gen.world2d" version="0" />
     <language slang="l:3d42449e-9670-4233-9f68-ba0596ae57f9:org.itemis.world2d" version="0" />
+    <language slang="l:0b89126e-fd1d-40f2-89cd-e37f2025923b:org.itemis.world2d.gen.json" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -64,6 +69,7 @@
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
+    <module reference="4bbd7be4-8c1a-40bc-a45f-403c5d3bf141(org.itemis.phydev.gen)" version="0" />
     <module reference="e5d9c8b2-888d-4711-b7f3-2b02600ffd38(org.itemis.phydev.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.itemis.world2d/sandbox/org.itemis.world2d.sandbox.msd" folder="world2d" />
       <modulePath path="$PROJECT_DIR$/solutions/org.itemis.phydev.allScripts/org.itemis.phydev.allScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/org.itemis.phydev.build/org.itemis.phydev.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.itemis.phydev.gen/org.itemis.phydev.gen.msd" folder="phydev" />
       <modulePath path="$PROJECT_DIR$/solutions/org.itemis.phydev.plugin/org.itemis.phydev.plugin.msd" folder="phydev" />
       <modulePath path="$PROJECT_DIR$/solutions/test.org.itemis.phydev/test.org.itemis.phydev.msd" folder="phydev" />
     </projectModules>
