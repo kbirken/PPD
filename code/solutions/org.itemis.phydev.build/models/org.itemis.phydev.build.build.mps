@@ -302,6 +302,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2Ar3EGnfR3p" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGnfR3q" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5sn4YBkcRDe" role="3989C9">
@@ -746,24 +751,9 @@
             <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
           </node>
         </node>
-        <node concept="1SiIV0" id="pX_yswGSJS" role="3bR37C">
-          <node concept="3bR9La" id="pX_yswGSJT" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="pX_ysx3Xri" role="3bR37C">
           <node concept="3bR9La" id="pX_ysx3Xrj" role="1SiIV1">
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="pX_ysx4aCB" role="3bR37C">
-          <node concept="3bR9La" id="pX_ysx4aCC" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4dliOJL_XQJ" role="3bR37C">
-          <node concept="3bR9La" id="4dliOJL_XQK" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
           </node>
         </node>
       </node>
@@ -925,9 +915,9 @@
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7nJ_v$TyXMN" role="3bR37C">
-          <node concept="3bR9La" id="7nJ_v$TyXMO" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:2Xjt3l57bIA" resolve="de.itemis.mps.editor.math.runtime" />
+        <node concept="1SiIV0" id="2Ar3EGnfR4e" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGnfR4f" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
       </node>
@@ -1000,16 +990,6 @@
           <node concept="1SiIV0" id="3ZJK8lMfhxS" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfhxT" role="1SiIV1">
               <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="3ZJK8lMfhxU" role="3bR37C">
-            <node concept="3bR9La" id="3ZJK8lMfhxV" role="1SiIV1">
-              <ref role="3bR37D" to="al5i:vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="3ZJK8lMfhxW" role="3bR37C">
-            <node concept="3bR9La" id="3ZJK8lMfhxX" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:2NyZxKpUHVD" resolve="com.mbeddr.mpsutil.blutil.genutil" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfhxY" role="3bR37C">
