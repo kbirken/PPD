@@ -209,6 +209,7 @@
       </src>
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.build.os/languages/iets3.build/org.iets3.opensource.build.jar" />
       </classpath>
     </javac>
