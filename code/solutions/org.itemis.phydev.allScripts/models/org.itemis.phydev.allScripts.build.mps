@@ -9,6 +9,8 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="7a8i" ref="r:a900251b-b07a-4cd6-a7e7-bc85846149da(org.itemis.phydev.build.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -112,6 +114,15 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="6uyzASnqGGh" role="1l3spd">
       <property role="TrG5h" value="phydev.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -210,6 +221,11 @@
         <node concept="1SiIV0" id="$m7ywrHmkQ" role="3bR37C">
           <node concept="3bR9La" id="$m7ywrHmkR" role="1SiIV1">
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2Ar3EGndpv5" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGndpv6" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>
