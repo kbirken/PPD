@@ -25,7 +25,6 @@
     <import index="go45" ref="r:3b1df3bc-09e5-4259-ad74-e2614cc7ec91(org.itemis.world2d.behavior)" />
     <import index="q8go" ref="r:f954cc73-8e40-437a-bf27-338da2cde5dc(org.itemis.phydev.interpreter.util)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
