@@ -10,7 +10,7 @@
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -301,6 +301,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2Ar3EGnfR3p" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGnfR3q" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5sn4YBkcRDe" role="3989C9">
@@ -477,6 +482,11 @@
             <node concept="3qWCbU" id="5sn4YBkcRSz" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2Ar3EGngYQW" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGngYQX" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:5wLtKNeSRRB" resolve="org.iets3.core.base" />
           </node>
         </node>
       </node>
@@ -745,24 +755,9 @@
             <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
           </node>
         </node>
-        <node concept="1SiIV0" id="pX_yswGSJS" role="3bR37C">
-          <node concept="3bR9La" id="pX_yswGSJT" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="pX_ysx3Xri" role="3bR37C">
           <node concept="3bR9La" id="pX_ysx3Xrj" role="1SiIV1">
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="pX_ysx4aCB" role="3bR37C">
-          <node concept="3bR9La" id="pX_ysx4aCC" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4dliOJL_XQJ" role="3bR37C">
-          <node concept="3bR9La" id="4dliOJL_XQK" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:44TucI396g5" resolve="org.iets3.core.expr.simpleTypes.interpreter" />
           </node>
         </node>
       </node>
@@ -924,9 +919,9 @@
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7nJ_v$TyXMN" role="3bR37C">
-          <node concept="3bR9La" id="7nJ_v$TyXMO" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:2Xjt3l57bIA" resolve="de.itemis.mps.editor.math.runtime" />
+        <node concept="1SiIV0" id="2Ar3EGnfR4e" role="3bR37C">
+          <node concept="3bR9La" id="2Ar3EGnfR4f" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
       </node>
@@ -999,16 +994,6 @@
           <node concept="1SiIV0" id="3ZJK8lMfhxS" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfhxT" role="1SiIV1">
               <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="3ZJK8lMfhxU" role="3bR37C">
-            <node concept="3bR9La" id="3ZJK8lMfhxV" role="1SiIV1">
-              <ref role="3bR37D" to="al5i:vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="3ZJK8lMfhxW" role="3bR37C">
-            <node concept="3bR9La" id="3ZJK8lMfhxX" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:2NyZxKpUHVD" resolve="com.mbeddr.mpsutil.blutil.genutil" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfhxY" role="3bR37C">
@@ -1263,6 +1248,15 @@
     <node concept="2igEWh" id="Ji$st3HApE" role="1hWBAP">
       <property role="3UIfUI" value="4096" />
     </node>
+    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1l3spW" id="5sn4YBkhr8a">
     <property role="2DA0ip" value="./../../../build/scripts" />
@@ -1359,8 +1353,8 @@
     <node concept="2sgV4H" id="pX_yswPQga" role="1l3spa">
       <ref role="1l3spb" node="6uyzASnqGG0" resolve="org.itemis.phydev.build" />
       <node concept="398BVA" id="pX_yswPQgb" role="2JcizS">
-        <ref role="398BVh" node="5sn4YBkhrzc" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="pX_yswPQgo" role="iGT6I">
+        <ref role="398BVh" node="1PCOxygkit5" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="5VGitJiENkT" role="iGT6I">
           <property role="2Ry0Am" value="org.itemis.phydev.build" />
         </node>
       </node>
@@ -1431,6 +1425,18 @@
     <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
       <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
         <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev" />
+      </node>
+    </node>
+    <node concept="398rNT" id="1PCOxygkit5" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="1PCOxygkit6" role="398pKh">
+        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <node concept="2Ry0Ak" id="1PCOxygkit7" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5VGitJiENkR" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
