@@ -11,9 +11,7 @@
   <imports>
     <import index="5vx7" ref="r:bac659a5-58c0-4fd4-9221-19471a85f6ed(org.itemis.phydev.gen.html.structure)" />
     <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" />
-    <import index="7s29" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.apache.commons.lang.text(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="uvrt" ref="r:c266b17e-13c4-40d1-81f3-e76cbf26809a(com.mbeddr.mpsutil.blutil.genutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="carl" ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)" implicit="true" />
   </imports>

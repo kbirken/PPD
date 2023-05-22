@@ -1,10 +1,6 @@
 import de.itemis.mps.gradle.*
 
 plugins {
-    //Package/Artifact publishing
-//    id 'maven-publish'
-    // github releses
-//    id 'co.riiid.gradle' version '0.4.2'
     id 'de.itemis.mps.gradle.common' version  '1.16.+'
 }
 
@@ -16,7 +12,6 @@ def minor = '1'
 
 //Specify used gradle version
 // unnecessary as specified already in gradle(gradle-wrapper.properties
-
 configurations {
     mps
     languageLibs

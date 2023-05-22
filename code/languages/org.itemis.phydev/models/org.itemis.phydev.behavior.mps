@@ -25,7 +25,6 @@
     <import index="go45" ref="r:3b1df3bc-09e5-4259-ad74-e2614cc7ec91(org.itemis.world2d.behavior)" />
     <import index="q8go" ref="r:f954cc73-8e40-437a-bf27-338da2cde5dc(org.itemis.phydev.interpreter.util)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -5181,6 +5180,62 @@
     </node>
     <node concept="13hLZK" id="4h5WJapqO4G" role="13h7CW">
       <node concept="3clFbS" id="4h5WJapqO4H" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6XklIawhKRk">
+    <property role="3GE5qa" value="vector" />
+    <ref role="13h7C2" to="wl5u:pX_ysx1O9L" resolve="Vector2DType" />
+    <node concept="13hLZK" id="6XklIawhKRl" role="13h7CW">
+      <node concept="3clFbS" id="6XklIawhKRm" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6XklIawhQI6" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="6XklIawhQI7" role="1B3o_S" />
+      <node concept="3clFbS" id="6XklIawhQIe" role="3clF47">
+        <node concept="3clFbF" id="6XklIawhSKf" role="3cqZAp">
+          <node concept="3cpWs3" id="6XklIawhWTv" role="3clFbG">
+            <node concept="Xl_RD" id="6XklIawhWTy" role="3uHU7w">
+              <property role="Xl_RC" value="&gt;" />
+            </node>
+            <node concept="3cpWs3" id="6XklIawhUTl" role="3uHU7B">
+              <node concept="3cpWs3" id="6XklIawhUHG" role="3uHU7B">
+                <node concept="3cpWs3" id="6XklIawhT76" role="3uHU7B">
+                  <node concept="Xl_RD" id="6XklIawhSKe" role="3uHU7B">
+                    <property role="Xl_RC" value="Vector2D&lt;" />
+                  </node>
+                  <node concept="2OqwBi" id="6XklIawhU1r" role="3uHU7w">
+                    <node concept="2OqwBi" id="6XklIawhTm3" role="2Oq$k0">
+                      <node concept="13iPFW" id="6XklIawhT7d" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="6XklIawhT_g" role="2OqNvi">
+                        <ref role="3Tt5mk" to="wl5u:pX_ysx1O9M" resolve="xType" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="6XklIawhUiU" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="6XklIawhUHJ" role="3uHU7w">
+                  <property role="Xl_RC" value="," />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6XklIawhWcz" role="3uHU7w">
+                <node concept="2OqwBi" id="6XklIawhVfe" role="2Oq$k0">
+                  <node concept="13iPFW" id="6XklIawhUTH" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6XklIawhVM$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="wl5u:pX_ysx1PB7" resolve="yType" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6XklIawhWsg" role="2OqNvi">
+                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="6XklIawhQIf" role="3clF45" />
     </node>
   </node>
 </model>
