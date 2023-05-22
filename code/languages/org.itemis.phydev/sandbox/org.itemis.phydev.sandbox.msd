@@ -63,6 +63,7 @@
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
     <module reference="e5d9c8b2-888d-4711-b7f3-2b02600ffd38(org.itemis.phydev.sandbox)" version="0" />
+    <module reference="2614fab6-e994-4127-9a5d-8c8cd7ba2833(test.in.expr.os)" version="0" />
   </dependencyVersions>
 </solution>
 
