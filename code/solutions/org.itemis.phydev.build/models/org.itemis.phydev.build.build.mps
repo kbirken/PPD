@@ -604,6 +604,51 @@
     </node>
     <node concept="2G$12M" id="Ji$st3FDQm" role="3989C9">
       <property role="TrG5h" value="phydev" />
+      <node concept="1E1JtA" id="5VGitJiH6In" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.itemis.phydev.gen" />
+        <property role="3LESm3" value="4bbd7be4-8c1a-40bc-a45f-403c5d3bf141" />
+        <node concept="398BVA" id="5VGitJiH6Lr" role="3LF7KH">
+          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="5VGitJiH6LQ" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="5VGitJiH6M9" role="2Ry0An">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="5VGitJiH6Ms" role="2Ry0An">
+                <property role="2Ry0Am" value="org.itemis.phydev.gen" />
+                <node concept="2Ry0Ak" id="5VGitJiH6MJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.itemis.phydev.gen.msd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="5VGitJiH6Nu" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5VGitJiH6Nv" role="1HemKq">
+            <node concept="398BVA" id="5VGitJiH6Np" role="3LXTmr">
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="5VGitJiH6Nq" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="5VGitJiH6Nr" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="5VGitJiH6Ns" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.gen" />
+                    <node concept="2Ry0Ak" id="5VGitJiH6Nt" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5VGitJiH6Nw" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="Ji$st3GiIB" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.itemis.phydev.runtime" />
