@@ -9,6 +9,7 @@
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
   <property name="artifacts.org.iets3.opensource" location="${dependencies.root}/org.iets3.opensource" />
+  <property name="artifacts.de.itemis.mps.extensions" location="${dependencies.root}/com.mbeddr.platform" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property file="${artifacts.org.iets3.opensource}/build.properties" prefix="import.org.iets3.opensource" />

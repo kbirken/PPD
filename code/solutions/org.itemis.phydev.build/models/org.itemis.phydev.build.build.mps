@@ -1163,6 +1163,15 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="6uyzASnqGGh" role="1l3spd">
       <property role="TrG5h" value="phydev.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -1340,8 +1349,8 @@
     <node concept="2sgV4H" id="pX_yswPQga" role="1l3spa">
       <ref role="1l3spb" node="6uyzASnqGG0" resolve="org.itemis.phydev.build" />
       <node concept="398BVA" id="pX_yswPQgb" role="2JcizS">
-        <ref role="398BVh" node="5sn4YBkhrzc" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="pX_yswPQgo" role="iGT6I">
+        <ref role="398BVh" node="1PCOxygkit5" resolve="artifacts.root" />
+        <node concept="2Ry0Ak" id="5VGitJiENkT" role="iGT6I">
           <property role="2Ry0Am" value="org.itemis.phydev.build" />
         </node>
       </node>
@@ -1401,6 +1410,18 @@
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="5sn4YBkhrzf" role="2Ry0An">
             <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1PCOxygkit5" role="1l3spd">
+      <property role="TrG5h" value="artifacts.root" />
+      <node concept="398BVA" id="1PCOxygkit6" role="398pKh">
+        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <node concept="2Ry0Ak" id="1PCOxygkit7" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="5VGitJiENkR" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
           </node>
         </node>
       </node>
