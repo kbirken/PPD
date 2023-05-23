@@ -72,6 +72,7 @@
       <property role="1QQsmn" value="1.0f" />
       <property role="1QQsoj" value="true" />
       <property role="1QQigP" value="true" />
+      <property role="2eyUBO" value="true" />
       <node concept="1osFrc" id="6At7l0NuFzl" role="1oqHpa">
         <property role="1osFrd" value="0.0f" />
         <property role="1osFrf" value="0.0f" />
