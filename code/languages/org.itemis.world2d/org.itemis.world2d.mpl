@@ -78,6 +78,7 @@
         <module reference="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" version="0" />
+        <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
         <module reference="3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)" version="0" />
         <module reference="8631d2e6-cdb1-49dd-84cf-e87de57f860c(org.itemis.world2d.generator)" version="0" />
         <module reference="80715590-c3e6-4f55-9f83-69945c0e090a(org.itemis.world2d.runtime)" version="0" />
@@ -91,7 +92,6 @@
     <dependency reexport="false">856b26ba-05ad-49b3-8b5b-d034f8f7a4a0(org.itemis.phydev.runtime)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
-    <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -167,6 +167,7 @@
     <dependency reexport="false">80715590-c3e6-4f55-9f83-69945c0e090a(org.itemis.world2d.runtime)</dependency>
   </runtime>
   <extendedLanguages>
+    <extendedLanguage>7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
   </extendedLanguages>
 </language>

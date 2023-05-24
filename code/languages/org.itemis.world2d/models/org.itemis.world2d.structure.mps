@@ -8,6 +8,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -72,7 +73,7 @@
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6Asc$CvgZXY" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="1TJgyj" id="6Asc$CvgZZf" role="1TKVEi">
       <property role="IQ2ns" value="7610012764282814415" />
@@ -185,7 +186,7 @@
     <property role="EcuMT" value="1276016897775668336" />
     <property role="TrG5h" value="IElement2D" />
     <node concept="PrWs8" id="16PkDIvk8LL" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="6At7l0M3ShP" role="PrDN$">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
