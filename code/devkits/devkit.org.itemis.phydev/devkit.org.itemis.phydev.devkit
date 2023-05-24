@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="devkit.org.itemis.phydev" uuid="d5cc9334-7d6d-4a54-8dc8-76e6549420f3">
+  <exported-language name="769783b6-17f4-40a3-bdc7-88b8332300f2(org.itemis.phydev)" />
+  <exported-language name="d9bfe14c-f389-4e27-be1b-5c11336c3fe5(org.itemis.phydev.gen.html)" />
+  <exported-language name="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0(org.itemis.phydev.gen.world2d)" />
+  <extendedDevKits>
+    <extendedDevKit>c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <generation-plan model="r:1fb49d66-2012-446a-88cc-fea67cbb54a7(org.itemis.phydev.gen.plan)" />
+</dev-kit>
+
