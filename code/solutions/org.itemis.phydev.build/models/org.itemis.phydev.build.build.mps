@@ -1264,7 +1264,7 @@
     <node concept="22LTRH" id="5sn4YBkhsWP" role="1hWBAP">
       <property role="TrG5h" value="test.org.itemis.phydev" />
       <node concept="22LTRM" id="5sn4YBkht0J" role="22LTRK">
-        <ref role="22LTRN" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev" />
+        <ref role="22LTRN" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
       </node>
       <node concept="24cAiW" id="5sn4YBkht2G" role="24cAkG">
         <node concept="NbPM2" id="5sn4YBkht2J" role="24c_eh">
@@ -1295,8 +1295,8 @@
       <property role="TrG5h" value="test.org.itemis.phydev" />
       <node concept="1E1JtA" id="5sn4YBkhsM9" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="test.org.itemis.phydev" />
-        <property role="3LESm3" value="5f740244-6ea7-4f28-ba3c-a9c80a3bed72" />
+        <property role="TrG5h" value="test.org.itemis.phydev.dummy" />
+        <property role="3LESm3" value="be85a5ff-e3d1-4cad-8c93-8332efdbecd4" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="5sn4YBkhsMd" role="3LF7KH">
           <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
@@ -1305,9 +1305,9 @@
             <node concept="2Ry0Ak" id="5sn4YBkhsMo" role="2Ry0An">
               <property role="2Ry0Am" value="solutions" />
               <node concept="2Ry0Ak" id="5sn4YBkhsMt" role="2Ry0An">
-                <property role="2Ry0Am" value="test.org.itemis.phydev" />
-                <node concept="2Ry0Ak" id="5sn4YBkhsMy" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.org.itemis.phydev.msd" />
+                <property role="2Ry0Am" value="test.org.itemis.phydev.dummy" />
+                <node concept="2Ry0Ak" id="2OVIZqykHXh" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.itemis.phydev.dummy.msd" />
                 </node>
               </node>
             </node>
@@ -1317,23 +1317,23 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="5sn4YBkhsME" role="1HemKq">
-            <node concept="398BVA" id="5sn4YBkhsM$" role="3LXTmr">
+          <node concept="3LXTmp" id="2OVIZqykHXt" role="1HemKq">
+            <node concept="398BVA" id="2OVIZqykHXj" role="3LXTmr">
               <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
-              <node concept="2Ry0Ak" id="5sn4YBkhsM_" role="iGT6I">
+              <node concept="2Ry0Ak" id="2OVIZqykHXk" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
-                <node concept="2Ry0Ak" id="5sn4YBkhsMA" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2OVIZqykHXl" role="2Ry0An">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="5sn4YBkhsMB" role="2Ry0An">
-                    <property role="2Ry0Am" value="test.org.itemis.phydev" />
-                    <node concept="2Ry0Ak" id="5sn4YBkhsMC" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="2OVIZqykHXm" role="2Ry0An">
+                    <property role="2Ry0Am" value="test.org.itemis.phydev.dummy" />
+                    <node concept="2Ry0Ak" id="2OVIZqykHXn" role="2Ry0An">
                       <property role="2Ry0Am" value="models" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="5sn4YBkhsMF" role="3LXTna">
+            <node concept="3qWCbU" id="2OVIZqykHXu" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -1432,7 +1432,7 @@
     <node concept="55IIr" id="5sn4YBkhr8b" role="auvoZ" />
     <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
       <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
-        <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev" />
+        <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
       </node>
     </node>
   </node>
