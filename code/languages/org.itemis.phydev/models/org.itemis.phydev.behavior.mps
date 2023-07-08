@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -451,29 +452,29 @@
       <node concept="3clFbS" id="4Lx5PHkTvY" role="3clF47">
         <node concept="3clFbF" id="4Lx5PHnLAY" role="3cqZAp">
           <node concept="2OqwBi" id="4Lx5PHnLAV" role="3clFbG">
-            <node concept="10M0yZ" id="5hGvh47jEyf" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
             <node concept="liA8E" id="4Lx5PHnLAX" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="4Lx5PHnLLv" role="37wK5m">
                 <property role="Xl_RC" value="-------------------------" />
               </node>
             </node>
+            <node concept="10M0yZ" id="5hGvh47jEyf" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4Lx5PHkTww" role="3cqZAp">
           <node concept="2OqwBi" id="4Lx5PHkTwt" role="3clFbG">
-            <node concept="10M0yZ" id="5hGvh47jEZA" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
             <node concept="liA8E" id="4Lx5PHkTwv" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="4Lx5PHkTwI" role="37wK5m">
                 <property role="Xl_RC" value="Welcome to WorldBuilder!" />
               </node>
+            </node>
+            <node concept="10M0yZ" id="5hGvh47jEZA" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
           </node>
         </node>
@@ -4484,7 +4485,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="1X3_iC" id="5hGvh47hnld" role="lGtFl">
+              <node concept="1X3_iC" id="5hGvh47hnld" role="3cqZAp">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                 <node concept="RRSsy" id="3PEUHLX621$" role="8Wnug">
