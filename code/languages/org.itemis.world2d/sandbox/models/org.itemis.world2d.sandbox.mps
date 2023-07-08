@@ -77,6 +77,19 @@
         <property role="1osFrf" value="0.0f" />
       </node>
     </node>
+    <node concept="1QQ392" id="6At7l0NuFzD" role="1QRWQ5">
+      <property role="TrG5h" value="Ramp" />
+      <property role="1QQfnC" value="0.5f" />
+      <property role="1QQfnI" value="10.0f" />
+      <property role="1QQfni" value="-0.8f" />
+      <property role="1QQsmn" value="1.0f" />
+      <property role="1QQigP" value="true" />
+      <property role="1QQsoj" value="true" />
+      <node concept="1osFrc" id="6At7l0NuFzE" role="1oqHpa">
+        <property role="1osFrd" value="9.0f" />
+        <property role="1osFrf" value="8.0f" />
+      </node>
+    </node>
     <node concept="1QQ392" id="6At7l0M3Ki5" role="1QRWQ5">
       <property role="TrG5h" value="B1" />
       <property role="1QQfnC" value="2.0f" />
@@ -90,22 +103,8 @@
         <property role="1osFrf" value="4.0f" />
       </node>
     </node>
-    <node concept="1QQ392" id="6At7l0NuFzD" role="1QRWQ5">
-      <property role="TrG5h" value="B2" />
-      <property role="1QQfnC" value="1.0f" />
-      <property role="1QQfnI" value="4.0f" />
-      <property role="1QQfni" value="-10.0f" />
-      <property role="1QQsmn" value="20.0f" />
-      <property role="1QQigP" value="true" />
-      <property role="2eyUBO" value="true" />
-      <property role="1QQsoj" value="true" />
-      <node concept="1osFrc" id="6At7l0NuFzE" role="1oqHpa">
-        <property role="1osFrd" value="-4.0f" />
-        <property role="1osFrf" value="16.0f" />
-      </node>
-    </node>
     <node concept="1QQ392" id="6At7l0NveeZ" role="1QRWQ5">
-      <property role="TrG5h" value="B3" />
+      <property role="TrG5h" value="B2" />
       <property role="1QQfnC" value="1.0f" />
       <property role="1QQfnI" value="4.0f" />
       <property role="1QQfni" value="-10.0f" />
@@ -123,7 +122,7 @@
       <property role="1QQsmn" value="18.0f" />
       <property role="2eyUBO" value="true" />
       <node concept="1osFrc" id="6At7l0M3Kif" role="1oqHpa">
-        <property role="1osFrd" value="1.0f" />
+        <property role="1osFrd" value="11.0f" />
         <property role="1osFrf" value="20.0f" />
       </node>
     </node>
