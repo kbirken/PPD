@@ -2,7 +2,11 @@ import de.itemis.mps.gradle.*
 
 plugins {
     id 'de.itemis.mps.gradle.common' version  '1.16.+'
+    id 'nu.studer.credentials' version '3.0'
 }
+
+// credentials are only needed if non-open-source components are used (i.e., iets3.core)
+def authorization = credentials
 
 apply plugin: 'download-jbr'
 
@@ -10,8 +14,8 @@ apply plugin: 'download-jbr'
 def major = '2021'
 def minor = '3'
 
-//Specify used gradle version
-// unnecessary as specified already in gradle(gradle-wrapper.properties
+// Gradle version is specified in gradle(gradle-wrapper.properties)
+
 configurations {
     mps
     languageLibs
@@ -27,6 +31,7 @@ ext.artifactsDir = new File(buildDir, 'artifacts')
 ext.mpsVersion = "$major.$minor." + '2'
 
 ext.iets3OpenSourceVersion = "$major.$minor.+"
+ext.iets3CoreVersion = "$major.$minor.+"
 ext.dependencyRepositories = [
         'https://artifacts.itemis.cloud/repository/maven-mps',
         'https://artifacts.itemis.cloud/repository/maven-iets3'
@@ -102,11 +107,31 @@ project.afterEvaluate{
 //for project depenendencies
 repositories {
     maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
+/*
+    // the credentials setting is only needed if non-open-source components are used (i.e. iets3.core)
+    for (repoUrl in project.dependencyRepositories) {
+        maven {
+            url repoUrl
+            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                credentials {
+                    username project.findProperty('artifacts.itemis.cloud.user')
+                    password project.findProperty('artifacts.itemis.cloud.pw')
+                }
+            } else if(authorization.forKey('artifacts.itemis.cloud.user') != null && authorization.forKey('artifacts.itemis.cloud.pw') != null) {
+                credentials {
+                    username authorization.forKey('artifacts.itemis.cloud.user')
+                    password authorization.forKey('artifacts.itemis.cloud.pw')
+                }
+            }
+        }
+    }
+*/
     mavenCentral()
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
+//    languageLibs "org.iets3:core:$iets3CoreVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
