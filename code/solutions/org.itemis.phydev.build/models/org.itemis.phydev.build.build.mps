@@ -935,6 +935,16 @@
             <ref role="3bR37D" to="90a9:4iIKqJTZ5I0" resolve="de.q60.mps.shadowmodels.repository" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6BMZQHsug5h" role="3bR37C">
+          <node concept="3bR9La" id="6BMZQHsug5i" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5U8hsWC71Xh" resolve="org.modelix.model.mpsadapters" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6BMZQHsug5j" role="3bR37C">
+          <node concept="3bR9La" id="6BMZQHsug5k" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3ZJK8lMfhuw" role="2G$12L">
         <property role="BnDLt" value="true" />
