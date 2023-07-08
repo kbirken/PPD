@@ -107,7 +107,6 @@ project.afterEvaluate{
 //for project depenendencies
 repositories {
     maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-/*
     // the credentials setting is only needed if non-open-source components are used (i.e. iets3.core)
     for (repoUrl in project.dependencyRepositories) {
         maven {
@@ -125,13 +124,12 @@ repositories {
             }
         }
     }
-*/
     mavenCentral()
 }
 
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     languageLibs "org.iets3:opensource:$iets3OpenSourceVersion"
-//    languageLibs "org.iets3:core:$iets3CoreVersion"
+    languageLibs "org.iets3:core:$iets3CoreVersion"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
 }
