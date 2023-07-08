@@ -8,7 +8,7 @@ apply plugin: 'download-jbr'
 
 // Project version
 def major = '2021'
-def minor = '1'
+def minor = '3'
 
 //Specify used gradle version
 // unnecessary as specified already in gradle(gradle-wrapper.properties
@@ -24,7 +24,7 @@ downloadJbr {
 
 ext.artifactsDir = new File(buildDir, 'artifacts')
 // Dependency versions
-ext.mpsVersion = "$major.$minor." + '4'
+ext.mpsVersion = "$major.$minor." + '2'
 
 ext.iets3OpenSourceVersion = "$major.$minor.+"
 ext.dependencyRepositories = [
