@@ -3,6 +3,14 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="iets3.core">
+          <value>
+            <Library>
+              <option name="name" value="iets3.core" />
+              <option name="path" value="${phydev.home}/build/dependencies/org.iets3.core" />
+            </Library>
+          </value>
+        </entry>
         <entry key="iets3.opensource">
           <value>
             <Library>

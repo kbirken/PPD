@@ -12,6 +12,7 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="ow72" ref="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -195,6 +196,9 @@
       <node concept="m$_yC" id="Ji$st3HnSy" role="m$_yJ">
         <ref role="m$_y1" to="ip48:64GCIgM55Fn" resolve="org.iets3.build.os" />
       </node>
+      <node concept="m$_yC" id="2kS2IKIrcae" role="m$_yJ">
+        <ref role="m$_y1" to="ow72:64GCIgM55Fn" resolve="org.iets3.build" />
+      </node>
       <node concept="3_J27D" id="Ji$st3HnNp" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HnPZ" role="3MwsjC">
           <property role="3MwjfP" value="phydev.build" />
@@ -218,6 +222,9 @@
       <property role="m$_wk" value="org.itemis.phydev" />
       <node concept="m$_yC" id="Ji$st3HsMX" role="m$_yJ">
         <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
+      </node>
+      <node concept="m$_yC" id="2kS2IKIrc9X" role="m$_yJ">
+        <ref role="m$_y1" to="ow72:4d1gpVcSdLh" resolve="org.iets3.featuremodel" />
       </node>
       <node concept="3_J27D" id="Ji$st3HsJq" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HsLP" role="3MwsjC">
@@ -305,6 +312,11 @@
         <node concept="1SiIV0" id="2Ar3EGnfR3p" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGnfR3q" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2kS2IKIrc85" role="3bR37C">
+          <node concept="3bR9La" id="2kS2IKIrc86" role="1SiIV1">
+            <ref role="3bR37D" to="ow72:7C6tnXfWu6n" resolve="org.iets3.core.build" />
           </node>
         </node>
       </node>
@@ -1160,6 +1172,15 @@
         <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="jS_CvxPGUJ" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1AwZ_wmLttS" role="1l3spa">
+      <ref role="1l3spb" to="ow72:434DXkjQLan" resolve="org.iets3.core" />
+      <node concept="398BVA" id="1AwZ_wmLttT" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="1AwZ_wmLtug" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.core" />
         </node>
       </node>
     </node>

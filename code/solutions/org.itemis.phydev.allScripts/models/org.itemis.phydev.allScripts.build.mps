@@ -11,6 +11,7 @@
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="7a8i" ref="r:a900251b-b07a-4cd6-a7e7-bc85846149da(org.itemis.phydev.build.build)" />
+    <import index="ow72" ref="r:17ae098b-ff6a-431c-a11b-d056fe3cdd3f(org.iets3.core.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -111,6 +112,15 @@
         <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="jS_CvxPGUJ" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="2kS2IKIrc6w" role="1l3spa">
+      <ref role="1l3spb" to="ow72:434DXkjQLan" resolve="org.iets3.core" />
+      <node concept="398BVA" id="2kS2IKIrc6x" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="2kS2IKIrc6L" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.core" />
         </node>
       </node>
     </node>
@@ -226,6 +236,11 @@
         <node concept="1SiIV0" id="2Ar3EGndpv5" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGndpv6" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2kS2IKIrcaw" role="3bR37C">
+          <node concept="3bR9La" id="2kS2IKIrcax" role="1SiIV1">
+            <ref role="3bR37D" to="ow72:7C6tnXfWu6n" resolve="org.iets3.core.build" />
           </node>
         </node>
       </node>
