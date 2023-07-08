@@ -925,6 +925,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2SPCFvvu4uE" role="3bR37C">
+          <node concept="3bR9La" id="2SPCFvvu4uF" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5U8hsWC73Be" resolve="org.modelix.model.repositoryconcepts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2SPCFvvu4uG" role="3bR37C">
+          <node concept="3bR9La" id="2SPCFvvu4uH" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4iIKqJTZ5I0" resolve="de.q60.mps.shadowmodels.repository" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3ZJK8lMfhuw" role="2G$12L">
         <property role="BnDLt" value="true" />
