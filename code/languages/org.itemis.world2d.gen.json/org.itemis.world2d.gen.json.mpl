@@ -80,6 +80,7 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+        <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
         <module reference="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0(org.itemis.phydev.gen.world2d)" version="0" />
         <module reference="3d42449e-9670-4233-9f68-ba0596ae57f9(org.itemis.world2d)" version="0" />
         <module reference="0b89126e-fd1d-40f2-89cd-e37f2025923b(org.itemis.world2d.gen.json)" version="0" />
