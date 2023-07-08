@@ -849,7 +849,7 @@
     </node>
     <node concept="2OrE70" id="5hGvh475Gu5" role="02uzr" />
     <node concept="02vpq" id="14C993cVUMt" role="02uzr">
-      <property role="TrG5h" value="pointDef2box" />
+      <property role="TrG5h" value="pointDef2body" />
       <property role="1YBnZf" value="true" />
       <node concept="026TG" id="14C993cVYZk" role="026TK">
         <node concept="027og" id="14C993cVZs3" role="026TJ">
@@ -970,7 +970,36 @@
         </node>
       </node>
     </node>
-    <node concept="2OrE70" id="14C993cU8PG" role="02uzr" />
+    <node concept="02vpq" id="ajjMXQWS4U" role="02uzr">
+      <ref role="1YyVLo" node="14C993cVUMt" resolve="pointDef2box" />
+      <node concept="02i3K" id="ajjMXQWT9y" role="02i3f">
+        <node concept="02i3D" id="ajjMXQWT9z" role="02i2B">
+          <ref role="02i3$" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
+        </node>
+      </node>
+      <node concept="02i3K" id="ajjMXQWT9$" role="02i3f">
+        <property role="TrG5h" value="sol" />
+        <node concept="02i3D" id="ajjMXQWT9_" role="02i2B">
+          <ref role="02i3$" to="wl5u:1MxN4Cv9BXK" resolve="Solution" />
+        </node>
+      </node>
+      <node concept="026TG" id="ajjMXQWT9A" role="026TK">
+        <node concept="027og" id="ajjMXQWT9B" role="026TJ">
+          <ref role="02LMe" to="wfa7:6Asc$CvhtLu" resolve="Circle2D" />
+          <node concept="027oh" id="ajjMXQWXBx" role="02LM9">
+            <ref role="027oj" to="tpck:h0TrG11" resolve="name" />
+            <node concept="2OqwBi" id="ajjMXQWYbt" role="027of">
+              <node concept="214o7A" id="ajjMXQWY0X" role="2Oq$k0" />
+              <node concept="3TrcHB" id="ajjMXQWYEY" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2OrE70" id="ajjMXQX08w" role="02uzr" />
+    <node concept="2OrE70" id="ajjMXQX0Bp" role="02uzr" />
     <node concept="02vpq" id="14C993cU7wj" role="02uzr">
       <property role="TrG5h" value="segment2box" />
       <node concept="026TG" id="14C993cUya0" role="026TK">
