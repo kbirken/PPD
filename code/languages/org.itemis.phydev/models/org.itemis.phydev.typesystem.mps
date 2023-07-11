@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="9914d82b-ab8a-44d1-9c65-9f2954c3b4df" name="org.iets3.variability.artifacts.typesystem" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -245,6 +246,11 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+    </language>
+    <language id="9914d82b-ab8a-44d1-9c65-9f2954c3b4df" name="org.iets3.variability.artifacts.typesystem">
+      <concept id="4776228038280204772" name="org.iets3.variability.artifacts.typesystem.structure.ForAllVariantsCheck" flags="ng" index="xIOfW">
+        <child id="4776228038280223098" name="body" index="xJ8Hy" />
+      </concept>
     </language>
   </registry>
   <node concept="18kY7G" id="6KOiXOpsUBO">
@@ -541,120 +547,124 @@
     <property role="TrG5h" value="check_Segment" />
     <property role="3GE5qa" value="mechanism" />
     <node concept="3clFbS" id="2QSm86dqMvD" role="18ibNy">
-      <node concept="Jncv_" id="2QSm86dqMS_" role="3cqZAp">
-        <ref role="JncvD" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
-        <node concept="2OqwBi" id="2QSm86dqO5Z" role="JncvB">
-          <node concept="2OqwBi" id="2QSm86dqNGR" role="2Oq$k0">
-            <node concept="2OqwBi" id="2QSm86dqN3A" role="2Oq$k0">
-              <node concept="1YBJjd" id="2QSm86dqMT3" role="2Oq$k0">
-                <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
-              </node>
-              <node concept="3TrEf2" id="2QSm86dqNgt" role="2OqNvi">
-                <ref role="3Tt5mk" to="wl5u:6KOiXOptKtF" resolve="start" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2QSm86dqNTd" role="2OqNvi">
-              <ref role="37wK5l" to="carl:6KOiXOpvgY_" resolve="getPointRef" />
-            </node>
-          </node>
-          <node concept="3TrEf2" id="2QSm86dqOfp" role="2OqNvi">
-            <ref role="3Tt5mk" to="wl5u:6KOiXOptOnD" resolve="point" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="2QSm86dqMSD" role="Jncv$">
-          <node concept="3clFbJ" id="2QSm86dqOsL" role="3cqZAp">
-            <node concept="3eOVzh" id="2QSm86dqXQE" role="3clFbw">
-              <node concept="2OqwBi" id="2QSm86dqOCw" role="3uHU7B">
-                <node concept="1YBJjd" id="2QSm86dqOsX" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
-                </node>
-                <node concept="2bSWHS" id="2QSm86dqOYj" role="2OqNvi" />
-              </node>
-              <node concept="2OqwBi" id="2QSm86dqQq3" role="3uHU7w">
-                <node concept="Jnkvi" id="2QSm86dqPN_" role="2Oq$k0">
-                  <ref role="1M0zk5" node="2QSm86dqMSF" resolve="anchor" />
-                </node>
-                <node concept="2bSWHS" id="2QSm86dqQCV" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="2QSm86dqOsN" role="3clFbx">
-              <node concept="2MkqsV" id="2QSm86dqQEM" role="3cqZAp">
-                <node concept="Xl_RD" id="2QSm86dqQES" role="2MkJ7o">
-                  <property role="Xl_RC" value="Anchor has to be defined before use" />
-                </node>
-                <node concept="2OqwBi" id="2QSm86dqQQh" role="1urrMF">
-                  <node concept="1YBJjd" id="2QSm86dqQFH" role="2Oq$k0">
+      <node concept="xIOfW" id="gZAb_UlOwl" role="3cqZAp">
+        <node concept="3clFbS" id="gZAb_UlOwn" role="xJ8Hy">
+          <node concept="Jncv_" id="2QSm86dqMS_" role="3cqZAp">
+            <ref role="JncvD" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
+            <node concept="2OqwBi" id="2QSm86dqO5Z" role="JncvB">
+              <node concept="2OqwBi" id="2QSm86dqNGR" role="2Oq$k0">
+                <node concept="2OqwBi" id="2QSm86dqN3A" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2QSm86dqMT3" role="2Oq$k0">
                     <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
                   </node>
-                  <node concept="3TrEf2" id="2QSm86dqRhZ" role="2OqNvi">
+                  <node concept="3TrEf2" id="2QSm86dqNgt" role="2OqNvi">
                     <ref role="3Tt5mk" to="wl5u:6KOiXOptKtF" resolve="start" />
                   </node>
                 </node>
+                <node concept="2qgKlT" id="2QSm86dqNTd" role="2OqNvi">
+                  <ref role="37wK5l" to="carl:6KOiXOpvgY_" resolve="getPointRef" />
+                </node>
               </node>
+              <node concept="3TrEf2" id="2QSm86dqOfp" role="2OqNvi">
+                <ref role="3Tt5mk" to="wl5u:6KOiXOptOnD" resolve="point" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="2QSm86dqMSD" role="Jncv$">
+              <node concept="3clFbJ" id="2QSm86dqOsL" role="3cqZAp">
+                <node concept="3eOVzh" id="2QSm86dqXQE" role="3clFbw">
+                  <node concept="2OqwBi" id="2QSm86dqOCw" role="3uHU7B">
+                    <node concept="1YBJjd" id="2QSm86dqOsX" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
+                    </node>
+                    <node concept="2bSWHS" id="2QSm86dqOYj" role="2OqNvi" />
+                  </node>
+                  <node concept="2OqwBi" id="2QSm86dqQq3" role="3uHU7w">
+                    <node concept="Jnkvi" id="2QSm86dqPN_" role="2Oq$k0">
+                      <ref role="1M0zk5" node="2QSm86dqMSF" resolve="anchor" />
+                    </node>
+                    <node concept="2bSWHS" id="2QSm86dqQCV" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2QSm86dqOsN" role="3clFbx">
+                  <node concept="2MkqsV" id="2QSm86dqQEM" role="3cqZAp">
+                    <node concept="Xl_RD" id="2QSm86dqQES" role="2MkJ7o">
+                      <property role="Xl_RC" value="Anchor has to be defined before use" />
+                    </node>
+                    <node concept="2OqwBi" id="2QSm86dqQQh" role="1urrMF">
+                      <node concept="1YBJjd" id="2QSm86dqQFH" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
+                      </node>
+                      <node concept="3TrEf2" id="2QSm86dqRhZ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="wl5u:6KOiXOptKtF" resolve="start" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="2QSm86dqMSF" role="JncvA">
+              <property role="TrG5h" value="anchor" />
+              <node concept="2jxLKc" id="2QSm86dqMSG" role="1tU5fm" />
             </node>
           </node>
-        </node>
-        <node concept="JncvC" id="2QSm86dqMSF" role="JncvA">
-          <property role="TrG5h" value="anchor" />
-          <node concept="2jxLKc" id="2QSm86dqMSG" role="1tU5fm" />
-        </node>
-      </node>
-      <node concept="Jncv_" id="2QSm86dqRlt" role="3cqZAp">
-        <ref role="JncvD" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
-        <node concept="2OqwBi" id="2QSm86dqRlu" role="JncvB">
-          <node concept="2OqwBi" id="2QSm86dqRlv" role="2Oq$k0">
-            <node concept="2OqwBi" id="2QSm86dqRlw" role="2Oq$k0">
-              <node concept="1YBJjd" id="2QSm86dqRlx" role="2Oq$k0">
-                <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
-              </node>
-              <node concept="3TrEf2" id="2QSm86dqRUQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="wl5u:6KOiXOptKyL" resolve="end" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2QSm86dqRlz" role="2OqNvi">
-              <ref role="37wK5l" to="carl:6KOiXOpvgY_" resolve="getPointRef" />
-            </node>
-          </node>
-          <node concept="3TrEf2" id="2QSm86dqRl$" role="2OqNvi">
-            <ref role="3Tt5mk" to="wl5u:6KOiXOptOnD" resolve="point" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="2QSm86dqRl_" role="Jncv$">
-          <node concept="3clFbJ" id="2QSm86dqRlA" role="3cqZAp">
-            <node concept="3eOVzh" id="2QSm86dqY8g" role="3clFbw">
-              <node concept="2OqwBi" id="2QSm86dqRlF" role="3uHU7B">
-                <node concept="1YBJjd" id="2QSm86dqRlG" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
-                </node>
-                <node concept="2bSWHS" id="2QSm86dqRlH" role="2OqNvi" />
-              </node>
-              <node concept="2OqwBi" id="2QSm86dqRlC" role="3uHU7w">
-                <node concept="Jnkvi" id="2QSm86dqRlD" role="2Oq$k0">
-                  <ref role="1M0zk5" node="2QSm86dqRlO" resolve="anchor" />
-                </node>
-                <node concept="2bSWHS" id="2QSm86dqRlE" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="2QSm86dqRlI" role="3clFbx">
-              <node concept="2MkqsV" id="2QSm86dqRlJ" role="3cqZAp">
-                <node concept="Xl_RD" id="2QSm86dqRlK" role="2MkJ7o">
-                  <property role="Xl_RC" value="Anchor has to be defined before use" />
-                </node>
-                <node concept="2OqwBi" id="2QSm86dqRlL" role="1urrMF">
-                  <node concept="1YBJjd" id="2QSm86dqRlM" role="2Oq$k0">
+          <node concept="Jncv_" id="2QSm86dqRlt" role="3cqZAp">
+            <ref role="JncvD" to="wl5u:2QSm86dp9Fk" resolve="Anchor" />
+            <node concept="2OqwBi" id="2QSm86dqRlu" role="JncvB">
+              <node concept="2OqwBi" id="2QSm86dqRlv" role="2Oq$k0">
+                <node concept="2OqwBi" id="2QSm86dqRlw" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2QSm86dqRlx" role="2Oq$k0">
                     <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
                   </node>
-                  <node concept="3TrEf2" id="2QSm86dqS1y" role="2OqNvi">
+                  <node concept="3TrEf2" id="2QSm86dqRUQ" role="2OqNvi">
                     <ref role="3Tt5mk" to="wl5u:6KOiXOptKyL" resolve="end" />
                   </node>
                 </node>
+                <node concept="2qgKlT" id="2QSm86dqRlz" role="2OqNvi">
+                  <ref role="37wK5l" to="carl:6KOiXOpvgY_" resolve="getPointRef" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2QSm86dqRl$" role="2OqNvi">
+                <ref role="3Tt5mk" to="wl5u:6KOiXOptOnD" resolve="point" />
               </node>
             </node>
+            <node concept="3clFbS" id="2QSm86dqRl_" role="Jncv$">
+              <node concept="3clFbJ" id="2QSm86dqRlA" role="3cqZAp">
+                <node concept="3eOVzh" id="2QSm86dqY8g" role="3clFbw">
+                  <node concept="2OqwBi" id="2QSm86dqRlF" role="3uHU7B">
+                    <node concept="1YBJjd" id="2QSm86dqRlG" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
+                    </node>
+                    <node concept="2bSWHS" id="2QSm86dqRlH" role="2OqNvi" />
+                  </node>
+                  <node concept="2OqwBi" id="2QSm86dqRlC" role="3uHU7w">
+                    <node concept="Jnkvi" id="2QSm86dqRlD" role="2Oq$k0">
+                      <ref role="1M0zk5" node="2QSm86dqRlO" resolve="anchor" />
+                    </node>
+                    <node concept="2bSWHS" id="2QSm86dqRlE" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2QSm86dqRlI" role="3clFbx">
+                  <node concept="2MkqsV" id="2QSm86dqRlJ" role="3cqZAp">
+                    <node concept="Xl_RD" id="2QSm86dqRlK" role="2MkJ7o">
+                      <property role="Xl_RC" value="Anchor has to be defined before use" />
+                    </node>
+                    <node concept="2OqwBi" id="2QSm86dqRlL" role="1urrMF">
+                      <node concept="1YBJjd" id="2QSm86dqRlM" role="2Oq$k0">
+                        <ref role="1YBMHb" node="2QSm86dqMvF" resolve="segment" />
+                      </node>
+                      <node concept="3TrEf2" id="2QSm86dqS1y" role="2OqNvi">
+                        <ref role="3Tt5mk" to="wl5u:6KOiXOptKyL" resolve="end" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="2QSm86dqRlO" role="JncvA">
+              <property role="TrG5h" value="anchor" />
+              <node concept="2jxLKc" id="2QSm86dqRlP" role="1tU5fm" />
+            </node>
           </node>
-        </node>
-        <node concept="JncvC" id="2QSm86dqRlO" role="JncvA">
-          <property role="TrG5h" value="anchor" />
-          <node concept="2jxLKc" id="2QSm86dqRlP" role="1tU5fm" />
         </node>
       </node>
     </node>

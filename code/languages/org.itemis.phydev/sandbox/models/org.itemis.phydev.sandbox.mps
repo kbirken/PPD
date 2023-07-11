@@ -5,13 +5,20 @@
     <use id="769783b6-17f4-40a3-bdc7-88b8332300f2" name="org.itemis.phydev" version="0" />
     <use id="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" name="org.itemis.phydev.gen.world2d" version="0" />
     <use id="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" name="org.itemis.phydev.gen.html" version="0" />
+    <use id="283dd47d-47ac-4322-8fbf-01035e4f4743" name="org.itemis.phydev.variability" version="0" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
+    <devkit ref="fc3e86e8-f98f-4eec-84d3-01fe190799dc(org.iets3.variability)" />
   </languages>
   <imports />
   <registry>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
+      </concept>
+    </language>
+    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+        <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
@@ -30,6 +37,7 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156802410" name="org.iets3.core.expr.base.structure.LogicalNotExpression" flags="ng" index="30czhn" />
       <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
@@ -112,6 +120,10 @@
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
+    <language id="283dd47d-47ac-4322-8fbf-01035e4f4743" name="org.itemis.phydev.variability">
+      <concept id="306131222073339095" name="org.itemis.phydev.variability.structure.ElementVP" flags="ng" index="1YqvhI" />
+      <concept id="306131222073035129" name="org.itemis.phydev.variability.structure.Mechanism150" flags="ng" index="1Yr_70" />
+    </language>
     <language id="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" name="org.itemis.phydev.gen.world2d">
       <concept id="4607112623202498341" name="org.itemis.phydev.gen.world2d.structure.GenWorld2dConfig" flags="ng" index="1dR3ux" />
     </language>
@@ -129,6 +141,50 @@
       </concept>
       <concept id="3123720608935236577" name="org.iets3.core.expr.repl.structure.ReplEntryRef" flags="ng" index="3ivRMQ">
         <reference id="3123720608935236578" name="entry" index="3ivRMP" />
+      </concept>
+    </language>
+    <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.featuremodel">
+      <concept id="8997672845438204620" name="org.iets3.featuremodel.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
+        <reference id="8997672845438204633" name="feature" index="21mTOu" />
+      </concept>
+      <concept id="3414566187106618468" name="org.iets3.featuremodel.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+        <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
+      </concept>
+      <concept id="6698472021570833404" name="org.iets3.featuremodel.structure.InlineFeatureConfigurationContent" flags="ng" index="rqCGG">
+        <child id="6698472021570799898" name="subfeatureConfigurations" index="rqKBa" />
+      </concept>
+      <concept id="6698472021570799893" name="org.iets3.featuremodel.structure.FeatureModelConfiguration" flags="ng" index="rqKB5">
+        <property id="6821044287477808223" name="errorMessage" index="26YOJW" />
+        <property id="3414566187109826511" name="__adaptHash" index="bROok" />
+        <property id="4791626744562666548" name="initiallyChecked" index="1n_0Gn" />
+        <property id="4791626744558055097" name="complete" index="1nQUAq" />
+      </concept>
+      <concept id="6698472021570799901" name="org.iets3.featuremodel.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
+      <concept id="3989254429232912648" name="org.iets3.featuremodel.structure.EmptyFeatureModelChunkContent" flags="ng" index="12i7jc" />
+      <concept id="3989254429232883574" name="org.iets3.featuremodel.structure.VariabilityModelChunk" flags="ng" index="12icEM">
+        <child id="3989254429232890937" name="contents" index="12i2BX" />
+      </concept>
+      <concept id="3989254429233029895" name="org.iets3.featuremodel.structure.Feature" flags="ng" index="12iwV3">
+        <child id="3989254429233029898" name="subFeatures" index="12iwVe" />
+      </concept>
+      <concept id="3989254429233029649" name="org.iets3.featuremodel.structure.FeatureModel" flags="ng" index="12iwZl">
+        <child id="3989254429233029900" name="root" index="12iwV8" />
+      </concept>
+      <concept id="3470763221645494592" name="org.iets3.featuremodel.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
+        <property id="6751014741090830985" name="selectionState" index="x_mqE" />
+        <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
+        <child id="6698472021570833352" name="content" index="rqCGo" />
+      </concept>
+    </language>
+    <language id="f0883503-8eaa-4bc8-8846-eb63220ab1dd" name="org.iets3.variability.artifacts">
+      <concept id="8172686665483193931" name="org.iets3.variability.artifacts.structure.IVariabilityAwareArtifact" flags="ng" index="35Qr_N">
+        <reference id="8362280949227479413" name="rootFeature" index="2AHaH2" />
+      </concept>
+      <concept id="5454343861691701145" name="org.iets3.variability.artifacts.structure.ArtifactRootFeatureRefExpr" flags="ng" index="1dhIX1">
+        <reference id="8362280949229569921" name="context" index="2AP8QQ" />
+      </concept>
+      <concept id="1046754514346632654" name="org.iets3.variability.artifacts.structure.IConditionVarPoint" flags="ng" index="1sb3hx">
+        <child id="6135977525816902738" name="featureExpr" index="2tfTHu" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -356,6 +412,40 @@
       <node concept="30bXRB" id="6h7RWbAEbLC" role="22T1sL">
         <property role="30bXRw" value="10" />
       </node>
+      <node concept="1YqvhI" id="gZAb_UlIIt" role="lGtFl">
+        <node concept="1QScDb" id="gZAb_UlIJp" role="2tfTHu">
+          <node concept="21mTOb" id="gZAb_UlIKw" role="1QScD9">
+            <ref role="21mTOu" node="gZAb_Ukson" resolve="Mech1" />
+          </node>
+          <node concept="1dhIX1" id="gZAb_UlIIP" role="30czhm">
+            <ref role="2AP8QQ" node="gZAb_UlANh" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1GoLdD" id="gZAb_UkoFx" role="1GkxhE">
+      <property role="TrG5h" value="rechts" />
+      <node concept="1PgKxM" id="gZAb_UkoG_" role="1PgOMQ">
+        <ref role="1PgKSO" node="6KOiXOpu73f" resolve="R0" />
+      </node>
+      <node concept="1PgKxM" id="gZAb_UkoHg" role="1PgOdG">
+        <ref role="1PgKSO" node="6KOiXOpu7GX" resolve="R1" />
+      </node>
+      <node concept="30bXRB" id="gZAb_UkrKs" role="22T1sL">
+        <property role="30bXRw" value="20" />
+      </node>
+      <node concept="1YqvhI" id="gZAb_UlILf" role="lGtFl">
+        <node concept="30czhn" id="gZAb_UlNEH" role="2tfTHu">
+          <node concept="1QScDb" id="gZAb_UlNEI" role="30czhm">
+            <node concept="1dhIX1" id="gZAb_UlILL" role="30czhm">
+              <ref role="2AP8QQ" node="gZAb_UlANh" />
+            </node>
+            <node concept="21mTOb" id="gZAb_UlIOE" role="1QScD9">
+              <ref role="21mTOu" node="gZAb_Ukson" resolve="Mech1" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1Gr_vC" id="6KOiXOpu6G7" role="1GkwI0">
       <property role="TrG5h" value="L0" />
@@ -419,6 +509,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1Yr_70" id="gZAb_UlANh" role="lGtFl">
+      <ref role="2AHaH2" node="gZAb_Uksoj" resolve="MyProduct" />
     </node>
   </node>
   <node concept="_iOnU" id="6KOiXOpsMcI">
@@ -1311,6 +1404,73 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="12icEM" id="gZAb_Uksod">
+    <property role="TrG5h" value="MyProductLine" />
+    <node concept="12i7jc" id="gZAb_Uksoe" role="12i2BX" />
+    <node concept="12iwZl" id="gZAb_Uksoi" role="12i2BX">
+      <property role="bVyBI" value="-328517525" />
+      <node concept="12iwV3" id="gZAb_Uksoj" role="12iwV8">
+        <property role="TrG5h" value="MyProduct" />
+        <node concept="12iwV3" id="gZAb_Ukson" role="12iwVe">
+          <property role="TrG5h" value="Mech1" />
+        </node>
+        <node concept="12iwV3" id="gZAb_Uksop" role="12iwVe">
+          <property role="TrG5h" value="Mech2" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="gZAb_Uksos" role="12i2BX" />
+    <node concept="12i7jc" id="gZAb_Uksoz" role="12i2BX" />
+    <node concept="rqKB5" id="gZAb_UksoO" role="12i2BX">
+      <property role="x_mqE" value="5QKr2dW9gDW/userTrue" />
+      <property role="26YOJW" value="" />
+      <property role="bVyBI" value="-1672516536" />
+      <property role="bROok" value="-328517525" />
+      <property role="1n_0Gn" value="true" />
+      <property role="TrG5h" value="Basic" />
+      <property role="0Rz4W" value="2135494542" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="gZAb_Uksoj" resolve="MyProduct" />
+      <node concept="rqCGG" id="gZAb_UksoR" role="rqCGo">
+        <node concept="rqKBd" id="gZAb_UksoS" role="rqKBa">
+          <property role="x_mqE" value="5QKr2dW9gDW/userTrue" />
+          <ref role="rqKBe" node="gZAb_Ukson" resolve="Mech1" />
+          <node concept="rqCGG" id="gZAb_UksoU" role="rqCGo" />
+        </node>
+        <node concept="rqKBd" id="gZAb_UksoV" role="rqKBa">
+          <property role="x_mqE" value="5QKr2dW9gE1/userFalse" />
+          <ref role="rqKBe" node="gZAb_Uksop" resolve="Mech2" />
+          <node concept="rqCGG" id="gZAb_UksoX" role="rqCGo" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="gZAb_UksvO" role="12i2BX" />
+    <node concept="rqKB5" id="gZAb_Ukswj" role="12i2BX">
+      <property role="x_mqE" value="5QKr2dW9gDW/userTrue" />
+      <property role="26YOJW" value="" />
+      <property role="bVyBI" value="1869260757" />
+      <property role="bROok" value="-328517525" />
+      <property role="1n_0Gn" value="true" />
+      <property role="0Rz4W" value="-582235864" />
+      <property role="TrG5h" value="High" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="gZAb_Uksoj" resolve="MyProduct" />
+      <node concept="rqCGG" id="gZAb_Ukswm" role="rqCGo">
+        <node concept="rqKBd" id="gZAb_Ukswn" role="rqKBa">
+          <property role="x_mqE" value="5QKr2dW9gDW/userTrue" />
+          <ref role="rqKBe" node="gZAb_Ukson" resolve="Mech1" />
+          <node concept="rqCGG" id="gZAb_Ukswp" role="rqCGo" />
+        </node>
+        <node concept="rqKBd" id="gZAb_Ukswq" role="rqKBa">
+          <property role="x_mqE" value="5QKr2dW9gDW/userTrue" />
+          <ref role="rqKBe" node="gZAb_Uksop" resolve="Mech2" />
+          <node concept="rqCGG" id="gZAb_Uksws" role="rqCGo" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="gZAb_Uks_c" role="12i2BX" />
+    <node concept="12i7jc" id="gZAb_Uks_y" role="12i2BX" />
   </node>
 </model>
 

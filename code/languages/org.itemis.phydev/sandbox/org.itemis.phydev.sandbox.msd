@@ -30,6 +30,8 @@
     <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="5" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base" version="0" />
+    <language slang="l:b4244272-c048-403b-93da-1c4a1df18d3f:org.iets3.analysis.logic.operator" version="0" />
+    <language slang="l:64cec9cf-f998-418c-830c-383b6bfdadb0:org.iets3.analysis.solversupport" version="2" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
     <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="5" />
@@ -41,9 +43,15 @@
     <language slang="l:d441fba0-f46b-43cd-b723-dad7b65da615:org.iets3.core.expr.tests" version="1" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="4" />
     <language slang="l:63c1aad1-e2db-439c-a30a-02b5e0bc80f3:org.iets3.core.expr.tracing" version="0" />
+    <language slang="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.featuremodel" version="20" />
+    <language slang="l:004abe72-40c7-4b05-ada1-aad01d6b0f74:org.iets3.featuremodel.extensions" version="0" />
+    <language slang="l:b23bb7a9-d572-4c72-9e90-242196573c57:org.iets3.variability.appl.baseLanguage" version="0" />
+    <language slang="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts" version="1" />
+    <language slang="l:9914d82b-ab8a-44d1-9c65-9f2954c3b4df:org.iets3.variability.artifacts.typesystem" version="0" />
     <language slang="l:769783b6-17f4-40a3-bdc7-88b8332300f2:org.itemis.phydev" version="0" />
     <language slang="l:d9bfe14c-f389-4e27-be1b-5c11336c3fe5:org.itemis.phydev.gen.html" version="0" />
     <language slang="l:9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0:org.itemis.phydev.gen.world2d" version="0" />
+    <language slang="l:283dd47d-47ac-4322-8fbf-01035e4f4743:org.itemis.phydev.variability" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -62,6 +70,7 @@
     <module reference="197e2a32-ff26-4358-af5c-731ae2b35f83(org.iets3.core.expr.simpleTypes.interpreter)" version="0" />
     <module reference="7a4a0378-45ed-4612-99b5-b72416acc630(org.iets3.core.expr.tests.interpreter)" version="0" />
     <module reference="9c16e638-297e-41f0-b9e1-a1e04a4aea54(org.iets3.core.expr.toplevel.interpreter)" version="0" />
+    <module reference="869cf7f1-8c42-4687-a1fd-0274f773c109(org.iets3.variability.ide)" version="0" />
     <module reference="e5d9c8b2-888d-4711-b7f3-2b02600ffd38(org.itemis.phydev.sandbox)" version="0" />
     <module reference="2614fab6-e994-4127-9a5d-8c8cd7ba2833(test.in.expr.os)" version="0" />
   </dependencyVersions>
