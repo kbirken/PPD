@@ -11,8 +11,8 @@ def authorization = credentials
 apply plugin: 'download-jbr'
 
 // Project version
-def major = '2021'
-def minor = '3'
+def major = '2022'
+def minor = '2'
 
 // Gradle version is specified in gradle(gradle-wrapper.properties)
 
