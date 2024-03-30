@@ -21,7 +21,7 @@
         <property id="7610271175623264037" name="a" index="1qX_DP" />
         <property id="7610271175623264040" name="b" index="1qX_DS" />
       </concept>
-      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ng" index="1QQ391">
+      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ngI" index="1QQ391">
         <property id="1276016897774517103" name="isPoint" index="2eyUBO" />
         <property id="7610012764282943453" name="density" index="1QQsmn" />
         <property id="7610012764282942553" name="isFixed" index="1QQsoj" />
@@ -31,7 +31,7 @@
         <property id="7610012764282865560" name="angle" index="1QQfni" />
         <property id="7610012764282885759" name="withCollisions" index="1QQigP" />
       </concept>
-      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ng" index="1QQfnF">
+      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ngI" index="1QQfnF">
         <property id="7610012764282865570" name="_width" index="1QQfnC" />
         <property id="7610012764282865572" name="_height" index="1QQfnI" />
       </concept>
@@ -50,7 +50,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">

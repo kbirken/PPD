@@ -11,8 +11,8 @@ def authorization = credentials
 apply plugin: 'download-jbr'
 
 // Project version
-def major = '2022'
-def minor = '3'
+def major = '2023'
+def minor = '2'
 
 // Gradle version is specified in gradle(gradle-wrapper.properties)
 
@@ -28,7 +28,7 @@ downloadJbr {
 
 ext.artifactsDir = new File(buildDir, 'artifacts')
 // Dependency versions
-ext.mpsVersion = "$major.$minor." + '1'
+ext.mpsVersion = "$major.$minor"
 
 ext.iets3OpenSourceVersion = "$major.$minor.+"
 ext.iets3CoreVersion = "$major.$minor.+"
