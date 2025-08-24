@@ -88,10 +88,15 @@
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" id="MPS.Kotlin" />
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.ThirdParty" id="MPS.ThirdParty" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" id="com.mbeddr.mpsutil.contextactions" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" id="com.mbeddr.mpsutil.editor.querylist" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" id="com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" id="com.mbeddr.mpsutil.jung" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" id="com.mbeddr.mpsutil.plantuml" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences" id="com.mbeddr.mpsutil.spreferences" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" id="com.mbeddr.mpsutil.suppresswarning" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" id="com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" id="de.itemis.mps.selection" />
@@ -100,6 +105,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" id="de.itemis.mps.editor.diagram" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" id="de.itemis.mps.editor.widgets" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells" id="de.itemis.mps.grammarcells" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" id="de.itemis.mps.utils" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.stubs.batik" id="de.itemis.stubs.batik" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.stubs.xml" id="de.itemis.stubs.xml" />
@@ -110,11 +116,13 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" id="org.apache.commons" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" id="de.slisson.mps.editor.multiline" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" id="de.slisson.mps.richtext" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-git4idea" id="jetbrains.mps.git4idea.stubs" />
       <plugin path="${artifacts.mps}/plugins/mps-httpsupport" id="jetbrains.mps.ide.httpsupport" />
+      <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />

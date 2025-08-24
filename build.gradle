@@ -1,7 +1,7 @@
 import de.itemis.mps.gradle.*
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version  '1.16.+'
+    id 'de.itemis.mps.gradle.common' version  '1.29.+'
     id 'nu.studer.credentials' version '3.0'
 }
 
@@ -11,8 +11,8 @@ def authorization = credentials
 apply plugin: 'download-jbr'
 
 // Project version
-def major = '2023'
-def minor = '2'
+def major = '2024'
+def minor = '1'
 
 // Gradle version is specified in gradle(gradle-wrapper.properties)
 
@@ -23,7 +23,7 @@ configurations {
 }
 
 downloadJbr {
-    jbrVersion = '17.0.8.1-b1000.32'
+    jbrVersion = '17.0.11-b1207.30'
 }
 
 ext.artifactsDir = new File(buildDir, 'artifacts')

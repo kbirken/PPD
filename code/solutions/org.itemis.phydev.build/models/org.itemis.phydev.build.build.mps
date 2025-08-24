@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
@@ -218,6 +218,9 @@
       <property role="m$_wk" value="org.itemis.phydev" />
       <node concept="m$_yC" id="Ji$st3HsMX" role="m$_yJ">
         <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
+      </node>
+      <node concept="m$_yC" id="3m7OP7e6Ck6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:NMVW79y25x" />
       </node>
       <node concept="3_J27D" id="Ji$st3HsJq" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HsLP" role="3MwsjC">
