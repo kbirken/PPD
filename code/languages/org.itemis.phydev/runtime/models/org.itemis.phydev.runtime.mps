@@ -2135,7 +2135,7 @@
                     <node concept="1rXfSq" id="1CLwGpRjn7e" role="3clFbG">
                       <ref role="37wK5l" node="1CLwGpRjizQ" resolve="collidesWith" />
                       <node concept="37vLTw" id="1CLwGpRjn7f" role="37wK5m">
-                        <ref role="3cqZAo" node="4VRf$SIygRM" />
+                        <ref role="3cqZAo" node="4VRf$SIygRM" resolve="it" />
                       </node>
                       <node concept="37vLTw" id="1CLwGpRjn7g" role="37wK5m">
                         <ref role="3cqZAo" node="1CLwGpRj8Ey" resolve="pos" />

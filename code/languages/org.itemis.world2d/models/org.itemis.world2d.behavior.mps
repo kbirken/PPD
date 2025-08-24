@@ -304,7 +304,7 @@
                         <node concept="2OqwBi" id="6At7l0NuUVt" role="2Oq$k0">
                           <node concept="2OqwBi" id="6At7l0NuR25" role="2Oq$k0">
                             <node concept="37vLTw" id="6At7l0NuQpB" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4VRf$SIygRH" />
+                              <ref role="3cqZAo" node="4VRf$SIygRH" resolve="it" />
                             </node>
                             <node concept="3Tsc0h" id="6At7l0NuRNA" role="2OqNvi">
                               <ref role="3TtcxE" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
@@ -789,7 +789,7 @@
                             <node concept="3EllGN" id="6At7l0LZfBQ" role="3clFbG">
                               <node concept="2OqwBi" id="6At7l0LZfBR" role="3ElVtu">
                                 <node concept="37vLTw" id="6At7l0LZfBS" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4VRf$SIygRJ" />
+                                  <ref role="3cqZAo" node="4VRf$SIygRJ" resolve="it" />
                                 </node>
                                 <node concept="3TrEf2" id="6At7l0LZfBT" role="2OqNvi">
                                   <ref role="3Tt5mk" to="wfa7:6At7l0LYYLH" resolve="body" />

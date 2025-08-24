@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet languageLevel="JAVA_8" type="java" compile="mps" classes="mps" ext="yes">
+    <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/libs/jbox2d-library-2.3.1-SNAPSHOT.jar" />
     </facet>

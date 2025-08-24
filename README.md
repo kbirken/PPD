@@ -3,7 +3,7 @@ Physical Product Developer with MPS
 
 ## Setup
 
-Download and install MPS 2023.2 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture.
+Download and install MPS 2023.3 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture. NOTE: the build scripts use 2023.2-based artifacts. This is OK, since there is only a small migration in 2023.3 that shouldn't affect functionality.
 
 This project will use the open-source platform extensions `mbeddr.platform` and `iets3.opensource`. We are not using the latest MPS version in order to have stable platform components available.
 
