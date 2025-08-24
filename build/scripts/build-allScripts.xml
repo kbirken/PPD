@@ -129,6 +129,7 @@
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.build.os" id="org.iets3.build.os" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <chunk>
         <module file="${phydev.home}/code/solutions/org.itemis.phydev.build/org.itemis.phydev.build.msd" />
       </chunk>

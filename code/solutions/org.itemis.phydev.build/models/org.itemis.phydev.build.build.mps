@@ -220,7 +220,7 @@
         <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
       <node concept="m$_yC" id="3m7OP7e6Ck6" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:NMVW79y25x" />
+        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
       </node>
       <node concept="3_J27D" id="Ji$st3HsJq" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HsLP" role="3MwsjC">
