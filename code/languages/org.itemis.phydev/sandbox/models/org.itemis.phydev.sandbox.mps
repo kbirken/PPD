@@ -6,7 +6,7 @@
     <use id="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" name="org.itemis.phydev.gen.world2d" version="0" />
     <use id="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" name="org.itemis.phydev.gen.html" version="0" />
     <use id="3d42449e-9670-4233-9f68-ba0596ae57f9" name="org.itemis.world2d" version="0" />
-    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="2" />
+    <use id="8bb1251e-eae5-47ab-9843-33adfae8edaa" name="org.iets3.core.expr.util" version="7" />
     <devkit ref="c4e521ab-b605-4ef9-a7c3-68075da058f0(org.iets3.core.expr.core.devkit)" />
   </languages>
   <imports />
@@ -98,7 +98,7 @@
         <reference id="7610271175598396478" name="body1" index="1osG_I" />
         <child id="7610271175598396476" name="loc" index="1osG_G" />
       </concept>
-      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ng" index="1QQ391">
+      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ngI" index="1QQ391">
         <property id="1276016897774517103" name="isPoint" index="2eyUBO" />
         <property id="7610012764282943453" name="density" index="1QQsmn" />
         <property id="7610012764282942553" name="isFixed" index="1QQsoj" />
@@ -108,7 +108,7 @@
         <property id="7610012764282865560" name="angle" index="1QQfni" />
         <property id="7610012764282885759" name="withCollisions" index="1QQigP" />
       </concept>
-      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ng" index="1QQfnF">
+      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ngI" index="1QQfnF">
         <property id="7610012764282865570" name="_width" index="1QQfnC" />
         <property id="7610012764282865572" name="_height" index="1QQfnI" />
       </concept>
@@ -2135,7 +2135,7 @@
               <ref role="5mhpJ" node="56ab_KnU9gR" resolve="RecordHigh" />
             </node>
             <node concept="1afdae" id="56ab_KnU9eh" role="30dEsF">
-              <ref role="1afue_" node="56ab_KnU8SG" resolve="x" />
+              <ref role="1afue_" node="56ab_KnU8SG" resolve="type" />
             </node>
           </node>
         </node>
