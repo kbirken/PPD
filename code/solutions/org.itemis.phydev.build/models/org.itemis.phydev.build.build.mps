@@ -15,11 +15,11 @@
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="ng" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
-      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
+      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="ng" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
@@ -48,7 +48,7 @@
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -78,7 +78,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -174,7 +174,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -193,7 +193,7 @@
         <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
       </node>
       <node concept="m$_yC" id="Ji$st3HnSy" role="m$_yJ">
-        <ref role="m$_y1" to="ip48:64GCIgM55Fn" resolve="org.iets3.build.os" />
+        <ref role="m$_y1" to="ip48:64GCIgM55Fn" />
       </node>
       <node concept="3_J27D" id="Ji$st3HnNp" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HnPZ" role="3MwsjC">
@@ -211,16 +211,16 @@
         </node>
       </node>
       <node concept="m$_yB" id="Ji$st3HnQj" role="m$_yh">
-        <ref role="m$_yA" node="Ji$st3HkJ8" resolve="org.itemis.phydev.build" />
+        <ref role="m$_yA" node="Ji$st3HkJ8" />
       </node>
     </node>
     <node concept="m$_wf" id="Ji$st3HsJo" role="3989C9">
       <property role="m$_wk" value="org.itemis.phydev" />
       <node concept="m$_yC" id="Ji$st3HsMX" role="m$_yJ">
-        <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
+        <ref role="m$_y1" to="ip48:5wLtKNeSRRD" />
       </node>
       <node concept="m$_yC" id="3m7OP7e6Ck6" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
+        <ref role="m$_y1" to="al5i:NMVW79y25x" />
       </node>
       <node concept="3_J27D" id="Ji$st3HsJq" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HsLP" role="3MwsjC">
@@ -238,10 +238,10 @@
         </node>
       </node>
       <node concept="m$f5U" id="Ji$st3H$g$" role="m$_yh">
-        <ref role="m$f5T" node="Ji$st3FDQm" resolve="phydev" />
+        <ref role="m$f5T" node="Ji$st3FDQm" />
       </node>
       <node concept="m$f5U" id="5sn4YBkdH28" role="m$_yh">
-        <ref role="m$f5T" node="5sn4YBkcRDe" resolve="world2d" />
+        <ref role="m$f5T" node="5sn4YBkcRDe" />
       </node>
     </node>
     <node concept="2G$12M" id="Ji$st3HkGr" role="3989C9">
@@ -251,7 +251,7 @@
         <property role="TrG5h" value="org.itemis.phydev.build" />
         <property role="3LESm3" value="6fbcaa51-7865-4de3-9f36-bfe4d9ef9c05" />
         <node concept="398BVA" id="Ji$st3HkJj" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="Ji$st3HkJB" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="Ji$st3HkJU" role="2Ry0An">
@@ -267,7 +267,7 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3HkKD" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3HkKE" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" resolve="org.iets3.opensource.build" />
+            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3HkKF" role="3bR37C">
@@ -277,7 +277,7 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3HkKH" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3HkKI" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" />
           </node>
         </node>
         <node concept="1BupzO" id="Ji$st3HkKO" role="3bR31x">
@@ -286,7 +286,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="Ji$st3HkKP" role="1HemKq">
             <node concept="398BVA" id="Ji$st3HkKJ" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3HkKK" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3HkKL" role="2Ry0An">
@@ -307,7 +307,7 @@
         </node>
         <node concept="1SiIV0" id="2Ar3EGnfR3p" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGnfR3q" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" />
           </node>
         </node>
       </node>
@@ -319,7 +319,7 @@
         <property role="TrG5h" value="org.itemis.world2d.runtime" />
         <property role="3LESm3" value="80715590-c3e6-4f55-9f83-69945c0e090a" />
         <node concept="398BVA" id="5sn4YBkcRN8" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="5sn4YBkcRNs" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="5sn4YBkcROu" role="2Ry0An">
@@ -342,7 +342,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="5sn4YBkcRPN" role="1HemKq">
             <node concept="398BVA" id="5sn4YBkcRPG" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="5sn4YBkcRPH" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="5sn4YBkcRPI" role="2Ry0An">
@@ -370,7 +370,7 @@
         <property role="TrG5h" value="org.itemis.world2d" />
         <property role="3LESm3" value="3d42449e-9670-4233-9f68-ba0596ae57f9" />
         <node concept="398BVA" id="5sn4YBkcRG7" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="5sn4YBkcRGr" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="5sn4YBkcRGP" role="2Ry0An">
@@ -386,7 +386,7 @@
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRHK" role="3bR37C">
           <node concept="3bR9La" id="5sn4YBkcRHL" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" />
           </node>
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRHM" role="3bR37C">
@@ -401,7 +401,7 @@
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRHQ" role="3bR37C">
           <node concept="3bR9La" id="5sn4YBkcRHR" role="1SiIV1">
-            <ref role="3bR37D" node="Ji$st3GiIB" resolve="org.itemis.phydev.runtime" />
+            <ref role="3bR37D" node="Ji$st3GiIB" />
           </node>
         </node>
         <node concept="1BupzO" id="5sn4YBkcRHX" role="3bR31x">
@@ -410,7 +410,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="5sn4YBkcRHY" role="1HemKq">
             <node concept="398BVA" id="5sn4YBkcRHS" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="5sn4YBkcRHT" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="5sn4YBkcRHU" role="2Ry0An">
@@ -431,7 +431,7 @@
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRI0" role="3bR37C">
           <node concept="1Busua" id="5sn4YBkcRI1" role="1SiIV1">
-            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" />
           </node>
         </node>
         <node concept="1yeLz9" id="5sn4YBkcRI2" role="1TViLv">
@@ -443,7 +443,7 @@
             <property role="1HemKv" value="true" />
             <node concept="3LXTmp" id="5sn4YBkcRIa" role="1HemKq">
               <node concept="398BVA" id="5sn4YBkcRI3" role="3LXTmr">
-                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <ref role="398BVh" node="6uyzASnqGGh" />
                 <node concept="2Ry0Ak" id="5sn4YBkcRI4" role="iGT6I">
                   <property role="2Ry0Am" value="code" />
                   <node concept="2Ry0Ak" id="5sn4YBkcRI5" role="2Ry0An">
@@ -467,12 +467,12 @@
           </node>
         </node>
         <node concept="1E0d5M" id="5sn4YBkcRRK" role="1E1XAP">
-          <ref role="1E0d5P" node="5sn4YBkcRKu" resolve="org.itemis.world2d.runtime" />
+          <ref role="1E0d5P" node="5sn4YBkcRKu" />
         </node>
         <node concept="3rtmxn" id="5sn4YBkcRSs" role="3bR31x">
           <node concept="3LXTmp" id="5sn4YBkcRSt" role="3rtmxm">
             <node concept="398BVA" id="5sn4YBkcRSu" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="5sn4YBkcRSv" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="5sn4YBkcRSw" role="2Ry0An">
@@ -490,7 +490,7 @@
         </node>
         <node concept="1SiIV0" id="koV6sN$Dzw" role="3bR37C">
           <node concept="1Busua" id="koV6sN$Dzx" role="1SiIV1">
-            <ref role="1Busuk" to="ip48:5wLtKNeSRRB" resolve="org.iets3.core.base" />
+            <ref role="1Busuk" to="ip48:5wLtKNeSRRB" />
           </node>
         </node>
       </node>
@@ -499,7 +499,7 @@
         <property role="TrG5h" value="org.itemis.world2d.gen.json" />
         <property role="3LESm3" value="0b89126e-fd1d-40f2-89cd-e37f2025923b" />
         <node concept="398BVA" id="3ZJK8lMfS3G" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="3ZJK8lMfS3K" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="3ZJK8lMfS5N" role="2Ry0An">
@@ -516,7 +516,7 @@
         <node concept="3rtmxn" id="3ZJK8lMfS5Z" role="3bR31x">
           <node concept="3LXTmp" id="3ZJK8lMfS60" role="3rtmxm">
             <node concept="398BVA" id="3ZJK8lMfS61" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfS62" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfS63" role="2Ry0An">
@@ -538,7 +538,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="3ZJK8lMfS6P" role="1HemKq">
             <node concept="398BVA" id="3ZJK8lMfS6J" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfS6K" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfS6L" role="2Ry0An">
@@ -562,17 +562,17 @@
           <property role="3LESm3" value="62e9de45-e6ba-4263-8946-c665259eabad" />
           <node concept="1SiIV0" id="3ZJK8lMfS6S" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfS6T" role="1SiIV1">
-              <ref role="3bR37D" node="3ZJK8lMfyOb" resolve="org.itemis.phydev.gen.world2d" />
+              <ref role="3bR37D" node="3ZJK8lMfyOb" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfS6U" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfS6V" role="1SiIV1">
-              <ref role="3bR37D" to="al5i:6o5cjw5gEyi" resolve="com.mbeddr.mpsutil.json" />
+              <ref role="3bR37D" to="al5i:6o5cjw5gEyi" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfS6W" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfS6X" role="1SiIV1">
-              <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+              <ref role="3bR37D" node="5sn4YBkcRFW" />
             </node>
           </node>
           <node concept="1BupzO" id="3ZJK8lMfS74" role="3bR31x">
@@ -581,7 +581,7 @@
             <property role="1HemKv" value="true" />
             <node concept="3LXTmp" id="3ZJK8lMfS75" role="1HemKq">
               <node concept="398BVA" id="3ZJK8lMfS6Y" role="3LXTmr">
-                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <ref role="398BVh" node="6uyzASnqGGh" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfS6Z" role="iGT6I">
                   <property role="2Ry0Am" value="code" />
                   <node concept="2Ry0Ak" id="3ZJK8lMfS70" role="2Ry0An">
@@ -613,7 +613,7 @@
         <property role="TrG5h" value="org.itemis.phydev.runtime" />
         <property role="3LESm3" value="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0" />
         <node concept="398BVA" id="Ji$st3GiIH" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="Ji$st3GiIN" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="Ji$st3GiIX" role="2Ry0An">
@@ -639,7 +639,7 @@
         <node concept="1SiIV0" id="Ji$st3GiJn" role="3bR37C">
           <node concept="1BurEX" id="Ji$st3GiJo" role="1SiIV1">
             <node concept="398BVA" id="Ji$st3GiJg" role="1BurEY">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3GiJh" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3GiJi" role="2Ry0An">
@@ -667,7 +667,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="Ji$st3GiJw" role="1HemKq">
             <node concept="398BVA" id="Ji$st3GiJp" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3GiJq" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3GiJr" role="2Ry0An">
@@ -695,7 +695,7 @@
         <property role="TrG5h" value="org.itemis.phydev.plugin" />
         <property role="3LESm3" value="552ddae7-173a-41b2-8758-b576a7f7a851" />
         <node concept="398BVA" id="Ji$st3GiSJ" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="Ji$st3GiT3" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="Ji$st3GiTf" role="2Ry0An">
@@ -721,12 +721,12 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3GiUf" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiUg" role="1SiIV1">
-            <ref role="3bR37D" node="Ji$st3GiIB" resolve="org.itemis.phydev.runtime" />
+            <ref role="3bR37D" node="Ji$st3GiIB" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3GiUh" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiUi" role="1SiIV1">
-            <ref role="3bR37D" node="Ji$st3GiLU" resolve="org.itemis.phydev" />
+            <ref role="3bR37D" node="Ji$st3GiLU" />
           </node>
         </node>
         <node concept="1BupzO" id="Ji$st3GiUo" role="3bR31x">
@@ -735,7 +735,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="Ji$st3GiUp" role="1HemKq">
             <node concept="398BVA" id="Ji$st3GiUj" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3GiUk" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3GiUl" role="2Ry0An">
@@ -756,12 +756,12 @@
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRQd" role="3bR37C">
           <node concept="3bR9La" id="5sn4YBkcRQe" role="1SiIV1">
-            <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+            <ref role="3bR37D" node="5sn4YBkcRFW" />
           </node>
         </node>
         <node concept="1SiIV0" id="pX_ysx3Xri" role="3bR37C">
           <node concept="3bR9La" id="pX_ysx3Xrj" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" />
           </node>
         </node>
       </node>
@@ -770,7 +770,7 @@
         <property role="TrG5h" value="org.itemis.phydev" />
         <property role="3LESm3" value="769783b6-17f4-40a3-bdc7-88b8332300f2" />
         <node concept="398BVA" id="Ji$st3GiMy" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="Ji$st3GiMQ" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="Ji$st3GiN9" role="2Ry0An">
@@ -786,7 +786,7 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3GiO7" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiO8" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3GiO9" role="3bR37C">
@@ -796,12 +796,12 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOb" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiOc" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:4C_RnzfEE1P" resolve="org.iets3.core.expr.base.runtime" />
+            <ref role="3bR37D" to="ip48:4C_RnzfEE1P" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOd" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiOe" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+            <ref role="3bR37D" to="ip48:5wLtKNeSRQd" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOh" role="3bR37C">
@@ -816,7 +816,7 @@
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOl" role="3bR37C">
           <node concept="3bR9La" id="Ji$st3GiOm" role="1SiIV1">
-            <ref role="3bR37D" node="Ji$st3GiIB" resolve="org.itemis.phydev.runtime" />
+            <ref role="3bR37D" node="Ji$st3GiIB" />
           </node>
         </node>
         <node concept="1BupzO" id="Ji$st3GiOs" role="3bR31x">
@@ -825,7 +825,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="Ji$st3GiOt" role="1HemKq">
             <node concept="398BVA" id="Ji$st3GiOn" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3GiOo" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3GiOp" role="2Ry0An">
@@ -845,16 +845,16 @@
           </node>
         </node>
         <node concept="1E0d5M" id="Ji$st3GiOv" role="1E1XAP">
-          <ref role="1E0d5P" node="Ji$st3GiIB" resolve="org.itemis.phydev.runtime" />
+          <ref role="1E0d5P" node="Ji$st3GiIB" />
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOw" role="3bR37C">
           <node concept="1Busua" id="Ji$st3GiOx" role="1SiIV1">
-            <ref role="1Busuk" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+            <ref role="1Busuk" to="ip48:5wLtKNeSRPD" />
           </node>
         </node>
         <node concept="1SiIV0" id="Ji$st3GiOy" role="3bR37C">
           <node concept="1Busua" id="Ji$st3GiOz" role="1SiIV1">
-            <ref role="1Busuk" to="ip48:49WTic8jAD5" resolve="org.iets3.core.expr.lambda" />
+            <ref role="1Busuk" to="ip48:49WTic8jAD5" />
           </node>
         </node>
         <node concept="1yeLz9" id="Ji$st3GiO$" role="1TViLv">
@@ -866,7 +866,7 @@
             <property role="1HemKv" value="true" />
             <node concept="3LXTmp" id="Ji$st3GiOG" role="1HemKq">
               <node concept="398BVA" id="Ji$st3GiO_" role="3LXTmr">
-                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <ref role="398BVh" node="6uyzASnqGGh" />
                 <node concept="2Ry0Ak" id="Ji$st3GiOA" role="iGT6I">
                   <property role="2Ry0Am" value="code" />
                   <node concept="2Ry0Ak" id="Ji$st3GiOB" role="2Ry0An">
@@ -892,7 +892,7 @@
         <node concept="3rtmxn" id="Ji$st3HkCa" role="3bR31x">
           <node concept="3LXTmp" id="Ji$st3HkCb" role="3rtmxm">
             <node concept="398BVA" id="Ji$st3HkCc" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3HkCd" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3HkCe" role="2Ry0An">
@@ -910,17 +910,17 @@
         </node>
         <node concept="1SiIV0" id="5sn4YBkcRQk" role="3bR37C">
           <node concept="3bR9La" id="5sn4YBkcRQl" role="1SiIV1">
-            <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+            <ref role="3bR37D" node="5sn4YBkcRFW" />
           </node>
         </node>
         <node concept="1SiIV0" id="pX_yswHPpr" role="3bR37C">
           <node concept="3bR9La" id="pX_yswHPps" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" />
           </node>
         </node>
         <node concept="1SiIV0" id="pX_yswZNTw" role="3bR37C">
           <node concept="3bR9La" id="pX_yswZNTx" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" />
           </node>
         </node>
         <node concept="1SiIV0" id="2Ar3EGnfR4e" role="3bR37C">
@@ -934,7 +934,7 @@
         <property role="TrG5h" value="org.itemis.phydev.gen.html" />
         <property role="3LESm3" value="d9bfe14c-f389-4e27-be1b-5c11336c3fe5" />
         <node concept="398BVA" id="3ZJK8lMfhwd" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="3ZJK8lMfhwh" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="3ZJK8lMfhwm" role="2Ry0An">
@@ -951,7 +951,7 @@
         <node concept="3rtmxn" id="3ZJK8lMfhwy" role="3bR31x">
           <node concept="3LXTmp" id="3ZJK8lMfhwz" role="3rtmxm">
             <node concept="398BVA" id="3ZJK8lMfhw$" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfhw_" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfhwA" role="2Ry0An">
@@ -973,7 +973,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="3ZJK8lMfhxP" role="1HemKq">
             <node concept="398BVA" id="3ZJK8lMfhxJ" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfhxK" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfhxL" role="2Ry0An">
@@ -997,12 +997,12 @@
           <property role="3LESm3" value="d1e8dd11-0055-40f9-aa15-0f31095436f3" />
           <node concept="1SiIV0" id="3ZJK8lMfhxS" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfhxT" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+              <ref role="3bR37D" to="90a9:PE3B26QCrP" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfhxY" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfhxZ" role="1SiIV1">
-              <ref role="3bR37D" node="Ji$st3GiLU" resolve="org.itemis.phydev" />
+              <ref role="3bR37D" node="Ji$st3GiLU" />
             </node>
           </node>
           <node concept="1BupzO" id="3ZJK8lMfhy6" role="3bR31x">
@@ -1011,7 +1011,7 @@
             <property role="1HemKv" value="true" />
             <node concept="3LXTmp" id="3ZJK8lMfhy7" role="1HemKq">
               <node concept="398BVA" id="3ZJK8lMfhy0" role="3LXTmr">
-                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <ref role="398BVh" node="6uyzASnqGGh" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfhy1" role="iGT6I">
                   <property role="2Ry0Am" value="code" />
                   <node concept="2Ry0Ak" id="3ZJK8lMfhy2" role="2Ry0An">
@@ -1040,7 +1040,7 @@
         <property role="TrG5h" value="org.itemis.phydev.gen.world2d" />
         <property role="3LESm3" value="9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0" />
         <node concept="398BVA" id="3ZJK8lMfyQv" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <ref role="398BVh" node="6uyzASnqGGh" />
           <node concept="2Ry0Ak" id="3ZJK8lMfyQz" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="3ZJK8lMfyQF" role="2Ry0An">
@@ -1057,7 +1057,7 @@
         <node concept="3rtmxn" id="3ZJK8lMfyQR" role="3bR31x">
           <node concept="3LXTmp" id="3ZJK8lMfyQS" role="3rtmxm">
             <node concept="398BVA" id="3ZJK8lMfyQT" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfyQU" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfyQV" role="2Ry0An">
@@ -1079,7 +1079,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="3ZJK8lMfySl" role="1HemKq">
             <node concept="398BVA" id="3ZJK8lMfySf" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="3ZJK8lMfySg" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfySh" role="2Ry0An">
@@ -1103,12 +1103,12 @@
           <property role="3LESm3" value="5eb88c59-7c7c-461c-bd9e-520b228199ae" />
           <node concept="1SiIV0" id="3ZJK8lMfySo" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfySp" role="1SiIV1">
-              <ref role="3bR37D" node="5sn4YBkcRFW" resolve="org.itemis.world2d" />
+              <ref role="3bR37D" node="5sn4YBkcRFW" />
             </node>
           </node>
           <node concept="1SiIV0" id="3ZJK8lMfySq" role="3bR37C">
             <node concept="3bR9La" id="3ZJK8lMfySr" role="1SiIV1">
-              <ref role="3bR37D" node="Ji$st3GiLU" resolve="org.itemis.phydev" />
+              <ref role="3bR37D" node="Ji$st3GiLU" />
             </node>
           </node>
           <node concept="1BupzO" id="3ZJK8lMfySy" role="3bR31x">
@@ -1117,7 +1117,7 @@
             <property role="1HemKv" value="true" />
             <node concept="3LXTmp" id="3ZJK8lMfySz" role="1HemKq">
               <node concept="398BVA" id="3ZJK8lMfySs" role="3LXTmr">
-                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <ref role="398BVh" node="6uyzASnqGGh" />
                 <node concept="2Ry0Ak" id="3ZJK8lMfySt" role="iGT6I">
                   <property role="2Ry0Am" value="code" />
                   <node concept="2Ry0Ak" id="3ZJK8lMfySu" role="2Ry0An">
@@ -1145,31 +1145,31 @@
     <node concept="2sgV4H" id="5wLtKNeSRPp" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5wLtKNeSRPq" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPb" resolve="mps.home" />
+        <ref role="398BVh" node="6uyzASnqGPb" />
       </node>
     </node>
     <node concept="2sgV4H" id="jS_CvxPMqM" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" />
       <node concept="398BVA" id="jS_CvxPMrd" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <ref role="398BVh" node="6uyzASnqGPL" />
         <node concept="2Ry0Ak" id="6uyzASnqGQM" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="jS_CvxPGKG" role="1l3spa">
-      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" />
       <node concept="398BVA" id="jS_CvxPGLW" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <ref role="398BVh" node="6uyzASnqGPL" />
         <node concept="2Ry0Ak" id="jS_CvxPGUJ" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" />
       <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <ref role="398BVh" node="6uyzASnqGPL" />
         <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
@@ -1189,7 +1189,7 @@
     <node concept="398rNT" id="6uyzASnqGPb" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="6uyzASnqGPi" role="398pKh">
-        <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+        <ref role="398BVh" node="6uyzASnqGGh" />
         <node concept="2Ry0Ak" id="6uyzASnqGPl" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="6uyzASnqGPo" role="2Ry0An">
@@ -1201,7 +1201,7 @@
     <node concept="398rNT" id="6uyzASnqGPL" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="6uyzASnqGPW" role="398pKh">
-        <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+        <ref role="398BVh" node="6uyzASnqGGh" />
         <node concept="2Ry0Ak" id="6uyzASnqGQ1" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="6uyzASnqGQ6" role="2Ry0An">
@@ -1215,15 +1215,15 @@
     <node concept="55IIr" id="6uyzASnqGG1" role="auvoZ" />
     <node concept="1l3spV" id="6uyzASnqGG2" role="1l3spN">
       <node concept="m$_wl" id="Ji$st3HsMt" role="39821P">
-        <ref role="m_rDy" node="Ji$st3HsJo" resolve="org.itemis.phydev" />
+        <ref role="m_rDy" node="Ji$st3HsJo" />
         <node concept="pUk6x" id="Ji$st3HsMN" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="Ji$st3HnTv" role="39821P">
-        <ref role="m_rDy" node="Ji$st3HnNn" resolve="org.itemis.phydev.build" />
+        <ref role="m_rDy" node="Ji$st3HnNn" />
         <node concept="398223" id="Ji$st3HAo5" role="39821P">
           <node concept="28jJK3" id="Ji$st3HAot" role="39821P">
             <node concept="398BVA" id="Ji$st3HAoE" role="28jJRO">
-              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <ref role="398BVh" node="6uyzASnqGGh" />
               <node concept="2Ry0Ak" id="Ji$st3HAoP" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="Ji$st3HAoU" role="2Ry0An">
@@ -1267,7 +1267,7 @@
     <node concept="22LTRH" id="5sn4YBkhsWP" role="1hWBAP">
       <property role="TrG5h" value="test.org.itemis.phydev" />
       <node concept="22LTRM" id="5sn4YBkht0J" role="22LTRK">
-        <ref role="22LTRN" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
+        <ref role="22LTRN" node="5sn4YBkhsM9" />
       </node>
       <node concept="24cAiW" id="5sn4YBkht2G" role="24cAkG">
         <node concept="NbPM2" id="5sn4YBkht2J" role="24c_eh">
@@ -1302,7 +1302,7 @@
         <property role="3LESm3" value="be85a5ff-e3d1-4cad-8c93-8332efdbecd4" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="5sn4YBkhsMd" role="3LF7KH">
-          <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+          <ref role="398BVh" node="5sn4YBkhrz4" />
           <node concept="2Ry0Ak" id="5sn4YBkhsMj" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="5sn4YBkhsMo" role="2Ry0An">
@@ -1322,7 +1322,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="2OVIZqykHXt" role="1HemKq">
             <node concept="398BVA" id="2OVIZqykHXj" role="3LXTmr">
-              <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+              <ref role="398BVh" node="5sn4YBkhrz4" />
               <node concept="2Ry0Ak" id="2OVIZqykHXk" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="2OVIZqykHXl" role="2Ry0An">
@@ -1346,31 +1346,31 @@
     <node concept="2sgV4H" id="5sn4YBkhrzs" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5sn4YBkhrzt" role="2JcizS">
-        <ref role="398BVh" node="5sn4YBkhrz8" resolve="mps.home" />
+        <ref role="398BVh" node="5sn4YBkhrz8" />
       </node>
     </node>
     <node concept="2sgV4H" id="pX_yswPQga" role="1l3spa">
-      <ref role="1l3spb" node="6uyzASnqGG0" resolve="org.itemis.phydev.build" />
+      <ref role="1l3spb" node="6uyzASnqGG0" />
       <node concept="398BVA" id="pX_yswPQgb" role="2JcizS">
-        <ref role="398BVh" node="1PCOxygkit5" resolve="artifacts.root" />
+        <ref role="398BVh" node="1PCOxygkit5" />
         <node concept="2Ry0Ak" id="5VGitJiENkT" role="iGT6I">
           <property role="2Ry0Am" value="org.itemis.phydev.build" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5sn4YBkhrzu" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" />
       <node concept="398BVA" id="5sn4YBkhrzv" role="2JcizS">
-        <ref role="398BVh" node="5sn4YBkhrzc" resolve="dependencies.root" />
+        <ref role="398BVh" node="5sn4YBkhrzc" />
         <node concept="2Ry0Ak" id="5sn4YBkhrzw" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5sn4YBkhrzx" role="1l3spa">
-      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" />
       <node concept="398BVA" id="5sn4YBkhrzy" role="2JcizS">
-        <ref role="398BVh" node="5sn4YBkhrzc" resolve="dependencies.root" />
+        <ref role="398BVh" node="5sn4YBkhrzc" />
         <node concept="2Ry0Ak" id="5sn4YBkhrzz" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
         </node>
@@ -1390,13 +1390,13 @@
     <node concept="398rNT" id="5sn4YBkhF7e" role="1l3spd">
       <property role="TrG5h" value="mps.macro.phydev.home" />
       <node concept="398BVA" id="5sn4YBkhFjb" role="398pKh">
-        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <ref role="398BVh" node="5sn4YBkhrz4" />
       </node>
     </node>
     <node concept="398rNT" id="5sn4YBkhrz8" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="5sn4YBkhrz9" role="398pKh">
-        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <ref role="398BVh" node="5sn4YBkhrz4" />
         <node concept="2Ry0Ak" id="5sn4YBkhrza" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="5sn4YBkhrzb" role="2Ry0An">
@@ -1408,7 +1408,7 @@
     <node concept="398rNT" id="5sn4YBkhrzc" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="5sn4YBkhrzd" role="398pKh">
-        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <ref role="398BVh" node="5sn4YBkhrz4" />
         <node concept="2Ry0Ak" id="5sn4YBkhrze" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="5sn4YBkhrzf" role="2Ry0An">
@@ -1420,7 +1420,7 @@
     <node concept="398rNT" id="1PCOxygkit5" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="1PCOxygkit6" role="398pKh">
-        <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+        <ref role="398BVh" node="5sn4YBkhrz4" />
         <node concept="2Ry0Ak" id="1PCOxygkit7" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="5VGitJiENkR" role="2Ry0An">
@@ -1435,7 +1435,7 @@
     <node concept="55IIr" id="5sn4YBkhr8b" role="auvoZ" />
     <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
       <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
-        <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
+        <ref role="L2wRA" node="5sn4YBkhsM9" />
       </node>
     </node>
   </node>
