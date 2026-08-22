@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="6" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="8" />
     <use id="769783b6-17f4-40a3-bdc7-88b8332300f2" name="org.itemis.phydev" version="0" />
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="6" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
@@ -17,7 +17,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
@@ -153,10 +153,10 @@
         <node concept="_fku$" id="3vCiOsXw2HM" role="_fkur" />
         <node concept="AC5g$" id="3vCiOsXw2IM" role="_fkuY">
           <node concept="_emDc" id="3vCiOsXw2In" role="30dEsF">
-            <ref role="_emDf" node="3vCiOsXw2B5" />
+            <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
           </node>
           <node concept="_emDc" id="3vCiOsXw2Kr" role="30dEs_">
-            <ref role="_emDf" node="3vCiOsXw2B5" />
+            <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
           </node>
         </node>
         <node concept="1PgPU0" id="3vCiOsXw2Tk" role="_fkuS">
@@ -174,13 +174,13 @@
           <node concept="1QScDb" id="4h5WJaprNNW" role="30dEs_">
             <node concept="3tbFks" id="4h5WJaprNR1" role="1QScD9" />
             <node concept="_emDc" id="4h5WJaprNKt" role="2lDidJ">
-              <ref role="_emDf" node="3vCiOsXw2B5" />
+              <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
             </node>
           </node>
           <node concept="1QScDb" id="4h5WJaprM9b" role="30dEsF">
             <node concept="3tbFdD" id="4h5WJaprNH7" role="1QScD9" />
             <node concept="_emDc" id="4h5WJaprM8W" role="2lDidJ">
-              <ref role="_emDf" node="3vCiOsXw2B5" />
+              <ref role="_emDf" node="3vCiOsXw2B5" resolve="v1" />
             </node>
           </node>
         </node>

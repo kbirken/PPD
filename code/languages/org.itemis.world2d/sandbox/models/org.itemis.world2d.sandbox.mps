@@ -21,7 +21,7 @@
         <property id="7610271175623264037" name="a" index="1qX_DP" />
         <property id="7610271175623264040" name="b" index="1qX_DS" />
       </concept>
-      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ng" index="1QQ391">
+      <concept id="7610012764282814475" name="org.itemis.world2d.structure.IBody2D" flags="ngI" index="1QQ391">
         <property id="1276016897774517103" name="isPoint" index="2eyUBO" />
         <property id="7610012764282943453" name="density" index="1QQsmn" />
         <property id="7610012764282942553" name="isFixed" index="1QQsoj" />
@@ -31,7 +31,7 @@
         <property id="7610012764282865560" name="angle" index="1QQfni" />
         <property id="7610012764282885759" name="withCollisions" index="1QQigP" />
       </concept>
-      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ng" index="1QQfnF">
+      <concept id="7610012764282865569" name="org.itemis.world2d.structure.ISized2D" flags="ngI" index="1QQfnF">
         <property id="7610012764282865570" name="_width" index="1QQfnC" />
         <property id="7610012764282865572" name="_height" index="1QQfnI" />
       </concept>
@@ -131,8 +131,8 @@
       <property role="3V$3ak" value="3d42449e-9670-4233-9f68-ba0596ae57f9/7610012764282814333/7610012764282814415" />
       <node concept="1osWrZ" id="6At7l0M3Kir" role="8Wnug">
         <property role="TrG5h" value="J1" />
-        <ref role="1osG_I" node="6At7l0M3Ki5" />
-        <ref role="1osG$h" node="6At7l0M3Kid" />
+        <ref role="1osG_I" node="6At7l0M3Ki5" resolve="B1" />
+        <ref role="1osG$h" node="6At7l0M3Kid" resolve="C1" />
         <node concept="1osFrc" id="6At7l0M3Kit" role="1osG_G">
           <property role="1osFrd" value="3.0f" />
           <property role="1osFrf" value="3.0f" />

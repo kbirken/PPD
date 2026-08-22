@@ -149,7 +149,7 @@
     <node concept="3lhOvk" id="3ZJK8lMfD7m" role="3lj3bC">
       <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="wfa7:6Asc$CvgZXX" resolve="World2D" />
-      <ref role="3lhOvi" node="3ZJK8lMfDgo" />
+      <ref role="3lhOvi" node="3ZJK8lMfDgo" resolve="map_World2D" />
       <node concept="30G5F_" id="3ZJK8lMfD7r" role="30HLyM">
         <node concept="3clFbS" id="3ZJK8lMfD7s" role="2VODD2">
           <node concept="3clFbF" id="3ZJK8lMfD7x" role="3cqZAp">

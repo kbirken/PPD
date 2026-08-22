@@ -22,7 +22,7 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -81,7 +81,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -93,31 +93,31 @@
     <node concept="2sgV4H" id="5wLtKNeSRPp" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5wLtKNeSRPq" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPb" />
+        <ref role="398BVh" node="6uyzASnqGPb" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="jS_CvxPMqM" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" />
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="jS_CvxPMrd" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" />
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="6uyzASnqGQM" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="jS_CvxPGKG" role="1l3spa">
-      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" />
+      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
       <node concept="398BVA" id="jS_CvxPGLW" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" />
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="jS_CvxPGUJ" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
         </node>
       </node>
     </node>
     <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" />
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" />
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
@@ -137,7 +137,7 @@
     <node concept="398rNT" id="6uyzASnqGPb" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="6uyzASnqGPi" role="398pKh">
-        <ref role="398BVh" node="6uyzASnqGGh" />
+        <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
         <node concept="2Ry0Ak" id="6uyzASnqGPl" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="6uyzASnqGPo" role="2Ry0An">
@@ -149,7 +149,7 @@
     <node concept="398rNT" id="6uyzASnqGPL" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="6uyzASnqGPW" role="398pKh">
-        <ref role="398BVh" node="6uyzASnqGGh" />
+        <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
         <node concept="2Ry0Ak" id="6uyzASnqGQ1" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="6uyzASnqGQ6" role="2Ry0An">
@@ -169,7 +169,7 @@
         <property role="TrG5h" value="org.itemis.phydev.build" />
         <property role="3LESm3" value="6fbcaa51-7865-4de3-9f36-bfe4d9ef9c05" />
         <node concept="398BVA" id="6uyzASnqI0X" role="3LF7KH">
-          <ref role="398BVh" node="6uyzASnqGGh" />
+          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
           <node concept="2Ry0Ak" id="6uyzASnqI16" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="6uyzASnqI1b" role="2Ry0An">
@@ -194,7 +194,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="6uyzASnqI1z" role="1HemKq">
             <node concept="398BVA" id="6uyzASnqI1t" role="3LXTmr">
-              <ref role="398BVh" node="6uyzASnqGGh" />
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
               <node concept="2Ry0Ak" id="6uyzASnqI1u" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="6uyzASnqI1v" role="2Ry0An">
@@ -215,17 +215,17 @@
         </node>
         <node concept="1SiIV0" id="$m7ywrHmkO" role="3bR37C">
           <node concept="3bR9La" id="$m7ywrHmkP" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" />
+            <ref role="3bR37D" to="ip48:7C6tnXfWu6n" resolve="org.iets3.opensource.build" />
           </node>
         </node>
         <node concept="1SiIV0" id="$m7ywrHmkQ" role="3bR37C">
           <node concept="3bR9La" id="$m7ywrHmkR" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:7Pr7tifzlku" />
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="2Ar3EGndpv5" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGndpv6" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26VOkn" />
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>

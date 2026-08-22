@@ -5,7 +5,7 @@ Physical Product Developer with MPS
 
 Download and install MPS 2026.1 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture.
 
-This project uses the open-source platform extensions `mbeddr.platform` and `iets3.opensource` (see [itemis artifacts](https://artifacts.itemis.cloud/repository/maven-mps/)). The project is currently at MPS 2026.1; matching versions of both extensions exist for that release.
+This project uses the open-source platform extensions `mbeddr.platform` and `iets3.opensource` (see [itemis artifacts](https://artifacts.itemis.cloud/repository/maven-mps/)).
 
 
 ### Building the project
@@ -21,23 +21,6 @@ The project comes with a gradle build. Open a command shell, move to the root fo
 Instead of running the gradle build, you can also run the script `download_deps.sh` to just download dependencies from itemis artifacts server.
 After the download is completed, open the MPS IDE and build all languages manually.
 
-
-## Migration notes
-
-Migrated from MPS 2025.1 → 2025.2 → 2025.3 → 2026.1. The migration chain lives on dedicated branches:
-
-| branch | MPS |
-|---|---|
-| `archive/mps20252` | 2025.2 |
-| `archive/mps20253` | 2025.3 |
-| `main` / `archive/mps20261` | 2026.1 |
-
-Key facts for re-migration or rollback:
-
-- **Platform extensions.** The `mbeddr.platform` and `iets3.opensource` libraries are external MPS libraries resolved via `code/.mps/libraries.xml`. Only **2025.1.x** and **2026.1.x** releases exist on the itemis artifact server — there is no 2025.2 or 2025.3 release of either. For MPS 2025.2 / 2025.3 you must use the `2025.1.+` versions of both extensions; for MPS 2026.1 you use the `2026.1.+` versions. The `download_deps.sh` script and the `build.properties` files inside the on-disk libraries encode which version is in use.
-- **libraries.xml.** The library paths use `$PROJECT_DIR$/../build/dependencies/{com.mbeddr.platform, org.iets3.opensource}`. This is the same mechanism the `mps-mbeddr-intro-course-exercises` repo uses, and it is resolvable by both the MPS IDE and `mops` (no need to run the gradle build or define `phydev.home` manually).
-- **Gate.** For each migration step we verify that the language modules (`org.itemis.phydev`, `org.itemis.world2d`, `org.itemis.phydev.gen.html`, `org.itemis.phydev.gen.world2d`, `org.itemis.world2d.gen.json`) build, and that the sandbox models (`org.itemis.phydev.sandbox`, `org.itemis.world2d.sandbox`) have no new model-check findings versus the 2025.1 baseline (which was clean: `no findings`).
-- **Generator output is out of scope.** The `org.itemis.phydev#01` generator (and the `org.itemis.world2d` generator) do not build at any stage, including 2025.1. Per the course-materials convention, only the language modules themselves are required to build.
 
 
 ## Tool architecture
