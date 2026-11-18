@@ -16,16 +16,16 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Only needed to run Gradle itself. The JBR that runs the MPS ant scripts
       # is downloaded by the build (downloadJbr task).
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: '21'
 
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
 
       # Downloads MPS and iets3.opensource, builds all languages and runs the MPS
       # tests of test.org.itemis.phydev (see build script org.itemis.phydev.test).
@@ -42,7 +42,7 @@ jobs:
       # The ant launchtests task writes the JUnit XML files to build/scripts.
       - name: Publish test report
         if: always()
-        uses: mikepenz/action-junit-report@v5
+        uses: mikepenz/action-junit-report@v6
         with:
           report_paths: 'build/scripts/TEST-*.xml'
           check_name: MPS test report
@@ -53,7 +53,7 @@ jobs:
 
       - name: Upload HTML test report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: junit-report
           path: |
@@ -62,7 +62,7 @@ jobs:
           if-no-files-found: warn
 
       - name: Upload language artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: org.itemis.phydev
           path: build/artifacts
