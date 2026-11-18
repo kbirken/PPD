@@ -1,7 +1,7 @@
 #!/bin/sh
 
-mbeddr_platform_version=2023.2.24471.e1820f3
-iets3_opensource_version=2023.2.7013.3463d21
+mbeddr_platform_version=2026.1.26568.a2dce9c
+iets3_opensource_version=2026.1.10950.990bf05
 
 # ------------------------------------------------------------
 

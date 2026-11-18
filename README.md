@@ -3,9 +3,9 @@ Physical Product Developer with MPS
 
 ## Setup
 
-Download and install MPS 2025.1 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture. 
+Download and install MPS 2026.1 from [this JetBrains site](https://www.jetbrains.com/de-de/mps/download/previous.html) for your favorite operating system and hardware architecture.
 
-This project will use the open-source platform extensions `mbeddr.platform` and `iets3.opensource`. We are not using the latest MPS version in order to have stable platform components available.
+This project uses the open-source platform extensions `mbeddr.platform` and `iets3.opensource` (see [itemis artifacts](https://artifacts.itemis.cloud/repository/maven-mps/)).
 
 
 ### Building the project
@@ -20,6 +20,7 @@ The project comes with a gradle build. Open a command shell, move to the root fo
 
 Instead of running the gradle build, you can also run the script `download_deps.sh` to just download dependencies from itemis artifacts server.
 After the download is completed, open the MPS IDE and build all languages manually.
+
 
 
 ## Tool architecture
