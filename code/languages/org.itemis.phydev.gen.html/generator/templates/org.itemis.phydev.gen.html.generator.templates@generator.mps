@@ -270,7 +270,7 @@
               <property role="3o6i5n" value="Requirements for" />
             </node>
             <node concept="3o6iSG" id="3ZJK8lMdaFc" role="3o6s8t">
-              <property role="3o6i5n" value="Product" />
+              <property role="3o6i5n" value="Solution" />
               <node concept="17Uvod" id="3ZJK8lMdaFe" role="lGtFl">
                 <property role="2qtEX9" value="value" />
                 <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
