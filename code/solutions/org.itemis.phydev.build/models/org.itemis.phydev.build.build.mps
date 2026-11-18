@@ -25,6 +25,7 @@
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
         <child id="1688667350638517006" name="compressArgs" index="XX84c" />
+        <child id="7978162869575635130" name="projectPath" index="1RZ71A" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -1278,6 +1279,12 @@
         <node concept="NbPM2" id="5sn4YBkht4I" role="XX84c">
           <node concept="3Mxwew" id="5sn4YBkht4H" role="3MwsjC">
             <property role="3MwjfP" value="true" />
+          </node>
+        </node>
+        <node concept="398BVA" id="26IcP3KsDkZ" role="1RZ71A">
+          <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="26IcP3KsDl0" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
           </node>
         </node>
       </node>
