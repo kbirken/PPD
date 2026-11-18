@@ -29,8 +29,15 @@ jobs:
 
       # Downloads MPS and iets3.opensource, builds all languages and runs the MPS
       # tests of test.org.itemis.phydev (see build script org.itemis.phydev.test).
+      # The MPS test environment initialises AWT and needs an X display, which the
+      # runner does not have, hence xvfb.
+      - name: Install xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+
       - name: Build and run tests
-        run: ./gradlew buildAndRunTests --console=plain
+        run: xvfb-run -a ./gradlew buildAndRunTests --console=plain
 
       # The ant launchtests task writes the JUnit XML files to build/scripts.
       - name: Publish test report
