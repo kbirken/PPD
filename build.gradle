@@ -72,6 +72,8 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) {
                 classpath: configurations.junitAnt.asPath)
         // Merge the per-suite results (written by the ant launchtests task to build/scripts)
         // into build/junitreport/TESTS-TestSuites.xml; without todir it would land in the project root.
+        // junitreport does not create todir itself (fails on a clean checkout).
+        ant.mkdir(dir: "$buildDir/junitreport")
         ant.junitreport(todir: "$buildDir/junitreport") {
             fileset(dir: "$buildDir/scripts", includes: 'TEST-*.xml')
             report(format: 'frames', todir: "$buildDir/junitreport")
