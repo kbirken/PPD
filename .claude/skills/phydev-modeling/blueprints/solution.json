@@ -1,0 +1,35 @@
+{
+  "$mps-ast": "1.0",
+  "$languages": {
+    "ph": "org.itemis.phydev.structure",
+    "st": "org.iets3.core.expr.simpleTypes.structure"
+  },
+  "node": {
+    "$concept": "ph.Solution",
+    "name": "Pendel01",
+    "rationale": "Use a simple pendulum for the horizontal movement.",
+    "mechanism": { "$name": "Pendel" },
+    "product":   { "$name": "Hori2000" },
+    "paramValues": [
+      {
+        "$concept": "ph.ParameterValue",
+        "param": { "$name": "y0" },
+        "value": { "$concept": "st.NumberLiteral", "value": "1.5" }
+      },
+      {
+        "$concept": "ph.ParameterValue",
+        "param": { "$name": "l" },
+        "value": { "$concept": "st.NumberLiteral", "value": "0.8" }
+      }
+    ],
+    "providedPoints": [
+      {
+        "$concept": "ph.PointMapping",
+        "required": { "$name": "PM" },
+        "actual":   { "$name": "Swing" }
+      }
+    ],
+    "minX": { "$concept": "st.NumberLiteral", "value": "-0.6" },
+    "maxX": { "$concept": "st.NumberLiteral", "value": "0.6" }
+  }
+}

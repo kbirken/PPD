@@ -1,0 +1,124 @@
+{
+  "_usage": "Snippets for extending an EXISTING Mechanism. Each entry: parent_node_id = the Mechanism root, link = 'link', ast = the payload for create_ast (parent_node_id + link). Names in $name must be unique in scope; otherwise use {\"$nodeId\": ...}. Replace <PLACEHOLDERS>.",
+  "parameter": {
+    "link": "parameters",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.Parameter",
+        "name": "<PARAM_NAME>",
+        "description": "<what the parameter means>",
+        "type": { "$concept": "st.NumberType", "prec": { "$concept": "st.NumberPrecSpec", "prec": "2" } }
+      }
+    }
+  },
+  "fixedPoint_literal": {
+    "link": "fixedPoints",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.FixedPointDef",
+        "name": "<POINT_NAME>",
+        "loc": {
+          "$concept": "ph.Vector2D",
+          "x": { "$concept": "st.NumberLiteral", "value": "0.0" },
+          "y": { "$concept": "st.NumberLiteral", "value": "1.0" }
+        }
+      }
+    }
+  },
+  "movingPoint_paramHalfWidth": {
+    "link": "movingPoints",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "ex": "org.iets3.core.expr.base.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.MovingPointDef",
+        "name": "<POINT_NAME>",
+        "loc": {
+          "$concept": "ph.Vector2D",
+          "x": {
+            "$concept": "ex.UnaryMinusExpression",
+            "expr": {
+              "$concept": "ex.ParensExpression",
+              "expr": {
+                "$concept": "ex.DivExpression",
+                "left": { "$concept": "ph.ParamRef", "arg": { "$name": "<PARAM_NAME>" } },
+                "right": { "$concept": "st.NumberLiteral", "value": "2" }
+              }
+            }
+          },
+          "y": { "$concept": "ph.ParamRef", "arg": { "$name": "<PARAM_NAME>" } }
+        }
+      }
+    }
+  },
+  "movingPoint_vectorSum": {
+    "link": "movingPoints",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.MovingPointDef",
+        "name": "<POINT_NAME>",
+        "loc": {
+          "$concept": "ph.Vector2DPlus",
+          "left": {
+            "$concept": "ph.Vector2D",
+            "x": { "$concept": "st.NumberLiteral", "value": "0" },
+            "y": { "$concept": "st.NumberLiteral", "value": "1" }
+          },
+          "right": {
+            "$concept": "ph.Vector2D",
+            "x": { "$concept": "st.NumberLiteral", "value": "1" },
+            "y": { "$concept": "st.NumberLiteral", "value": "0" }
+          }
+        }
+      }
+    }
+  },
+  "segment": {
+    "link": "elements",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.Segment",
+        "name": "<SEGMENT_NAME>",
+        "start": { "$concept": "ph.PointRef", "point": { "$name": "<START_POINT>" } },
+        "end":   { "$concept": "ph.PointRef", "point": { "$name": "<END_POINT>" } },
+        "density": { "$concept": "st.NumberLiteral", "value": "10" }
+      }
+    }
+  },
+  "triangle": {
+    "link": "elements",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.Triangle",
+        "name": "<TRIANGLE_NAME>",
+        "a": { "$concept": "ph.PointRef", "point": { "$name": "<POINT_A>" } },
+        "b": { "$concept": "ph.PointRef", "point": { "$name": "<POINT_B>" } },
+        "c": { "$concept": "ph.PointRef", "point": { "$name": "<POINT_C>" } },
+        "density": { "$concept": "st.NumberLiteral", "value": "10" }
+      }
+    }
+  },
+  "anchor_on_segment": {
+    "link": "elements",
+    "ast": {
+      "$mps-ast": "1.0",
+      "$languages": { "ph": "org.itemis.phydev.structure", "st": "org.iets3.core.expr.simpleTypes.structure" },
+      "node": {
+        "$concept": "ph.Anchor",
+        "name": "<ANCHOR_NAME>",
+        "segment": { "$name": "<SEGMENT_NAME>" },
+        "relativePos": { "$concept": "st.NumberLiteral", "value": "0.5" }
+      }
+    }
+  }
+}

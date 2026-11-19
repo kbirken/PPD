@@ -1,0 +1,59 @@
+{
+  "$mps-ast": "1.0",
+  "$languages": {
+    "ph": "org.itemis.phydev.structure",
+    "ex": "org.iets3.core.expr.base.structure",
+    "st": "org.iets3.core.expr.simpleTypes.structure"
+  },
+  "node": {
+    "$concept": "ph.Mechanism",
+    "name": "Pendel",
+    "parameters": [
+      {
+        "$concept": "ph.Parameter", "$anchor": "p_y0",
+        "name": "y0", "description": "height of the suspension point",
+        "type": { "$concept": "st.NumberType", "prec": { "$concept": "st.NumberPrecSpec", "prec": "2" } }
+      },
+      {
+        "$concept": "ph.Parameter", "$anchor": "p_l",
+        "name": "l", "description": "length of the pendulum",
+        "type": { "$concept": "st.NumberType", "prec": { "$concept": "st.NumberPrecSpec", "prec": "2" } }
+      }
+    ],
+    "fixedPoints": [
+      {
+        "$concept": "ph.FixedPointDef", "$anchor": "fp_top",
+        "name": "Top",
+        "loc": {
+          "$concept": "ph.Vector2D",
+          "x": { "$concept": "st.NumberLiteral", "value": "0.0" },
+          "y": { "$concept": "ph.ParamRef", "arg": { "$ref": "p_y0" } }
+        }
+      }
+    ],
+    "movingPoints": [
+      {
+        "$concept": "ph.MovingPointDef", "$anchor": "mp_swing",
+        "name": "Swing",
+        "loc": {
+          "$concept": "ph.Vector2D",
+          "x": { "$concept": "st.NumberLiteral", "value": "0.0" },
+          "y": {
+            "$concept": "ex.MinusExpression",
+            "left": { "$concept": "ph.ParamRef", "arg": { "$ref": "p_y0" } },
+            "right": { "$concept": "ph.ParamRef", "arg": { "$ref": "p_l" } }
+          }
+        }
+      }
+    ],
+    "elements": [
+      {
+        "$concept": "ph.Segment",
+        "name": "pendel",
+        "start": { "$concept": "ph.PointRef", "point": { "$ref": "fp_top" } },
+        "end":   { "$concept": "ph.PointRef", "point": { "$ref": "mp_swing" } },
+        "density": { "$concept": "st.NumberLiteral", "value": "10" }
+      }
+    ]
+  }
+}

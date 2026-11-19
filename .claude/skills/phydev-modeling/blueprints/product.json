@@ -1,0 +1,38 @@
+{
+  "$mps-ast": "1.0",
+  "$languages": {
+    "ph": "org.itemis.phydev.structure",
+    "st": "org.iets3.core.expr.simpleTypes.structure"
+  },
+  "node": {
+    "$concept": "ph.Product",
+    "name": "Hori2000",
+    "requiredPoints": [
+      {
+        "$concept": "ph.RequiredPoint", "$anchor": "rp_pm",
+        "name": "PM",
+        "description": "the point which should move on a horizontal line"
+      }
+    ],
+    "requirements": [
+      {
+        "$concept": "ph.TextOnlyRequirement",
+        "text": "The product shall look shiny, mostly silver and black."
+      },
+      {
+        "$concept": "ph.WeightRequirement",
+        "maxWeight": { "$concept": "st.NumberLiteral", "value": "2.3" }
+      },
+      {
+        "$concept": "ph.TrajectoryRequirement",
+        "point": { "$ref": "rp_pm" },
+        "y": { "$concept": "st.NumberLiteral", "value": "0.8" },
+        "deviation": { "$concept": "st.NumberLiteral", "value": "5.0" }
+      },
+      {
+        "$concept": "ph.ComplexityRequirement",
+        "maxMovingParts": 3
+      }
+    ]
+  }
+}
