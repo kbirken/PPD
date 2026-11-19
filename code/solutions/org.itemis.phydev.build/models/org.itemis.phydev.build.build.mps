@@ -1288,6 +1288,9 @@
           </node>
         </node>
       </node>
+      <node concept="22LTRM" id="7e57_z2KbcX" role="22LTRK">
+        <ref role="22LTRN" node="7e57_z2KbcJ" resolve="test.org.itemis.phydev" />
+      </node>
     </node>
     <node concept="1wNqPr" id="2B1T7v1mRQy" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -1344,6 +1347,52 @@
               </node>
             </node>
             <node concept="3qWCbU" id="2OVIZqykHXu" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="7e57_z2KbcJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.org.itemis.phydev" />
+        <property role="3LESm3" value="5f740244-6ea7-4f28-ba3c-a9c80a3bed72" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="7e57_z2KbcK" role="3LF7KH">
+          <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="7e57_z2KbcL" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="7e57_z2KbcM" role="2Ry0An">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="7e57_z2KbcN" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.itemis.phydev" />
+                <node concept="2Ry0Ak" id="7e57_z2KbcO" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.itemis.phydev.msd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="7e57_z2KbcP" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7e57_z2KbcQ" role="1HemKq">
+            <node concept="398BVA" id="7e57_z2KbcR" role="3LXTmr">
+              <ref role="398BVh" node="5sn4YBkhrz4" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="7e57_z2KbcS" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="7e57_z2KbcT" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="7e57_z2KbcU" role="2Ry0An">
+                    <property role="2Ry0Am" value="test.org.itemis.phydev" />
+                    <node concept="2Ry0Ak" id="7e57_z2KbcV" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7e57_z2KbcW" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -1443,6 +1492,9 @@
     <node concept="1l3spV" id="5sn4YBkhr8c" role="1l3spN">
       <node concept="L2wRC" id="5sn4YBkhsSO" role="39821P">
         <ref role="L2wRA" node="5sn4YBkhsM9" resolve="test.org.itemis.phydev.dummy" />
+      </node>
+      <node concept="L2wRC" id="7e57_z2KbcY" role="39821P">
+        <ref role="L2wRA" node="7e57_z2KbcJ" resolve="test.org.itemis.phydev" />
       </node>
     </node>
   </node>
