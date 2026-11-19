@@ -44,6 +44,7 @@
     <language slang="l:769783b6-17f4-40a3-bdc7-88b8332300f2:org.itemis.phydev" version="0" />
     <language slang="l:d9bfe14c-f389-4e27-be1b-5c11336c3fe5:org.itemis.phydev.gen.html" version="0" />
     <language slang="l:9c2cbfd0-a0c8-4ef8-a53b-eb33dfc9b0f0:org.itemis.phydev.gen.world2d" version="0" />
+    <language slang="l:a985a22f-0f3f-4ca2-93de-13fe7726e332:org.itemis.phydev.test" version="0" />
     <language slang="l:3d42449e-9670-4233-9f68-ba0596ae57f9:org.itemis.world2d" version="0" />
   </languageVersions>
   <dependencyVersions>

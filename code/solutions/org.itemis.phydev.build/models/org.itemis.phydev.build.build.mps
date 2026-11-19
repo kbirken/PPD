@@ -15,11 +15,11 @@
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="ng" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
-      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
+      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="ng" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
@@ -49,7 +49,7 @@
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -175,7 +175,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -220,9 +220,6 @@
       <node concept="m$_yC" id="Ji$st3HsMX" role="m$_yJ">
         <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
       </node>
-      <node concept="m$_yC" id="3m7OP7e6Ck6" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
-      </node>
       <node concept="3_J27D" id="Ji$st3HsJq" role="m$_yQ">
         <node concept="3Mxwew" id="Ji$st3HsLP" role="3MwsjC">
           <property role="3MwjfP" value="phydev" />
@@ -243,6 +240,9 @@
       </node>
       <node concept="m$f5U" id="5sn4YBkdH28" role="m$_yh">
         <ref role="m$f5T" node="5sn4YBkcRDe" resolve="world2d" />
+      </node>
+      <node concept="m$_yC" id="3m7OP7e6Ck6" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
       </node>
     </node>
     <node concept="2G$12M" id="Ji$st3HkGr" role="3989C9">
@@ -308,6 +308,11 @@
         </node>
         <node concept="1SiIV0" id="2Ar3EGnfR3p" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGnfR3q" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="zSqug$V8Th" role="3bR37C">
+          <node concept="3bR9La" id="zSqug$V8Ti" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
@@ -924,9 +929,150 @@
             <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2Ar3EGnfR4e" role="3bR37C">
+        <node concept="1SiIV0" id="7nJ_v$TyXMN" role="3bR37C">
           <node concept="3bR9La" id="2Ar3EGnfR4f" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="6OjemT1GXw0" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.itemis.phydev.test" />
+        <property role="3LESm3" value="a985a22f-0f3f-4ca2-93de-13fe7726e332" />
+        <node concept="398BVA" id="6OjemT1GXzQ" role="3LF7KH">
+          <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+          <node concept="2Ry0Ak" id="6OjemT1GX$a" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="6OjemT1GX$t" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="6OjemT1GX$K" role="2Ry0An">
+                <property role="2Ry0Am" value="org.itemis.phydev.test" />
+                <node concept="2Ry0Ak" id="6OjemT1GX_3" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.itemis.phydev.test.mpl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6OjemT1GX_c" role="3bR31x">
+          <node concept="3LXTmp" id="6OjemT1GX_d" role="3rtmxm">
+            <node concept="398BVA" id="6OjemT1GX_e" role="3LXTmr">
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="6OjemT1GX_f" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="6OjemT1GX_g" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="6OjemT1GX_h" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.test" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6OjemT1GX_j" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAF" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAG" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAH" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAJ" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAL" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAM" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAN" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAO" role="1SiIV1">
+            <ref role="3bR37D" node="Ji$st3GiIB" resolve="org.itemis.phydev.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAP" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAQ" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:5wLtKNeSRRB" resolve="org.iets3.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAR" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAS" role="1SiIV1">
+            <ref role="3bR37D" to="ip48:ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXAT" role="3bR37C">
+          <node concept="3bR9La" id="6OjemT1GXAU" role="1SiIV1">
+            <ref role="3bR37D" node="Ji$st3GiLU" resolve="org.itemis.phydev" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="6OjemT1GXB0" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6OjemT1GXB1" role="1HemKq">
+            <node concept="398BVA" id="6OjemT1GXAV" role="3LXTmr">
+              <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+              <node concept="2Ry0Ak" id="6OjemT1GXAW" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="6OjemT1GXAX" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="6OjemT1GXAY" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.itemis.phydev.test" />
+                    <node concept="2Ry0Ak" id="6OjemT1GXAZ" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6OjemT1GXB2" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6OjemT1GXB3" role="3bR37C">
+          <node concept="1Busua" id="6OjemT1GXB4" role="1SiIV1">
+            <ref role="1Busuk" to="ip48:ub9nkyRnyj" resolve="org.iets3.core.expr.tests" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6OjemT1GXB5" role="1TViLv">
+          <property role="TrG5h" value="org.itemis.phydev.test.generator" />
+          <property role="3LESm3" value="8e66ce04-58ed-4e14-a6a8-3aedee1d5a2a" />
+          <node concept="1BupzO" id="6OjemT1GXBc" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="6OjemT1GXBd" role="1HemKq">
+              <node concept="398BVA" id="6OjemT1GXB6" role="3LXTmr">
+                <ref role="398BVh" node="6uyzASnqGGh" resolve="phydev.home" />
+                <node concept="2Ry0Ak" id="6OjemT1GXB7" role="iGT6I">
+                  <property role="2Ry0Am" value="code" />
+                  <node concept="2Ry0Ak" id="6OjemT1GXB8" role="2Ry0An">
+                    <property role="2Ry0Am" value="languages" />
+                    <node concept="2Ry0Ak" id="6OjemT1GXB9" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.itemis.phydev.test" />
+                      <node concept="2Ry0Ak" id="6OjemT1GXBa" role="2Ry0An">
+                        <property role="2Ry0Am" value="generator" />
+                        <node concept="2Ry0Ak" id="6OjemT1GXBb" role="2Ry0An">
+                          <property role="2Ry0Am" value="templates" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="6OjemT1GXBe" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1167,15 +1313,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
-        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="6uyzASnqGGh" role="1l3spd">
       <property role="TrG5h" value="phydev.home" />
       <node concept="55IIr" id="1Y5vs7yKdTn" role="398pKh">
@@ -1256,6 +1393,15 @@
     </node>
     <node concept="2igEWh" id="Ji$st3HApE" role="1hWBAP">
       <property role="3UIfUI" value="4096" />
+    </node>
+    <node concept="2sgV4H" id="6s9oz3GUFvh" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="6s9oz3GUFvi" role="2JcizS">
+        <ref role="398BVh" node="6uyzASnqGPL" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="6s9oz3GUFvj" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="5sn4YBkhr8a">
