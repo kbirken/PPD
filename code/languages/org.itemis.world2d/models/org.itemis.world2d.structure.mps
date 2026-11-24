@@ -114,6 +114,16 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyi" id="4UlpL2w4qi7" role="1TKVEl">
+      <property role="TrG5h" value="noGravity" />
+      <property role="IQ2nx" value="5662545427590915207" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4UlpL2w7$Pq" role="1TKVEl">
+      <property role="TrG5h" value="damping" />
+      <property role="IQ2nx" value="5662545427591744858" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Asc$Cvh008">
     <property role="EcuMT" value="7610012764282814472" />

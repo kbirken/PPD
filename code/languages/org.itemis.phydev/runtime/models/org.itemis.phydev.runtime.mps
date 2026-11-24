@@ -2561,6 +2561,127 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4UlpL2w7xPp" role="jymVt" />
+    <node concept="3clFb_" id="4UlpL2w7xPk" role="jymVt">
+      <property role="TrG5h" value="setDamping" />
+      <node concept="3Tm1VV" id="4UlpL2w7xPl" role="1B3o_S" />
+      <node concept="3cqZAl" id="4UlpL2w7xPm" role="3clF45" />
+      <node concept="37vLTG" id="4UlpL2w7xPn" role="3clF46">
+        <property role="TrG5h" value="damping" />
+        <node concept="10OMs4" id="4UlpL2w7xPo" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4UlpL2w7xPq" role="3clF47">
+        <node concept="1Dw8fO" id="4UlpL2w7xPr" role="3cqZAp">
+          <node concept="3cpWsn" id="4UlpL2w7xPs" role="1Duv9x">
+            <property role="TrG5h" value="b" />
+            <node concept="3uibUv" id="4UlpL2w7xPt" role="1tU5fm">
+              <ref role="3uigEE" to="hdfp:~Body" resolve="Body" />
+            </node>
+            <node concept="2OqwBi" id="4UlpL2w7xPx" role="33vP2m">
+              <node concept="2OqwBi" id="4UlpL2w7xPu" role="2Oq$k0">
+                <node concept="Xjq3P" id="4UlpL2w7xPv" role="2Oq$k0" />
+                <node concept="2OwXpG" id="4UlpL2w7xPw" role="2OqNvi">
+                  <ref role="2Oxat5" node="6h7RWbAp9h7" resolve="world" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4UlpL2w7xPy" role="2OqNvi">
+                <ref role="37wK5l" to="hdfp:~World.getBodyList()" resolve="getBodyList" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4UlpL2w7xPz" role="1Dwp0S">
+            <node concept="37vLTw" id="4UlpL2w7xP$" role="3uHU7B">
+              <ref role="3cqZAo" node="4UlpL2w7xPs" resolve="b" />
+            </node>
+            <node concept="10Nm6u" id="4UlpL2w7xP_" role="3uHU7w" />
+          </node>
+          <node concept="37vLTI" id="4UlpL2w7xPA" role="1Dwrff">
+            <node concept="37vLTw" id="4UlpL2w7xPB" role="37vLTJ">
+              <ref role="3cqZAo" node="4UlpL2w7xPs" resolve="b" />
+            </node>
+            <node concept="2OqwBi" id="4UlpL2w7xPD" role="37vLTx">
+              <node concept="37vLTw" id="4UlpL2w7xPC" role="2Oq$k0">
+                <ref role="3cqZAo" node="4UlpL2w7xPs" resolve="b" />
+              </node>
+              <node concept="liA8E" id="4UlpL2w7xPE" role="2OqNvi">
+                <ref role="37wK5l" to="hdfp:~Body.getNext()" resolve="getNext" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4UlpL2w7xPF" role="2LFqv$">
+            <node concept="3clFbF" id="4UlpL2w7xPK" role="3cqZAp">
+              <node concept="2OqwBi" id="4UlpL2w7xPI" role="3clFbG">
+                <node concept="37vLTw" id="4UlpL2w7xPG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4UlpL2w7xPs" resolve="b" />
+                </node>
+                <node concept="liA8E" id="4UlpL2w7xPJ" role="2OqNvi">
+                  <ref role="37wK5l" to="hdfp:~Body.setLinearDamping(float)" resolve="setLinearDamping" />
+                  <node concept="37vLTw" id="4UlpL2w7xPH" role="37wK5m">
+                    <ref role="3cqZAo" node="4UlpL2w7xPn" resolve="damping" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4UlpL2w7xPP" role="3cqZAp">
+              <node concept="2OqwBi" id="4UlpL2w7xPN" role="3clFbG">
+                <node concept="37vLTw" id="4UlpL2w7xPL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4UlpL2w7xPs" resolve="b" />
+                </node>
+                <node concept="liA8E" id="4UlpL2w7xPO" role="2OqNvi">
+                  <ref role="37wK5l" to="hdfp:~Body.setAngularDamping(float)" resolve="setAngularDamping" />
+                  <node concept="37vLTw" id="4UlpL2w7xPM" role="37wK5m">
+                    <ref role="3cqZAo" node="4UlpL2w7xPn" resolve="damping" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4UlpL2w7xPQ" role="lGtFl">
+        <node concept="1PaTwC" id="4UlpL2w7xPR" role="1Vez_I">
+          <node concept="3oM_SD" id="4UlpL2w7xPS" role="1PaTwD">
+            <property role="3oM_SC" value="Set" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPT" role="1PaTwD">
+            <property role="3oM_SC" value="linear" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPU" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPV" role="1PaTwD">
+            <property role="3oM_SC" value="angular" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPW" role="1PaTwD">
+            <property role="3oM_SC" value="damping" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPX" role="1PaTwD">
+            <property role="3oM_SC" value="(1/s)" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPY" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xPZ" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xQ0" role="1PaTwD">
+            <property role="3oM_SC" value="bodies;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xQ1" role="1PaTwD">
+            <property role="3oM_SC" value="0" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xQ2" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xQ3" role="1PaTwD">
+            <property role="3oM_SC" value="no" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2w7xQ4" role="1PaTwD">
+            <property role="3oM_SC" value="damping." />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="6h7RWbAEc0b">
     <property role="TrG5h" value="Circle" />

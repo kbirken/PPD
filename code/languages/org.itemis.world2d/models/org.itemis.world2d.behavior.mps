@@ -12,8 +12,8 @@
     <import index="9s9o" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.common(org.itemis.phydev.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="wfa7" ref="r:5cbb99b3-109d-41a0-9f3d-5c45b7d64709(org.itemis.world2d.structure)" />
+    <import index="hdfp" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.dynamics(org.itemis.phydev.runtime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hdfp" ref="856b26ba-05ad-49b3-8b5b-d034f8f7a4a0/java:org.jbox2d.dynamics(org.itemis.phydev.runtime/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -58,6 +58,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -76,6 +77,10 @@
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -100,6 +105,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -251,6 +257,42 @@
                     </node>
                     <node concept="3zqWPK" id="6MQb0ApDtNh" role="2OqNvi">
                       <ref role="37wK5l" node="6At7l0NqOU4" resolve="b" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4UlpL2w4sds" role="3cqZAp">
+          <node concept="2OqwBi" id="4UlpL2w4sdt" role="3clFbw">
+            <node concept="13iPFW" id="4UlpL2w4sdu" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4UlpL2w4sdv" role="2OqNvi">
+              <ref role="3TsBF5" to="wfa7:4UlpL2w4qi7" resolve="noGravity" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4UlpL2w4sdw" role="3clFbx">
+            <node concept="3clFbF" id="4UlpL2w4sdx" role="3cqZAp">
+              <node concept="2OqwBi" id="4UlpL2w4sdy" role="3clFbG">
+                <node concept="2OqwBi" id="4UlpL2w4sdz" role="2Oq$k0">
+                  <node concept="37vLTw" id="4UlpL2w4sd$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6At7l0NqUVS" resolve="world" />
+                  </node>
+                  <node concept="liA8E" id="4UlpL2w4sd_" role="2OqNvi">
+                    <ref role="37wK5l" to="i1wt:6h7RWbApvZw" resolve="box2d" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4UlpL2w4sdA" role="2OqNvi">
+                  <ref role="37wK5l" to="hdfp:~World.setGravity(org.jbox2d.common.Vec2)" resolve="setGravity" />
+                  <node concept="2ShNRf" id="4UlpL2w4sdB" role="37wK5m">
+                    <node concept="1pGfFk" id="4UlpL2w4sdC" role="2ShVmc">
+                      <ref role="37wK5l" to="9s9o:~Vec2.&lt;init&gt;(float,float)" resolve="Vec2" />
+                      <node concept="3cmrfG" id="4UlpL2w4sdD" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="3cmrfG" id="4UlpL2w4sdE" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -821,6 +863,39 @@
                   <ref role="37wK5l" to="i1wt:2B9hOR0FaSF" resolve="registerMovingPart" />
                   <node concept="37vLTw" id="6At7l0LZhDz" role="37wK5m">
                     <ref role="3cqZAo" node="6At7l0LZfBG" resolve="bodies" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4UlpL2w7$Py" role="3cqZAp">
+          <node concept="3y3z36" id="4UlpL2w7$Pz" role="3clFbw">
+            <node concept="2OqwBi" id="4UlpL2w7$P$" role="3uHU7B">
+              <node concept="13iPFW" id="4UlpL2w7$P_" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4UlpL2w7$PA" role="2OqNvi">
+                <ref role="3TsBF5" to="wfa7:4UlpL2w7$Pq" resolve="damping" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4UlpL2w7$PB" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="4UlpL2w7$PC" role="3clFbx">
+            <node concept="3clFbF" id="4UlpL2w7$PD" role="3cqZAp">
+              <node concept="2OqwBi" id="4UlpL2w7$PE" role="3clFbG">
+                <node concept="37vLTw" id="4UlpL2w7$PF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6At7l0NqUVS" resolve="world" />
+                </node>
+                <node concept="liA8E" id="4UlpL2w7$PG" role="2OqNvi">
+                  <ref role="37wK5l" to="i1wt:4UlpL2w7xPk" resolve="setDamping" />
+                  <node concept="2YIFZM" id="4UlpL2w7$PH" role="37wK5m">
+                    <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                    <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                    <node concept="2OqwBi" id="4UlpL2w7$PI" role="37wK5m">
+                      <node concept="13iPFW" id="4UlpL2w7$PJ" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="4UlpL2w7$PK" role="2OqNvi">
+                        <ref role="3TsBF5" to="wfa7:4UlpL2w7$Pq" resolve="damping" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

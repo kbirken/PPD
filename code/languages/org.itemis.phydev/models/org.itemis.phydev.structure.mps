@@ -30,8 +30,19 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
@@ -604,6 +615,17 @@
       <property role="TrG5h" value="rationale" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="4UlpL2w4w3v" role="1TKVEl">
+      <property role="TrG5h" value="motionPlane" />
+      <property role="IQ2nx" value="5662545427590938847" />
+      <ref role="AX2Wp" node="4UlpL2w4w3d" resolve="MotionPlane" />
+    </node>
+    <node concept="1TJgyj" id="4UlpL2w7D8y" role="1TKVEi">
+      <property role="20kJfa" value="damping" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="IQ2ns" value="5662545427591762466" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1MxN4Cv9D98">
     <property role="EcuMT" value="2063154723034665544" />
@@ -781,6 +803,22 @@
     <property role="TrG5h" value="Vec2DYOp" />
     <property role="34LRSv" value="y" />
     <ref role="1TJDcQ" node="4h5WJapqOdT" resolve="Vec2DComponentOp" />
+  </node>
+  <node concept="25R3W" id="4UlpL2w4w3d">
+    <property role="TrG5h" value="MotionPlane" />
+    <property role="3GE5qa" value="solution" />
+    <property role="3F6X1D" value="5662545427590938829" />
+    <ref role="1H5jkz" node="4UlpL2w4w3e" resolve="vertical" />
+    <node concept="25R33" id="4UlpL2w4w3e" role="25R1y">
+      <property role="TrG5h" value="vertical" />
+      <property role="1L1pqM" value="vertical" />
+      <property role="3tVfz5" value="5662545427590938830" />
+    </node>
+    <node concept="25R33" id="4UlpL2w4w3f" role="25R1y">
+      <property role="TrG5h" value="horizontal" />
+      <property role="1L1pqM" value="horizontal" />
+      <property role="3tVfz5" value="5662545427590938831" />
+    </node>
   </node>
 </model>
 

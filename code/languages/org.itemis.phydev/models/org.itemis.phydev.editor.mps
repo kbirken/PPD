@@ -10,7 +10,7 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" implicit="true" />
+    <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
@@ -1223,6 +1223,45 @@
             </node>
           </node>
           <node concept="2iRkQZ" id="1MxN4Cv9CXk" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4UlpL2w4w3x" role="3EZMnx" />
+      <node concept="3F0ifn" id="4UlpL2w4w3y" role="3EZMnx">
+        <property role="3F0ifm" value="simulation:" />
+      </node>
+      <node concept="3EZMnI" id="4UlpL2w4w3z" role="3EZMnx">
+        <node concept="2iRfu4" id="4UlpL2w4w3$" role="2iSdaV" />
+        <node concept="VPM3Z" id="4UlpL2w4w3_" role="3F10Kt" />
+        <node concept="3XFhqQ" id="4UlpL2w4w3A" role="3EZMnx" />
+        <node concept="3EZMnI" id="4UlpL2w4w3B" role="3EZMnx">
+          <node concept="2iRkQZ" id="4UlpL2w4w3C" role="2iSdaV" />
+          <node concept="VPM3Z" id="4UlpL2w4w3D" role="3F10Kt" />
+          <node concept="3EZMnI" id="4UlpL2w4w3E" role="3EZMnx">
+            <node concept="2iRfu4" id="4UlpL2w4w3F" role="2iSdaV" />
+            <node concept="VPM3Z" id="4UlpL2w4w3G" role="3F10Kt" />
+            <node concept="3F0ifn" id="4UlpL2w4w3H" role="3EZMnx">
+              <property role="3F0ifm" value="motion plane:" />
+            </node>
+            <node concept="3F0A7n" id="4UlpL2w4w3I" role="3EZMnx">
+              <ref role="1NtTu8" to="wl5u:4UlpL2w4w3v" resolve="motionPlane" />
+            </node>
+          </node>
+          <node concept="3EZMnI" id="4UlpL2w7D8$" role="3EZMnx">
+            <node concept="2iRfu4" id="4UlpL2w7D8_" role="2iSdaV" />
+            <node concept="VPM3Z" id="4UlpL2w7D8A" role="3F10Kt" />
+            <node concept="3F0ifn" id="4UlpL2w7D8B" role="3EZMnx">
+              <property role="3F0ifm" value="damping:" />
+            </node>
+            <node concept="3F1sOY" id="4UlpL2w7D8C" role="3EZMnx">
+              <ref role="1NtTu8" to="wl5u:4UlpL2w7D8y" resolve="damping" />
+              <node concept="3F0ifn" id="4UlpL2w7D8D" role="2ruayu">
+                <property role="3F0ifm" value="none" />
+              </node>
+            </node>
+            <node concept="3F0ifn" id="4UlpL2w7D8E" role="3EZMnx">
+              <property role="3F0ifm" value="1/s" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

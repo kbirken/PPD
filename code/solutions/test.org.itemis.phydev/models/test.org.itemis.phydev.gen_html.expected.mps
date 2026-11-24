@@ -192,6 +192,21 @@
               <property role="3o6i5n" value=" mechanism." />
             </node>
           </node>
+          <node concept="2pNNFK" id="4UlpL2w7rUX" role="3o6s8t">
+            <property role="2pNNFO" value="p" />
+            <node concept="3o6iSG" id="4UlpL2w7rUY" role="3o6s8t">
+              <property role="3o6i5n" value="The mechanism moves in a " />
+            </node>
+            <node concept="2pNNFK" id="4UlpL2w7rUZ" role="3o6s8t">
+              <property role="2pNNFO" value="em" />
+              <node concept="3o6iSG" id="4UlpL2w7rV0" role="3o6s8t">
+                <property role="3o6i5n" value="vertical" />
+              </node>
+            </node>
+            <node concept="3o6iSG" id="4UlpL2w7rV1" role="3o6s8t">
+              <property role="3o6i5n" value=" plane." />
+            </node>
+          </node>
         </node>
       </node>
     </node>

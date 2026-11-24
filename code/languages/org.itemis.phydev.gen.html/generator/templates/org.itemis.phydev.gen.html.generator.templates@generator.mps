@@ -135,6 +135,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="5779574625832259537" name="jetbrains.mps.lang.smodel.structure.EnumMember_PresentationOperation" flags="ng" index="1XCIdh" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -474,6 +475,40 @@
             </node>
             <node concept="3o6iSG" id="3ZJK8lMeJys" role="3o6s8t">
               <property role="3o6i5n" value=" mechanism." />
+            </node>
+          </node>
+          <node concept="2pNNFK" id="4UlpL2w7j_F" role="3o6s8t">
+            <property role="2pNNFO" value="p" />
+            <node concept="3o6iSG" id="4UlpL2w7j_G" role="3o6s8t">
+              <property role="3o6i5n" value="The mechanism moves in a " />
+            </node>
+            <node concept="2pNNFK" id="4UlpL2w7j_H" role="3o6s8t">
+              <property role="2pNNFO" value="em" />
+              <node concept="3o6iSG" id="4UlpL2w7j_I" role="3o6s8t">
+                <property role="3o6i5n" value="plane" />
+                <node concept="17Uvod" id="4UlpL2w7j_J" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
+                  <node concept="3zFVjK" id="4UlpL2w7j_K" role="3zH0cK">
+                    <node concept="3clFbS" id="4UlpL2w7j_L" role="2VODD2">
+                      <node concept="3clFbF" id="4UlpL2w7j_M" role="3cqZAp">
+                        <node concept="2OqwBi" id="4UlpL2w7j_N" role="3clFbG">
+                          <node concept="2OqwBi" id="4UlpL2w7j_O" role="2Oq$k0">
+                            <node concept="30H73N" id="4UlpL2w7j_P" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="4UlpL2w7j_Q" role="2OqNvi">
+                              <ref role="3TsBF5" to="wl5u:4UlpL2w4w3v" resolve="motionPlane" />
+                            </node>
+                          </node>
+                          <node concept="1XCIdh" id="4UlpL2w7j_R" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3o6iSG" id="4UlpL2w7j_S" role="3o6s8t">
+              <property role="3o6i5n" value=" plane." />
             </node>
           </node>
         </node>

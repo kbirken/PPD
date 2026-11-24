@@ -38,6 +38,10 @@ Solution "Pendel01"           mechanism + concrete parameter values, fulfils a p
   paramValues    [ParameterValue]  param -> Parameter (of the mechanism), value: Expression
   providedPoints [PointMapping]    required -> RequiredPoint, actual -> IPointDef (point/anchor of mechanism)
   minX, maxX  [0..1] Expression    allowed x range for the simulation (see Pendel01)
+  motionPlane MotionPlane          vertical (default, gravity acts in the plane) | horizontal
+                                   (e.g. a door hinge: no gravity in the simulation; sets World2D.noGravity)
+  damping     [0..1] Expression    linear + angular damping of all bodies in 1/s (World2D.damping); without it
+                                   a frictionless mechanism keeps moving after release. 5 stops Gelenk01 in ~0.25 s
   rationale   string
 ```
 
@@ -114,8 +118,9 @@ Pitfalls: the WorldBuilder has metre-scale constants (segment width 0.05, length
 so model small parts with a scale parameter (see `Gelenk-7Punkt`, `k`). Without collisions/end stops a
 mechanism can be dragged through its dead point onto another assembly branch — a jump in `angle` shows it.
 The console Java dialect cannot translate `instanceof` or enum constants (use `.name().equals(..)`).
-If an incremental `build_module` of `org.itemis.phydev.runtime` fails with jbox2d enum errors in
-`source_gen/org/jbox2d`, delete that directory and run `build_module` with `full_build: true`.
+If `build_module` of `org.itemis.phydev.runtime` fails with jbox2d enum errors in
+`source_gen/org/jbox2d` (the jar stub models get generated), delete **both** `runtime/source_gen/org/jbox2d`
+and `runtime/source_gen.caches/org/jbox2d`, then run `build_module` with `full_build: true`.
 
 ## Blueprints (`blueprints/`)
 
