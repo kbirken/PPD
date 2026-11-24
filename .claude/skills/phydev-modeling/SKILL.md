@@ -90,6 +90,33 @@ Details:
 6. Optionally `reveal_node_in_ide` so the user sees the result; checking requirements/simulating
    is done by the user in the IDE (intention/context menu), not via Portalon.
 
+## Trying out a Solution headless (SimProbe)
+
+`org.itemis.phydev.runtime.SimProbe` drives the jbox2d world of a Solution without the IDE window, so
+an agent can test a mechanism. Run it via Portalon `run_console_stage` (`backend: "portalon"`,
+`depends_on: ["org.itemis.phydev", "org.itemis.phydev.runtime"]`):
+
+```java
+node<org.itemis.phydev.structure.Solution> sol = instances(org.itemis.phydev.structure.Solution).findFirst(it -> it.name == "Gelenk01");
+org.itemis.phydev.runtime.SimProbe p = new org.itemis.phydev.runtime.SimProbe(org.itemis.phydev.behavior.WorldBuilder.buildBoxWorld(sol));
+p.gravity(false).pointCollisions(false).frame("0");
+for (int k = 1; k <= 6; k++) { p.dragAround("T2", "T1", 15.0f, 60).frame("" + Math.round(p.angle("T1", "T2"))); print(p.snapshot() + "\n"); }
+p.writeFilmstrip("<scratchpad>/sim/strip.png");   // then Read the PNG
+```
+
+API: `gravity(bool)`, `pointCollisions(bool)` (joint circles otherwise collide with unrelated segments),
+`drag(point, x, y, steps)`, `dragAround(point, pivot, deg, steps)` (ccw positive), `release()`, `step(n)`,
+`pos(point)`, `angle(a, b)` (deg), `jointError()`/`jointErrorAt()` (max anchor separation of revolute
+joints; ~0 = consistent geometry), `contacts()`, `snapshot()` (one text line), `frame(label)` +
+`writeFilmstrip(file)` (all frames side by side, common scale, colour per part group = name before `_`).
+
+Pitfalls: the WorldBuilder has metre-scale constants (segment width 0.05, length −0.1, point radius 0.03),
+so model small parts with a scale parameter (see `Gelenk-7Punkt`, `k`). Without collisions/end stops a
+mechanism can be dragged through its dead point onto another assembly branch — a jump in `angle` shows it.
+The console Java dialect cannot translate `instanceof` or enum constants (use `.name().equals(..)`).
+If an incremental `build_module` of `org.itemis.phydev.runtime` fails with jbox2d enum errors in
+`source_gen/org/jbox2d`, delete that directory and run `build_module` with `full_build: true`.
+
 ## Blueprints (`blueprints/`)
 
 All are `$mps-ast` documents validated against the current language (2026.1) and tested live
