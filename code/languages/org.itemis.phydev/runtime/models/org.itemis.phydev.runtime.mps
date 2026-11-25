@@ -44,6 +44,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
+      <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
         <property id="5279705229678483899" name="value" index="2$xPTl" />
@@ -214,6 +215,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="1225892208569" name="jetbrains.mps.baseLanguage.structure.ShiftLeftExpression" flags="nn" index="1GRDU$" />
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
         <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
       </concept>
@@ -2080,6 +2082,36 @@
             <ref role="3cqZAo" node="667ewDY3mzO" resolve="isPoint" />
           </node>
         </node>
+        <node concept="3clFbF" id="4UlpL2waHFa" role="3cqZAp">
+          <node concept="1rXfSq" id="4UlpL2waHFb" role="3clFbG">
+            <ref role="37wK5l" node="4UlpL2wa_2u" resolve="setFilter" />
+            <node concept="2OqwBi" id="4UlpL2waHFc" role="37wK5m">
+              <node concept="37vLTw" id="4UlpL2waHFd" role="2Oq$k0">
+                <ref role="3cqZAo" node="6h7RWbApky0" resolve="dr" />
+              </node>
+              <node concept="liA8E" id="4UlpL2waHFe" role="2OqNvi">
+                <ref role="37wK5l" node="6h7RWbAEwaE" resolve="box2d" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="4UlpL2weXHb" role="37wK5m">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="3cmrfG" id="4UlpL2waHFg" role="37wK5m">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="3K4zz7" id="4UlpL2waHFh" role="37wK5m">
+              <node concept="37vLTw" id="4UlpL2waHFi" role="3K4Cdx">
+                <ref role="3cqZAo" node="667ewDY3mzO" resolve="isPoint" />
+              </node>
+              <node concept="3cmrfG" id="4UlpL2waHFj" role="3K4E3e">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="3cmrfG" id="4UlpL2waHFk" role="3K4GZi">
+                <property role="3cmrfH" value="65535" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="6h7RWbApji2" role="1B3o_S" />
       <node concept="3cqZAl" id="6h7RWbApk55" role="3clF45" />
@@ -2106,6 +2138,19 @@
             <node concept="TSZUe" id="2B9hOR0FdVA" role="2OqNvi">
               <node concept="37vLTw" id="2B9hOR0Fe3i" role="25WWJ7">
                 <ref role="3cqZAo" node="2B9hOR0FccV" resolve="items" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4UlpL2waHFl" role="3cqZAp">
+          <node concept="1rXfSq" id="4UlpL2waHFm" role="3clFbG">
+            <ref role="37wK5l" node="4UlpL2waCmi" resolve="separatePart" />
+            <node concept="37vLTw" id="4UlpL2waHFn" role="37wK5m">
+              <ref role="3cqZAo" node="2B9hOR0FccV" resolve="items" />
+            </node>
+            <node concept="1ZRNhn" id="4UlpL2waHFo" role="37wK5m">
+              <node concept="1rXfSq" id="4UlpL2waHFp" role="2$L3a6">
+                <ref role="37wK5l" node="2B9hOR0EMOF" resolve="getNMovingParts" />
               </node>
             </node>
           </node>
@@ -2678,6 +2723,654 @@
           </node>
           <node concept="3oM_SD" id="4UlpL2w7xQ4" role="1PaTwD">
             <property role="3oM_SC" value="damping." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4UlpL2wa_2D" role="jymVt" />
+    <node concept="2YIFZL" id="4UlpL2wa_2u" role="jymVt">
+      <property role="TrG5h" value="setFilter" />
+      <node concept="3Tm6S6" id="4UlpL2wa_2v" role="1B3o_S" />
+      <node concept="3cqZAl" id="4UlpL2wa_2w" role="3clF45" />
+      <node concept="37vLTG" id="4UlpL2wa_2x" role="3clF46">
+        <property role="TrG5h" value="b" />
+        <node concept="3uibUv" id="4UlpL2wa_2y" role="1tU5fm">
+          <ref role="3uigEE" to="hdfp:~Body" resolve="Body" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4UlpL2wa_2z" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="3uibUv" id="4UlpL2wa_2$" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4UlpL2wa_2_" role="3clF46">
+        <property role="TrG5h" value="category" />
+        <node concept="10Oyi0" id="4UlpL2wa_2A" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4UlpL2wa_2B" role="3clF46">
+        <property role="TrG5h" value="mask" />
+        <node concept="10Oyi0" id="4UlpL2wa_2C" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4UlpL2wa_2E" role="3clF47">
+        <node concept="1Dw8fO" id="4UlpL2wa_2F" role="3cqZAp">
+          <node concept="3cpWsn" id="4UlpL2wa_2G" role="1Duv9x">
+            <property role="TrG5h" value="f" />
+            <node concept="3uibUv" id="4UlpL2wa_2H" role="1tU5fm">
+              <ref role="3uigEE" to="hdfp:~Fixture" resolve="Fixture" />
+            </node>
+            <node concept="2OqwBi" id="4UlpL2wa_2J" role="33vP2m">
+              <node concept="37vLTw" id="4UlpL2wa_2I" role="2Oq$k0">
+                <ref role="3cqZAo" node="4UlpL2wa_2x" resolve="b" />
+              </node>
+              <node concept="liA8E" id="4UlpL2wa_2K" role="2OqNvi">
+                <ref role="37wK5l" to="hdfp:~Body.getFixtureList()" resolve="getFixtureList" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="4UlpL2wa_2L" role="1Dwp0S">
+            <node concept="37vLTw" id="4UlpL2wa_2M" role="3uHU7B">
+              <ref role="3cqZAo" node="4UlpL2wa_2G" resolve="f" />
+            </node>
+            <node concept="10Nm6u" id="4UlpL2wa_2N" role="3uHU7w" />
+          </node>
+          <node concept="37vLTI" id="4UlpL2wa_2O" role="1Dwrff">
+            <node concept="37vLTw" id="4UlpL2wa_2P" role="37vLTJ">
+              <ref role="3cqZAo" node="4UlpL2wa_2G" resolve="f" />
+            </node>
+            <node concept="2OqwBi" id="4UlpL2wa_2R" role="37vLTx">
+              <node concept="37vLTw" id="4UlpL2wa_2Q" role="2Oq$k0">
+                <ref role="3cqZAo" node="4UlpL2wa_2G" resolve="f" />
+              </node>
+              <node concept="liA8E" id="4UlpL2wa_2S" role="2OqNvi">
+                <ref role="37wK5l" to="hdfp:~Fixture.getNext()" resolve="getNext" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4UlpL2wa_2T" role="2LFqv$">
+            <node concept="3cpWs8" id="4UlpL2wa_2Y" role="3cqZAp">
+              <node concept="3cpWsn" id="4UlpL2wa_2U" role="3cpWs9">
+                <property role="TrG5h" value="flt" />
+                <node concept="3uibUv" id="4UlpL2wa_2V" role="1tU5fm">
+                  <ref role="3uigEE" to="hdfp:~Filter" resolve="Filter" />
+                </node>
+                <node concept="2ShNRf" id="4UlpL2wa_2W" role="33vP2m">
+                  <node concept="1pGfFk" id="4UlpL2wa_2X" role="2ShVmc">
+                    <ref role="37wK5l" to="hdfp:~Filter.&lt;init&gt;()" resolve="Filter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4UlpL2wa_3e" role="3cqZAp">
+              <node concept="37vLTI" id="4UlpL2wa_2Z" role="3clFbG">
+                <node concept="2OqwBi" id="4UlpL2wa_30" role="37vLTJ">
+                  <node concept="37vLTw" id="4UlpL2wa_31" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UlpL2wa_2U" resolve="flt" />
+                  </node>
+                  <node concept="2OwXpG" id="4UlpL2wa_32" role="2OqNvi">
+                    <ref role="2Oxat5" to="hdfp:~Filter.groupIndex" resolve="groupIndex" />
+                  </node>
+                </node>
+                <node concept="1eOMI4" id="4UlpL2wa_33" role="37vLTx">
+                  <node concept="3K4zz7" id="4UlpL2wa_34" role="1eOMHV">
+                    <node concept="3y3z36" id="4UlpL2wa_35" role="3K4Cdx">
+                      <node concept="37vLTw" id="4UlpL2wa_36" role="3uHU7B">
+                        <ref role="3cqZAo" node="4UlpL2wa_2z" resolve="group" />
+                      </node>
+                      <node concept="10Nm6u" id="4UlpL2wa_37" role="3uHU7w" />
+                    </node>
+                    <node concept="37vLTw" id="4UlpL2wa_38" role="3K4E3e">
+                      <ref role="3cqZAo" node="4UlpL2wa_2z" resolve="group" />
+                    </node>
+                    <node concept="2OqwBi" id="4UlpL2wa_39" role="3K4GZi">
+                      <node concept="2OqwBi" id="4UlpL2wa_3b" role="2Oq$k0">
+                        <node concept="37vLTw" id="4UlpL2wa_3a" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4UlpL2wa_2G" resolve="f" />
+                        </node>
+                        <node concept="liA8E" id="4UlpL2wa_3c" role="2OqNvi">
+                          <ref role="37wK5l" to="hdfp:~Fixture.getFilterData()" resolve="getFilterData" />
+                        </node>
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2wa_3d" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.groupIndex" resolve="groupIndex" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4UlpL2wa_3k" role="3cqZAp">
+              <node concept="37vLTI" id="4UlpL2wa_3f" role="3clFbG">
+                <node concept="2OqwBi" id="4UlpL2wa_3g" role="37vLTJ">
+                  <node concept="37vLTw" id="4UlpL2wa_3h" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UlpL2wa_2U" resolve="flt" />
+                  </node>
+                  <node concept="2OwXpG" id="4UlpL2wa_3i" role="2OqNvi">
+                    <ref role="2Oxat5" to="hdfp:~Filter.categoryBits" resolve="categoryBits" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4UlpL2wa_3j" role="37vLTx">
+                  <ref role="3cqZAo" node="4UlpL2wa_2_" resolve="category" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4UlpL2wa_3q" role="3cqZAp">
+              <node concept="37vLTI" id="4UlpL2wa_3l" role="3clFbG">
+                <node concept="2OqwBi" id="4UlpL2wa_3m" role="37vLTJ">
+                  <node concept="37vLTw" id="4UlpL2wa_3n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UlpL2wa_2U" resolve="flt" />
+                  </node>
+                  <node concept="2OwXpG" id="4UlpL2wa_3o" role="2OqNvi">
+                    <ref role="2Oxat5" to="hdfp:~Filter.maskBits" resolve="maskBits" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4UlpL2wa_3p" role="37vLTx">
+                  <ref role="3cqZAo" node="4UlpL2wa_2B" resolve="mask" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4UlpL2wa_3v" role="3cqZAp">
+              <node concept="2OqwBi" id="4UlpL2wa_3t" role="3clFbG">
+                <node concept="37vLTw" id="4UlpL2wa_3r" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4UlpL2wa_2G" resolve="f" />
+                </node>
+                <node concept="liA8E" id="4UlpL2wa_3u" role="2OqNvi">
+                  <ref role="37wK5l" to="hdfp:~Fixture.setFilterData(org.jbox2d.dynamics.Filter)" resolve="setFilterData" />
+                  <node concept="37vLTw" id="4UlpL2wa_3s" role="37wK5m">
+                    <ref role="3cqZAo" node="4UlpL2wa_2U" resolve="flt" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4UlpL2wa_3w" role="lGtFl">
+        <node concept="1PaTwC" id="4UlpL2wa_3x" role="1Vez_I">
+          <node concept="3oM_SD" id="4UlpL2wa_3y" role="1PaTwD">
+            <property role="3oM_SC" value="Set" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3z" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3$" role="1PaTwD">
+            <property role="3oM_SC" value="collision" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3_" role="1PaTwD">
+            <property role="3oM_SC" value="filter" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3A" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3B" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3C" role="1PaTwD">
+            <property role="3oM_SC" value="fixtures" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3D" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3E" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3F" role="1PaTwD">
+            <property role="3oM_SC" value="body;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3G" role="1PaTwD">
+            <property role="3oM_SC" value="group" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3H" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3I" role="1PaTwD">
+            <property role="3oM_SC" value="keeps" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3J" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3K" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3L" role="1PaTwD">
+            <property role="3oM_SC" value="group" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wa_3M" role="1PaTwD">
+            <property role="3oM_SC" value="index." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4UlpL2waClb" role="jymVt" />
+    <node concept="3clFb_" id="4UlpL2waCl4" role="jymVt">
+      <property role="TrG5h" value="setCollisionLayer" />
+      <node concept="3Tm1VV" id="4UlpL2waCl5" role="1B3o_S" />
+      <node concept="3cqZAl" id="4UlpL2waCl6" role="3clF45" />
+      <node concept="37vLTG" id="4UlpL2waCl7" role="3clF46">
+        <property role="TrG5h" value="dr" />
+        <node concept="3uibUv" id="4UlpL2waCl8" role="1tU5fm">
+          <ref role="3uigEE" node="6h7RWbAEGaV" resolve="IDrawableBody" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4UlpL2waCl9" role="3clF46">
+        <property role="TrG5h" value="layer" />
+        <node concept="10Oyi0" id="4UlpL2waCla" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4UlpL2waClc" role="3clF47">
+        <node concept="3clFbJ" id="4UlpL2waCld" role="3cqZAp">
+          <node concept="3eOVzh" id="4UlpL2waCle" role="3clFbw">
+            <node concept="37vLTw" id="4UlpL2waClf" role="3uHU7B">
+              <ref role="3cqZAo" node="4UlpL2waCl9" resolve="layer" />
+            </node>
+            <node concept="3cmrfG" id="4UlpL2waClg" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4UlpL2waClh" role="3clFbx">
+            <node concept="3clFbF" id="4UlpL2waClp" role="3cqZAp">
+              <node concept="1rXfSq" id="4UlpL2waClo" role="3clFbG">
+                <ref role="37wK5l" node="4UlpL2wa_2u" resolve="setFilter" />
+                <node concept="2OqwBi" id="4UlpL2waClj" role="37wK5m">
+                  <node concept="37vLTw" id="4UlpL2waCli" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UlpL2waCl7" resolve="dr" />
+                  </node>
+                  <node concept="liA8E" id="4UlpL2waClk" role="2OqNvi">
+                    <ref role="37wK5l" node="6h7RWbAEwaE" resolve="box2d" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="4UlpL2waCll" role="37wK5m" />
+                <node concept="3cmrfG" id="4UlpL2waClm" role="37wK5m">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="4UlpL2waCln" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4UlpL2waClq" role="9aQIa">
+            <node concept="3eOSWO" id="4UlpL2waClr" role="3clFbw">
+              <node concept="37vLTw" id="4UlpL2waCls" role="3uHU7B">
+                <ref role="3cqZAo" node="4UlpL2waCl9" resolve="layer" />
+              </node>
+              <node concept="3cmrfG" id="4UlpL2waClt" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="4UlpL2waClu" role="3clFbx">
+              <node concept="3cpWs8" id="4UlpL2waCly" role="3cqZAp">
+                <node concept="3cpWsn" id="4UlpL2waClv" role="3cpWs9">
+                  <property role="TrG5h" value="bit" />
+                  <node concept="10Oyi0" id="4UlpL2waClw" role="1tU5fm" />
+                  <node concept="1GRDU$" id="4UlpL2waCmc" role="33vP2m">
+                    <node concept="3cmrfG" id="4UlpL2waCmd" role="3uHU7B">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="37vLTw" id="4UlpL2waCme" role="3uHU7w">
+                      <ref role="3cqZAo" node="4UlpL2waCl9" resolve="layer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4UlpL2waClE" role="3cqZAp">
+                <node concept="1rXfSq" id="4UlpL2waClD" role="3clFbG">
+                  <ref role="37wK5l" node="4UlpL2wa_2u" resolve="setFilter" />
+                  <node concept="2OqwBi" id="4UlpL2waCl$" role="37wK5m">
+                    <node concept="37vLTw" id="4UlpL2waClz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4UlpL2waCl7" resolve="dr" />
+                    </node>
+                    <node concept="liA8E" id="4UlpL2waCl_" role="2OqNvi">
+                      <ref role="37wK5l" node="6h7RWbAEwaE" resolve="box2d" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="4UlpL2waClA" role="37wK5m" />
+                  <node concept="37vLTw" id="4UlpL2waClB" role="37wK5m">
+                    <ref role="3cqZAo" node="4UlpL2waClv" resolve="bit" />
+                  </node>
+                  <node concept="pVOtf" id="4UlpL2waCmf" role="37wK5m">
+                    <node concept="37vLTw" id="4UlpL2waCmg" role="3uHU7B">
+                      <ref role="3cqZAo" node="4UlpL2waClv" resolve="bit" />
+                    </node>
+                    <node concept="3cmrfG" id="4UlpL2waCmh" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4UlpL2waClF" role="lGtFl">
+        <node concept="1PaTwC" id="4UlpL2waClG" role="1Vez_I">
+          <node concept="3oM_SD" id="4UlpL2waClH" role="1PaTwD">
+            <property role="3oM_SC" value="Put" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClI" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClJ" role="1PaTwD">
+            <property role="3oM_SC" value="body" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClK" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClL" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClM" role="1PaTwD">
+            <property role="3oM_SC" value="collision" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClN" role="1PaTwD">
+            <property role="3oM_SC" value="layer:" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClO" role="1PaTwD">
+            <property role="3oM_SC" value="layer" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClP" role="1PaTwD">
+            <property role="3oM_SC" value="1..15" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClQ" role="1PaTwD">
+            <property role="3oM_SC" value="collides" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClR" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClS" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClT" role="1PaTwD">
+            <property role="3oM_SC" value="same" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClU" role="1PaTwD">
+            <property role="3oM_SC" value="layer" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClV" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClW" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="4UlpL2waClX" role="1Vez_I">
+          <node concept="3oM_SD" id="4UlpL2waClY" role="1PaTwD">
+            <property role="3oM_SC" value="unlayered" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waClZ" role="1PaTwD">
+            <property role="3oM_SC" value="bodies;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm0" role="1PaTwD">
+            <property role="3oM_SC" value="layer" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm1" role="1PaTwD">
+            <property role="3oM_SC" value="&lt;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm2" role="1PaTwD">
+            <property role="3oM_SC" value="0" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm3" role="1PaTwD">
+            <property role="3oM_SC" value="collides" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm4" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm5" role="1PaTwD">
+            <property role="3oM_SC" value="nothing;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm6" role="1PaTwD">
+            <property role="3oM_SC" value="layer" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm7" role="1PaTwD">
+            <property role="3oM_SC" value="0" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm8" role="1PaTwD">
+            <property role="3oM_SC" value="leaves" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCm9" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCma" role="1PaTwD">
+            <property role="3oM_SC" value="filter" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCmb" role="1PaTwD">
+            <property role="3oM_SC" value="unchanged." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4UlpL2waCmq" role="jymVt" />
+    <node concept="3clFb_" id="4UlpL2waCmi" role="jymVt">
+      <property role="TrG5h" value="separatePart" />
+      <node concept="3Tm6S6" id="4UlpL2waCmj" role="1B3o_S" />
+      <node concept="3cqZAl" id="4UlpL2waCmk" role="3clF45" />
+      <node concept="37vLTG" id="4UlpL2waCml" role="3clF46">
+        <property role="TrG5h" value="parts" />
+        <node concept="3uibUv" id="4UlpL2waCmm" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="4UlpL2waCmn" role="11_B2D">
+            <ref role="3uigEE" node="6h7RWbAEGaV" resolve="IDrawableBody" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4UlpL2waCmo" role="3clF46">
+        <property role="TrG5h" value="group" />
+        <node concept="10Oyi0" id="4UlpL2waCmp" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4UlpL2waCmr" role="3clF47">
+        <node concept="3clFbJ" id="4UlpL2waCms" role="3cqZAp">
+          <node concept="3eOVzh" id="4UlpL2waCmt" role="3clFbw">
+            <node concept="2OqwBi" id="4UlpL2waCmv" role="3uHU7B">
+              <node concept="37vLTw" id="4UlpL2waCmu" role="2Oq$k0">
+                <ref role="3cqZAo" node="4UlpL2waCml" resolve="parts" />
+              </node>
+              <node concept="liA8E" id="4UlpL2waCmw" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="4UlpL2waCmx" role="3uHU7w">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4UlpL2waCmy" role="3clFbx">
+            <node concept="3cpWs6" id="4UlpL2waCmz" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="1DcWWT" id="4UlpL2waCm_" role="3cqZAp">
+          <node concept="3cpWsn" id="4UlpL2waCmA" role="1Duv9x">
+            <property role="TrG5h" value="p" />
+            <node concept="3uibUv" id="4UlpL2waCm$" role="1tU5fm">
+              <ref role="3uigEE" node="6h7RWbAEGaV" resolve="IDrawableBody" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="4UlpL2waCmB" role="1DdaDG">
+            <ref role="3cqZAo" node="4UlpL2waCml" resolve="parts" />
+          </node>
+          <node concept="3clFbS" id="4UlpL2waCmC" role="2LFqv$">
+            <node concept="1Dw8fO" id="4UlpL2waCmD" role="3cqZAp">
+              <node concept="3cpWsn" id="4UlpL2waCmE" role="1Duv9x">
+                <property role="TrG5h" value="f" />
+                <node concept="3uibUv" id="4UlpL2waCmF" role="1tU5fm">
+                  <ref role="3uigEE" to="hdfp:~Fixture" resolve="Fixture" />
+                </node>
+                <node concept="2OqwBi" id="4UlpL2waCmJ" role="33vP2m">
+                  <node concept="2OqwBi" id="4UlpL2waCmH" role="2Oq$k0">
+                    <node concept="37vLTw" id="4UlpL2waCmG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4UlpL2waCmA" resolve="p" />
+                    </node>
+                    <node concept="liA8E" id="4UlpL2waCmI" role="2OqNvi">
+                      <ref role="37wK5l" node="6h7RWbAEwaE" resolve="box2d" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4UlpL2waCmK" role="2OqNvi">
+                    <ref role="37wK5l" to="hdfp:~Body.getFixtureList()" resolve="getFixtureList" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="4UlpL2waCmL" role="1Dwp0S">
+                <node concept="37vLTw" id="4UlpL2waCmM" role="3uHU7B">
+                  <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                </node>
+                <node concept="10Nm6u" id="4UlpL2waCmN" role="3uHU7w" />
+              </node>
+              <node concept="37vLTI" id="4UlpL2waCmO" role="1Dwrff">
+                <node concept="37vLTw" id="4UlpL2waCmP" role="37vLTJ">
+                  <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                </node>
+                <node concept="2OqwBi" id="4UlpL2waCmR" role="37vLTx">
+                  <node concept="37vLTw" id="4UlpL2waCmQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                  </node>
+                  <node concept="liA8E" id="4UlpL2waCmS" role="2OqNvi">
+                    <ref role="37wK5l" to="hdfp:~Fixture.getNext()" resolve="getNext" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4UlpL2waCmT" role="2LFqv$">
+                <node concept="3cpWs8" id="4UlpL2waCmY" role="3cqZAp">
+                  <node concept="3cpWsn" id="4UlpL2waCmU" role="3cpWs9">
+                    <property role="TrG5h" value="flt" />
+                    <node concept="3uibUv" id="4UlpL2waCmV" role="1tU5fm">
+                      <ref role="3uigEE" to="hdfp:~Filter" resolve="Filter" />
+                    </node>
+                    <node concept="2ShNRf" id="4UlpL2waCmW" role="33vP2m">
+                      <node concept="1pGfFk" id="4UlpL2waCmX" role="2ShVmc">
+                        <ref role="37wK5l" to="hdfp:~Filter.&lt;init&gt;()" resolve="Filter" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4UlpL2waCn4" role="3cqZAp">
+                  <node concept="37vLTI" id="4UlpL2waCmZ" role="3clFbG">
+                    <node concept="2OqwBi" id="4UlpL2waCn0" role="37vLTJ">
+                      <node concept="37vLTw" id="4UlpL2waCn1" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4UlpL2waCmU" resolve="flt" />
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2waCn2" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.groupIndex" resolve="groupIndex" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="4UlpL2waCn3" role="37vLTx">
+                      <ref role="3cqZAo" node="4UlpL2waCmo" resolve="group" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4UlpL2waCne" role="3cqZAp">
+                  <node concept="37vLTI" id="4UlpL2waCn5" role="3clFbG">
+                    <node concept="2OqwBi" id="4UlpL2waCn6" role="37vLTJ">
+                      <node concept="37vLTw" id="4UlpL2waCn7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4UlpL2waCmU" resolve="flt" />
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2waCn8" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.categoryBits" resolve="categoryBits" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4UlpL2waCn9" role="37vLTx">
+                      <node concept="2OqwBi" id="4UlpL2waCnb" role="2Oq$k0">
+                        <node concept="37vLTw" id="4UlpL2waCna" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                        </node>
+                        <node concept="liA8E" id="4UlpL2waCnc" role="2OqNvi">
+                          <ref role="37wK5l" to="hdfp:~Fixture.getFilterData()" resolve="getFilterData" />
+                        </node>
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2waCnd" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.categoryBits" resolve="categoryBits" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4UlpL2waCno" role="3cqZAp">
+                  <node concept="37vLTI" id="4UlpL2waCnf" role="3clFbG">
+                    <node concept="2OqwBi" id="4UlpL2waCng" role="37vLTJ">
+                      <node concept="37vLTw" id="4UlpL2waCnh" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4UlpL2waCmU" resolve="flt" />
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2waCni" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.maskBits" resolve="maskBits" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="4UlpL2waCnj" role="37vLTx">
+                      <node concept="2OqwBi" id="4UlpL2waCnl" role="2Oq$k0">
+                        <node concept="37vLTw" id="4UlpL2waCnk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                        </node>
+                        <node concept="liA8E" id="4UlpL2waCnm" role="2OqNvi">
+                          <ref role="37wK5l" to="hdfp:~Fixture.getFilterData()" resolve="getFilterData" />
+                        </node>
+                      </node>
+                      <node concept="2OwXpG" id="4UlpL2waCnn" role="2OqNvi">
+                        <ref role="2Oxat5" to="hdfp:~Filter.maskBits" resolve="maskBits" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4UlpL2waCnt" role="3cqZAp">
+                  <node concept="2OqwBi" id="4UlpL2waCnr" role="3clFbG">
+                    <node concept="37vLTw" id="4UlpL2waCnp" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4UlpL2waCmE" resolve="f" />
+                    </node>
+                    <node concept="liA8E" id="4UlpL2waCns" role="2OqNvi">
+                      <ref role="37wK5l" to="hdfp:~Fixture.setFilterData(org.jbox2d.dynamics.Filter)" resolve="setFilterData" />
+                      <node concept="37vLTw" id="4UlpL2waCnq" role="37wK5m">
+                        <ref role="3cqZAo" node="4UlpL2waCmU" resolve="flt" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4UlpL2waCnu" role="lGtFl">
+        <node concept="1PaTwC" id="4UlpL2waCnv" role="1Vez_I">
+          <node concept="3oM_SD" id="4UlpL2waCnw" role="1PaTwD">
+            <property role="3oM_SC" value="Bodies" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnx" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCny" role="1PaTwD">
+            <property role="3oM_SC" value="one" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnz" role="1PaTwD">
+            <property role="3oM_SC" value="moving" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCn$" role="1PaTwD">
+            <property role="3oM_SC" value="part" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCn_" role="1PaTwD">
+            <property role="3oM_SC" value="(e.g." />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnB" role="1PaTwD">
+            <property role="3oM_SC" value="sides" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnC" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnD" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnE" role="1PaTwD">
+            <property role="3oM_SC" value="triangle)" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnF" role="1PaTwD">
+            <property role="3oM_SC" value="never" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnG" role="1PaTwD">
+            <property role="3oM_SC" value="collide" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnH" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnI" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2waCnJ" role="1PaTwD">
+            <property role="3oM_SC" value="other." />
           </node>
         </node>
       </node>
@@ -4747,8 +5440,13 @@
             <node concept="37vLTw" id="4UlpL2w32Ni" role="3uHU7B">
               <ref role="3cqZAo" node="4UlpL2w32Ne" resolve="i" />
             </node>
-            <node concept="37vLTw" id="4UlpL2w32Nj" role="3uHU7w">
-              <ref role="3cqZAo" node="4UlpL2w32K8" resolve="n" />
+            <node concept="17qRlL" id="4UlpL2wfSTu" role="3uHU7w">
+              <node concept="3cmrfG" id="4UlpL2wfSTv" role="3uHU7B">
+                <property role="3cmrfH" value="2" />
+              </node>
+              <node concept="37vLTw" id="4UlpL2wfSTw" role="3uHU7w">
+                <ref role="3cqZAo" node="4UlpL2w32K8" resolve="n" />
+              </node>
             </node>
           </node>
           <node concept="3uNrnE" id="4UlpL2w32Nk" role="1Dwrff">
@@ -4767,10 +5465,15 @@
                 </node>
                 <node concept="liA8E" id="4UlpL2w32Nw" role="2OqNvi">
                   <ref role="37wK5l" to="hdfp:~World.step(float,int,int)" resolve="step" />
-                  <node concept="2OqwBi" id="4UlpL2w32Nq" role="37wK5m">
-                    <node concept="Xjq3P" id="4UlpL2w32Nr" role="2Oq$k0" />
-                    <node concept="2OwXpG" id="4UlpL2w32Ns" role="2OqNvi">
-                      <ref role="2Oxat5" node="4UlpL2w32Jt" resolve="dt" />
+                  <node concept="FJ1c_" id="4UlpL2wfSTx" role="37wK5m">
+                    <node concept="2OqwBi" id="4UlpL2wfSTy" role="3uHU7B">
+                      <node concept="Xjq3P" id="4UlpL2wfSTz" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="4UlpL2wfST$" role="2OqNvi">
+                        <ref role="2Oxat5" node="4UlpL2w32Jt" resolve="dt" />
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="4UlpL2wfST_" role="3uHU7w">
+                      <property role="3cmrfH" value="2" />
                     </node>
                   </node>
                   <node concept="3cmrfG" id="4UlpL2w32Nt" role="37wK5m">

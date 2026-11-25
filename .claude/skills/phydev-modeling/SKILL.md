@@ -51,8 +51,16 @@ Details:
   `ParamRef` (reference to a mechanism `Parameter`, concept `IArgument`). Numbers are
   `NumberLiteral` (property `value` is a **string**, e.g. `"0.6"`), arithmetic is iets3
   (`DivExpression`, `MinusExpression`, `UnaryMinusExpression`, `ParensExpression`, ...).
-- **Segment** (`start`, `end`: `PointRef`; `density`; optional `noCollision`) = a rod between two points.
-  **Triangle** (`a`,`b`,`c`: `PointRef`; `density`) = rigid plate. **Anchor** (`segment`, `relativePos`
+- **Segment** (`start`, `end`: `PointRef`; `density`; optional `collision`) = a rod between two points.
+  **Triangle** (`a`,`b`,`c`: `PointRef`; `density`; optional `collision`) = rigid plate.
+  **Collision layers** (language version 1): `Mechanism.layers [Layer]` declares named layers;
+  `collision` is `OnLayer(layer -> Layer)` (collides with parts on the same layer and with parts without
+  `collision`), `NoCollision` (collides with nothing) or absent (collides with all; the editor shows
+  `<collides with all>`). Points never collide;
+  the bodies of one part (triangle sides) never collide with each other. Max. 15 layers (jbox2d category bits).
+  Example: `Gelenk-7Punkt` (layers `vorne`/`hinten`; a rigid three-joint link is a Triangle, not three
+  segments, so its sides do not collide with each other on the shared layer).
+  The old boolean `Segment.noCollision` is deprecated; migration `ReplaceNoCollisionByCollisionSpec` converts it. **Anchor** (`segment`, `relativePos`
   0..1) = a point on a segment, usable as `actual` in a `PointMapping` or as start/end of other segments.
   `PointRef.point` references an `IPointDef` (fixed point, moving point, or anchor) of the **same mechanism**.
 - **Units**: lengths in m, deviation (Trajectory) in **mm**, weights in kg, density in kg/m².
@@ -103,24 +111,30 @@ an agent can test a mechanism. Run it via Portalon `run_console_stage` (`backend
 ```java
 node<org.itemis.phydev.structure.Solution> sol = instances(org.itemis.phydev.structure.Solution).findFirst(it -> it.name == "Gelenk01");
 org.itemis.phydev.runtime.SimProbe p = new org.itemis.phydev.runtime.SimProbe(org.itemis.phydev.behavior.WorldBuilder.buildBoxWorld(sol));
-p.gravity(false).pointCollisions(false).frame("0");
+p.gravity(false).frame("0");
 for (int k = 1; k <= 6; k++) { p.dragAround("T2", "T1", 15.0f, 60).frame("" + Math.round(p.angle("T1", "T2"))); print(p.snapshot() + "\n"); }
 p.writeFilmstrip("<scratchpad>/sim/strip.png");   // then Read the PNG
 ```
 
-API: `gravity(bool)`, `pointCollisions(bool)` (joint circles otherwise collide with unrelated segments),
+API: `gravity(bool)`, `pointCollisions(bool)` (default off, as in the IDE; `true` lets joint circles collide
+with parts that have no `collision`), `dragForce(N)` (max. force of the drag spring, default 500 N; the IDE
+mouse spring uses 1000 × mass of the grabbed point, ~57 N for a joint circle — use `dragForce(57)` to mimic it),
 `drag(point, x, y, steps)`, `dragAround(point, pivot, deg, steps)` (ccw positive), `release()`, `step(n)`,
 `pos(point)`, `angle(a, b)` (deg), `jointError()`/`jointErrorAt()` (max anchor separation of revolute
 joints; ~0 = consistent geometry), `contacts()`, `snapshot()` (one text line), `frame(label)` +
 `writeFilmstrip(file)` (all frames side by side, common scale, colour per part group = name before `_`).
 
+Time stepping: one SimProbe `step` = 1/60 s, computed as 2 sub-steps (1/120 s); the IDE simulation draws
+20 frames/s with 5 sub-steps of 1/100 s each. This is a deliberate compromise for demos: a single 1/20 s step
+lets the joints of small, light mechanisms stretch (Gelenk01 felt like rubber, triangles flipped), while
+very fine steps (1/200 s) make tight joints jam against colliding neighbours (Roberts01 got stuck, because
+adjacent parts without collision layers touch at their shared joints).
+
 Pitfalls: the WorldBuilder has metre-scale constants (segment width 0.05, length −0.1, point radius 0.03),
 so model small parts with a scale parameter (see `Gelenk-7Punkt`, `k`). Without collisions/end stops a
 mechanism can be dragged through its dead point onto another assembly branch — a jump in `angle` shows it.
 The console Java dialect cannot translate `instanceof` or enum constants (use `.name().equals(..)`).
-If `build_module` of `org.itemis.phydev.runtime` fails with jbox2d enum errors in
-`source_gen/org/jbox2d` (the jar stub models get generated), delete **both** `runtime/source_gen/org/jbox2d`
-and `runtime/source_gen.caches/org/jbox2d`, then run `build_module` with `full_build: true`.
+After rebuilding `org.itemis.phydev.plugin`, reopen the simulation window so it uses the new code.
 
 ## Blueprints (`blueprints/`)
 

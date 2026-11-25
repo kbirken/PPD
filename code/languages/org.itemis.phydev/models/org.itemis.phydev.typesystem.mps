@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -10,7 +11,7 @@
     <import index="wl5u" ref="r:4e6d5887-bd72-487b-8a33-9a312d03f1ef(org.itemis.phydev.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="carl" ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)" implicit="true" />
+    <import index="carl" ref="r:78f6e3a3-3a3d-4298-b0df-7510c56bffaa(org.itemis.phydev.behavior)" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -234,6 +235,9 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -245,6 +249,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -1931,6 +1936,105 @@
     <node concept="1YaCAy" id="4Y8Ro$BW2Qv" role="1YuTPh">
       <property role="TrG5h" value="vector2DType" />
       <ref role="1YaFvo" to="wl5u:pX_ysx1O9L" resolve="Vector2DType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4UlpL2wdLSJ">
+    <property role="TrG5h" value="check_MechanismLayers" />
+    <property role="3GE5qa" value="mechanism" />
+    <node concept="3clFbS" id="4UlpL2wdLU0" role="18ibNy">
+      <node concept="3SKdUt" id="4UlpL2wdLU1" role="3cqZAp">
+        <node concept="1PaTwC" id="4UlpL2wdLU2" role="1aUNEU">
+          <node concept="3oM_SD" id="4UlpL2wdLU3" role="1PaTwD">
+            <property role="3oM_SC" value="jbox2d" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU4" role="1PaTwD">
+            <property role="3oM_SC" value="offers" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU5" role="1PaTwD">
+            <property role="3oM_SC" value="16" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU6" role="1PaTwD">
+            <property role="3oM_SC" value="category" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU7" role="1PaTwD">
+            <property role="3oM_SC" value="bits;" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU8" role="1PaTwD">
+            <property role="3oM_SC" value="bit" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLU9" role="1PaTwD">
+            <property role="3oM_SC" value="0" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUa" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUb" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUc" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUd" role="1PaTwD">
+            <property role="3oM_SC" value="parts" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUe" role="1PaTwD">
+            <property role="3oM_SC" value="without" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUf" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUg" role="1PaTwD">
+            <property role="3oM_SC" value="collision" />
+          </node>
+          <node concept="3oM_SD" id="4UlpL2wdLUh" role="1PaTwD">
+            <property role="3oM_SC" value="layer" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4UlpL2wdLUi" role="3cqZAp">
+        <node concept="3eOSWO" id="4UlpL2wdLUj" role="3clFbw">
+          <node concept="2OqwBi" id="4UlpL2wdLUl" role="3uHU7B">
+            <node concept="2OqwBi" id="4UlpL2wdLUn" role="2Oq$k0">
+              <node concept="1YBJjd" id="4UlpL2wdLUo" role="2Oq$k0">
+                <ref role="1YBMHb" node="4UlpL2wdLTW" resolve="mechanism" />
+              </node>
+              <node concept="3Tsc0h" id="4UlpL2wdLUm" role="2OqNvi">
+                <ref role="3TtcxE" to="wl5u:4UlpL2wac95" resolve="layers" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="4UlpL2wdLUk" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="4UlpL2wdLUp" role="3uHU7w">
+            <property role="3cmrfH" value="15" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="4UlpL2wdLUq" role="3clFbx">
+          <node concept="2MkqsV" id="4UlpL2wdLUr" role="3cqZAp">
+            <node concept="Xl_RD" id="4UlpL2wdLUs" role="2MkJ7o">
+              <property role="Xl_RC" value="At most 15 collision layers are supported (the physics engine has 16 collision categories)" />
+            </node>
+            <node concept="2OqwBi" id="4UlpL2wdLUv" role="1urrMF">
+              <node concept="2OqwBi" id="4UlpL2wdLUx" role="2Oq$k0">
+                <node concept="1YBJjd" id="4UlpL2wdLUy" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4UlpL2wdLTW" resolve="mechanism" />
+                </node>
+                <node concept="3Tsc0h" id="4UlpL2wdLUw" role="2OqNvi">
+                  <ref role="3TtcxE" to="wl5u:4UlpL2wac95" resolve="layers" />
+                </node>
+              </node>
+              <node concept="34jXtK" id="4UlpL2wdLUt" role="2OqNvi">
+                <node concept="3cmrfG" id="4UlpL2wdLUu" role="25WWJ7">
+                  <property role="3cmrfH" value="15" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4UlpL2wdLTW" role="1YuTPh">
+      <property role="TrG5h" value="mechanism" />
+      <ref role="1YaFvo" to="wl5u:4Lx5PHnXdT" resolve="Mechanism" />
     </node>
   </node>
 </model>

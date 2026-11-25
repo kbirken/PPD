@@ -249,6 +249,18 @@
               <ref role="1NtTu8" to="wfa7:6Asc$CvhhpZ" resolve="withCollisions" />
             </node>
           </node>
+          <node concept="3EZMnI" id="4UlpL2wbiTc" role="3EZMnx">
+            <node concept="2iRfu4" id="4UlpL2wbiTd" role="2iSdaV" />
+            <node concept="3F0ifn" id="4UlpL2wbiTe" role="3EZMnx">
+              <property role="3F0ifm" value="collision layer" />
+            </node>
+            <node concept="3F0A7n" id="4UlpL2wbiTf" role="3EZMnx">
+              <ref role="1NtTu8" to="wfa7:4UlpL2wbiTa" resolve="layer" />
+            </node>
+            <node concept="3F0ifn" id="4UlpL2wbiTg" role="3EZMnx">
+              <property role="3F0ifm" value="(0 = all, -1 = none, 1..15 = layer)" />
+            </node>
+          </node>
           <node concept="3EZMnI" id="16PkDIvfOkd" role="3EZMnx">
             <node concept="VPM3Z" id="16PkDIvfOke" role="3F10Kt" />
             <node concept="3F0ifn" id="16PkDIvfOkf" role="3EZMnx">

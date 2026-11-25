@@ -77,6 +77,7 @@
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -190,9 +191,6 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -361,11 +359,12 @@
       <node concept="3F0ifn" id="6h7RWbAD5gX" role="3EZMnx">
         <property role="3F0ifm" value="kg/m2," />
       </node>
-      <node concept="27S6Sx" id="16xqaOIbI6y" role="3EZMnx">
-        <ref role="1NtTu8" to="wl5u:1CLwGpRnlmS" resolve="noCollision" />
-      </node>
-      <node concept="3F0ifn" id="16xqaOIbI7c" role="3EZMnx">
-        <property role="3F0ifm" value="no collision" />
+      <node concept="3F1sOY" id="4UlpL2watvm" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;collides with all&gt;" />
+        <ref role="1NtTu8" to="wl5u:4UlpL2wac97" resolve="collision" />
+        <node concept="3F0ifn" id="4UlpL2watvn" role="2ruayu">
+          <property role="3F0ifm" value="collides with all" />
+        </node>
       </node>
     </node>
   </node>
@@ -444,6 +443,19 @@
         <node concept="3F2HdR" id="6KOiXOptZ1S" role="3EZMnx">
           <ref role="1NtTu8" to="wl5u:6KOiXOptYSQ" resolve="movingPoints" />
           <node concept="2iRkQZ" id="6KOiXOptZ1T" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4UlpL2watve" role="3EZMnx" />
+      <node concept="3F0ifn" id="4UlpL2watvf" role="3EZMnx">
+        <property role="3F0ifm" value="collision layers:" />
+      </node>
+      <node concept="3EZMnI" id="4UlpL2watvg" role="3EZMnx">
+        <node concept="2iRfu4" id="4UlpL2watvh" role="2iSdaV" />
+        <node concept="VPM3Z" id="4UlpL2watvi" role="3F10Kt" />
+        <node concept="3XFhqQ" id="4UlpL2watvj" role="3EZMnx" />
+        <node concept="3F2HdR" id="4UlpL2watvk" role="3EZMnx">
+          <ref role="1NtTu8" to="wl5u:4UlpL2wac95" resolve="layers" />
+          <node concept="2iRkQZ" id="4UlpL2wdI73" role="2czzBx" />
         </node>
       </node>
       <node concept="3F0ifn" id="4Lx5PHoT3P" role="3EZMnx" />
@@ -739,7 +751,14 @@
         <ref role="1NtTu8" to="wl5u:1MxN4CuWs22" resolve="density" />
       </node>
       <node concept="3F0ifn" id="1MxN4CuWs2O" role="3EZMnx">
-        <property role="3F0ifm" value="kg/m2" />
+        <property role="3F0ifm" value="kg/m2," />
+      </node>
+      <node concept="3F1sOY" id="4UlpL2watvr" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;collides with all&gt;" />
+        <ref role="1NtTu8" to="wl5u:4UlpL2wac99" resolve="collision" />
+        <node concept="3F0ifn" id="4UlpL2watvs" role="2ruayu">
+          <property role="3F0ifm" value="collides with all" />
+        </node>
       </node>
     </node>
   </node>
@@ -1505,6 +1524,39 @@
     <ref role="1XX52x" to="wl5u:4h5WJapqLRA" resolve="NoArgVec2DOp" />
     <node concept="PMmxH" id="4h5WJapqO3a" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4UlpL2watv2">
+    <property role="3GE5qa" value="mechanism.collision" />
+    <ref role="1XX52x" to="wl5u:4UlpL2wac8Y" resolve="Layer" />
+    <node concept="3F0A7n" id="4UlpL2watv3" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4UlpL2watv4">
+    <property role="3GE5qa" value="mechanism.collision" />
+    <ref role="1XX52x" to="wl5u:4UlpL2wac91" resolve="OnLayer" />
+    <node concept="3EZMnI" id="4UlpL2watv5" role="2wV5jI">
+      <node concept="2iRfu4" id="4UlpL2watv6" role="2iSdaV" />
+      <node concept="3F0ifn" id="4UlpL2watv7" role="3EZMnx">
+        <property role="3F0ifm" value="on layer" />
+      </node>
+      <node concept="1iCGBv" id="4UlpL2watv8" role="3EZMnx">
+        <ref role="1NtTu8" to="wl5u:4UlpL2wac92" resolve="layer" />
+        <node concept="1sVBvm" id="4UlpL2watv9" role="1sWHZn">
+          <node concept="3F0A7n" id="4UlpL2watva" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4UlpL2watvb">
+    <property role="3GE5qa" value="mechanism.collision" />
+    <ref role="1XX52x" to="wl5u:4UlpL2wac93" resolve="NoCollision" />
+    <node concept="3F0ifn" id="4UlpL2watvc" role="2wV5jI">
+      <property role="3F0ifm" value="no collision" />
     </node>
   </node>
 </model>

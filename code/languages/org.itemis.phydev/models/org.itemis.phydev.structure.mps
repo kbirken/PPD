@@ -38,6 +38,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -159,6 +162,9 @@
       <property role="IQ2nx" value="1887433507762689464" />
       <property role="TrG5h" value="noCollision" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="4UlpL2wac9b" role="lGtFl">
+        <property role="YLQ7P" value="replaced by child 'collision' (NoCollision / OnLayer); migrated by migration 0" />
+      </node>
     </node>
     <node concept="PrWs8" id="6KOiXOptKda" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -187,6 +193,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="4UlpL2wac97" role="1TKVEi">
+      <property role="20kJfa" value="collision" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="IQ2ns" value="5662545427592430151" />
+      <ref role="20lvS9" node="4UlpL2wac90" resolve="CollisionSpec" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Lx5PHnXdT">
     <property role="EcuMT" value="85995404698571641" />
@@ -207,6 +219,13 @@
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4Lx5PHoT0U" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyj" id="4UlpL2wac95" role="1TKVEi">
+      <property role="20kJfa" value="layers" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="IQ2ns" value="5662545427592430149" />
+      <ref role="20lvS9" node="4UlpL2wac8Y" resolve="Layer" />
     </node>
     <node concept="1TJgyj" id="4Lx5PHoSZt" role="1TKVEi">
       <property role="IQ2ns" value="85995404698816477" />
@@ -441,6 +460,12 @@
       <property role="20kJfa" value="density" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4UlpL2wac99" role="1TKVEi">
+      <property role="20kJfa" value="collision" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="IQ2ns" value="5662545427592430153" />
+      <ref role="20lvS9" node="4UlpL2wac90" resolve="CollisionSpec" />
     </node>
   </node>
   <node concept="1TIwiD" id="1MxN4CuYPDI">
@@ -819,6 +844,43 @@
       <property role="1L1pqM" value="horizontal" />
       <property role="3tVfz5" value="5662545427590938831" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4UlpL2wac8Y">
+    <property role="TrG5h" value="Layer" />
+    <property role="3GE5qa" value="mechanism.collision" />
+    <property role="34LRSv" value="layer" />
+    <property role="EcuMT" value="5662545427592430142" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4UlpL2wac8Z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UlpL2wac90">
+    <property role="TrG5h" value="CollisionSpec" />
+    <property role="3GE5qa" value="mechanism.collision" />
+    <property role="R5$K7" value="true" />
+    <property role="EcuMT" value="5662545427592430144" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4UlpL2wac91">
+    <property role="TrG5h" value="OnLayer" />
+    <property role="3GE5qa" value="mechanism.collision" />
+    <property role="34LRSv" value="on layer" />
+    <property role="EcuMT" value="5662545427592430145" />
+    <ref role="1TJDcQ" node="4UlpL2wac90" resolve="CollisionSpec" />
+    <node concept="1TJgyj" id="4UlpL2wac92" role="1TKVEi">
+      <property role="20kJfa" value="layer" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="5662545427592430146" />
+      <ref role="20lvS9" node="4UlpL2wac8Y" resolve="Layer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UlpL2wac93">
+    <property role="TrG5h" value="NoCollision" />
+    <property role="3GE5qa" value="mechanism.collision" />
+    <property role="34LRSv" value="no collision" />
+    <property role="EcuMT" value="5662545427592430147" />
+    <ref role="1TJDcQ" node="4UlpL2wac90" resolve="CollisionSpec" />
   </node>
 </model>
 

@@ -515,6 +515,27 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="4UlpL2wbjoE" role="3cqZAp">
+                  <node concept="2OqwBi" id="4UlpL2wbjoF" role="3clFbG">
+                    <node concept="37vLTw" id="4UlpL2wbjoG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6At7l0NqUVS" resolve="world" />
+                    </node>
+                    <node concept="liA8E" id="4UlpL2wbjoH" role="2OqNvi">
+                      <ref role="37wK5l" to="i1wt:4UlpL2waCl4" resolve="setCollisionLayer" />
+                      <node concept="37vLTw" id="4UlpL2wbjoJ" role="37wK5m">
+                        <ref role="3cqZAo" node="16PkDIvfqAd" resolve="box" />
+                      </node>
+                      <node concept="2OqwBi" id="4UlpL2wbjoP" role="37wK5m">
+                        <node concept="Jnkvi" id="4UlpL2wbjoQ" role="2Oq$k0">
+                          <ref role="1M0zk5" node="16PkDIvfqjN" resolve="b" />
+                        </node>
+                        <node concept="3TrcHB" id="4UlpL2wbjoR" role="2OqNvi">
+                          <ref role="3TsBF5" to="wfa7:4UlpL2wbiTa" resolve="layer" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6At7l0LW0EG" role="3cqZAp">
                   <node concept="37vLTI" id="6At7l0LW1DQ" role="3clFbG">
                     <node concept="37vLTw" id="6At7l0LW1TK" role="37vLTx">

@@ -589,5 +589,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4UlpL2wac9p">
+    <property role="3GE5qa" value="mechanism.collision" />
+    <ref role="1M2myG" to="wl5u:4UlpL2wac91" resolve="OnLayer" />
+    <node concept="1N5Pfh" id="4UlpL2wac9q" role="1Mr941">
+      <ref role="1N5Vy1" to="wl5u:4UlpL2wac92" resolve="layer" />
+      <node concept="1dDu$B" id="4UlpL2wac9r" role="1N6uqs">
+        <ref role="1dDu$A" to="wl5u:4UlpL2wac8Y" resolve="Layer" />
+      </node>
+    </node>
+  </node>
 </model>
 
