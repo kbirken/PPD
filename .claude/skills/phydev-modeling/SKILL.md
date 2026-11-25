@@ -114,6 +114,11 @@ API: `gravity(bool)`, `pointCollisions(bool)` (joint circles otherwise collide w
 joints; ~0 = consistent geometry), `contacts()`, `snapshot()` (one text line), `frame(label)` +
 `writeFilmstrip(file)` (all frames side by side, common scale, colour per part group = name before `_`).
 
+Time stepping: one SimProbe `step` = 1/60 s, computed as 2 sub-steps (1/120 s); the IDE simulation draws
+20 frames/s with 2 sub-steps of 1/40 s each. A single 1/20 s step lets the joints of small, light mechanisms
+stretch under the mouse spring (they feel like rubber); much finer steps make tight joints jam against
+colliding neighbours (adjacent parts touch at their shared joints).
+
 Pitfalls: the WorldBuilder has metre-scale constants (segment width 0.05, length −0.1, point radius 0.03),
 so model small parts with a scale parameter (see `Gelenk-7Punkt`, `k`). Without collisions/end stops a
 mechanism can be dragged through its dead point onto another assembly branch — a jump in `angle` shows it.
